@@ -1,0 +1,76 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="new-in">
+      <div class="new-in-right">
+        <p class="allcaps">{{section.settings.subtitle}}</p>
+        <div class="new-in-text">
+          <h3 class="m-h6">{{section.settings.title}}</h3>
+          <p class="b-18-r m-b-16-r">{{section.settings.text}}</p>
+          <div class="new-in-cta"><a href="{{section.settings.cta_url}}" class="btn cta text-left">{{section.settings.cta}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="new-in-left">
+        <div class="new-in-photo-slider">
+          {% for block in section.blocks %}
+          <div class="new-slide">
+            <img src="{{block.settings.img | img_url: 'master'}}">
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+    {
+    "name": "New In",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Title",
+        "default": "New In"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "text",
+        "id": "cta",
+        "label": "CTA text",
+        "default": "Explore work"
+      },
+      {
+        "type": "url",
+        "id": "cta_url",
+        "label": "CTA Url"
+      }
+    ],
+    "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+  

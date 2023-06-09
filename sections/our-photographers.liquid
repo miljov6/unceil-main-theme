@@ -1,0 +1,89 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="our-photographers">
+            <div class="our-photographers-head">
+                <h1 class="m-h3">{{section.settings.title}}</h1>
+            </div>
+            <div class="our-photographers-blocks">
+                    {% for block in section.blocks %}
+                    {% assign modulo = forloop.index | modulo:2 %}
+                    <div class="our-photographers-block{% if modulo == 0 %} block-left {% endif %}">
+                        <div class="our-photographers-block-img">
+                            <a href="{{block.settings.url}}"></a>
+                            <img src="{{block.settings.img | img_url: 'master'}}">
+                        </div>
+                        <div class="our-photographers-block-info">
+                            <h5 class="m-h6">{{block.settings.name}}</h5>
+                        </div>
+                            
+                    </div>
+                    {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+    {
+    "name": "Our Photographers",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }
+    ],
+    "blocks": [
+    {
+      "type": "photo",
+      "name": "Photo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+            "type":"url",
+            "id": "url",
+            "label": "URL" 
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Photographer",
+      "name": "photographer",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "photo",
+          "settings": {}
+        },
+        {
+          "type": "photo",
+          "settings": {}
+        },
+        {
+          "type": "photo",
+          "settings": {}
+        },
+        {
+          "type": "photo",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+  

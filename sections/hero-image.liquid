@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="hero-img">
+            <img src="{{section.settings.img | img_url: 'master'}}">
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+    "name": "Hero Image",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Choose Image"
+      }
+    ],
+      "presets": [
+      {
+        "category": "Hero Image",
+        "name": "Hero Image",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}
+  

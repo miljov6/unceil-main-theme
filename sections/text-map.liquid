@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="text-map">
+            <img src="{{'world-map.svg'|asset_url}}">
+            <div class="text-map-block">
+                <h1 class="m-h3">{{section.settings.title}}</h1>
+                <p class="b-18-r m-b-16-r">{{section.settings.text}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+    "name": "Text Map",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      }
+    ],
+      "presets": [
+      {
+        "category": "Text Map",
+        "name": "Text Map",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

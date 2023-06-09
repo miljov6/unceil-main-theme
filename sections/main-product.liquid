@@ -1,0 +1,331 @@
+{% assign block_1_title = product.metafields.custom.block_1_title %}
+{% assign block_1_text = product.metafields.custom.block_1_text %}
+{% assign block_2_title = product.metafields.custom.block_2_title %}
+{% assign block_2_text = product.metafields.custom.block_2_text %}
+{% assign block_3_title = product.metafields.custom.block_3_title %}
+{% assign block_3_text = product.metafields.custom.block_3_text %}
+{% assign block_4_title = product.metafields.custom.block_4_title %}
+{% assign block_4_text = product.metafields.custom.block_4_text %}
+{% assign block_5_title = product.metafields.custom.block_5_title %}
+{% assign block_5_text = product.metafields.custom.block_5_text %}
+{% assign limited = product.metafields.custom.limited_description %}
+{% assign additional_photos = product.metafields.custom.description_photos %}
+{% assign author = product.metafields.custom.author %}
+
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<div class="container">
+  <div class="container-fluid">
+    <div class="product-grid">
+      <div class="product-media">
+        <div class="product-media-featured">
+          <img src="{{product.featured_image | img_url: 'master'}}">
+        </div>
+        <div class="product-gallery">
+          {% for image in product.images %}
+          {% if image.src != product.featured_image.src %}
+          <div class="product-image">
+            <img src="{{image.src | product_img_url: 'medium'}}">
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="product-aditional">
+          {% if block_1_text != blank %}
+          <div class="product-additional-block">
+            <p class="b-14-m">{{block_1_title}}</p>
+            <div class="under-block">
+              <p class="b-16-r text-grey">{{block_1_text}}</p>
+            </div>
+          </div>
+          {% endif %}
+          {% if block_2_text != blank %}
+          <div class="product-additional-block">
+            <p class="b-14-m">{{block_2_title}}</p>
+            <div class="under-block">
+              <p class="b-16-r text-grey">{{block_2_text}}</p>
+            </div>
+          </div>
+          {% endif %}
+          {% if block_3_text != blank %}
+          <div class="product-additional-block">
+            <p class="b-14-m">{{block_3_title}}</p>
+            <div class="under-block">
+              <p class="b-16-r text-grey">{{block_3_text}}</p>
+            </div>
+          </div>
+          {% endif %}
+          {% if block_4_text != blank %}
+          <div class="product-additional-block">
+            <p class="b-14-m">{{block_4_title}}</p>
+            <div class="under-block">
+              <p class="b-16-r text-grey">{{block_4_text}}</p>
+            </div>
+          </div>
+          {% endif %}
+          {% if block_5_text != blank %}
+          <div class="product-additional-block">
+            <p class="b-14-m">{{block_5_title}}</p>
+            <div class="under-block">
+              <p class="b-16-r text-grey">{{block_5_text}}</p>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+        <div class="product-additional-photos">
+          {% for photo in additional_photos.value limit:1 %}
+          <div class="product-additional-photo">
+            <img src="{{photo | img_url: 'master'}}">
+          </div>
+          {% endfor %}
+          <div class="product-additional-photos-grid">
+            {% for photo in additional_photos.value %}
+            {% if forloop.index >1 %}
+            <div class="product-additional-photo">
+              <img src="{{photo | img_url: 'master'}}">
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <product-form class="product-form">
+        <div class="product-form-sticky">
+          <div class="product-form-block">
+            <h2>{{product.title}}</h2>
+            <p>{{author}}</p>
+            {% if limited != blank %}
+            <p class="b-14-r text-grey">{{limited}}</p>
+            {% endif %}
+          </div>
+          <div class="product-options-block">
+            <div class="product-variants">
+              {% for product_option in product.options_with_values %}
+              <div class="product-options">
+                <div class="product-option-left">
+                  {% if product_option.name contains 'Size' %}
+                  <span class="b-14-r text-grey">Select size</span>
+                  {% else %}
+                  <span class="b-14-r text-grey">Framing</span>
+                  {% endif %}
+                </div>
+
+                <select class="select-options b-16-m" id="option-{{forloop.index}}">
+                  {% for value in product_option.values %}
+                  <option {% if product_option.selected_value==value %}selected{% endif %} val="{{value | downcase}}">
+                    {{ value }}
+                  </option>
+                  {% endfor %}
+                </select>
+              </div>
+              {% endfor %}
+              <select id="variants-select">
+                {% for variant in product.variants %}
+                <option id="{{variant.id}}" data-available="{{variant.available}}" data-option1="{{variant.option1}}"
+                  data-option2="{{variant.option2}}" data-price="{{variant.price | money_without_trailing_zeros}}">
+                  {{variant.title}}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+          <div class="product-form-add">
+            {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+            {%- form 'product', product, id: product_form_installment_id, class: 'add-to-cart-form' -%}
+            <input type="hidden" name="id" id="variant-id" value="{{ product.selected_or_first_available_variant.id }}">
+            {{ form | payment_terms }}
+            {%- endform -%}
+            <div class="buy-btn" data-product-id="{{ product.selected_or_first_available_variant.id }}"
+              data-available="{{ product.selected_or_first_available_variant.available }}" type="submit" name="add" aria-haspopup="dialog">
+              {% if product.selected_or_first_available_variant.available %}
+              <span class="b-18-r" id="buy-btn">Buy now - {{product.selected_or_first_available_variant.price |
+                money_without_trailing_zeros }}</span>
+              {% else %}
+              <span class="b-18-r" id="buy-btn">Not Available</span>
+              {% endif %}
+            </div>
+          </div>
+          <div class="product-tabs">
+            <div class="product-form-tabs">
+              <div class="product-form-tab active-tab">
+                <p class="b-14-m">Product Details</p>
+              </div>
+              <div class="product-form-tab">
+                <p class="b-14-m">{{settings.payment_title}}</p>
+
+              </div>
+              <div class="product-form-tab">
+                <p class="b-14-m">{{settings.shipping_title}}</p>
+              </div>
+            </div>
+            <div class="product-tabs-content">
+              <div class="product-tab-text standard-block">
+                <p class="b-14-r">{{product.description}}</p>
+              </div>
+              <div class="product-tab-text standard-block">
+                <p class="b-14-r">{{settings.payment_text}}</p>
+              </div>
+              <div class="product-tab-text standard-block">
+                <p class="b-14-r">{{settings.shipping_text}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="product-help-block">
+            <p class="b-14-m">{{settings.help_title}}</p>
+            <div class="standard-block">
+              <p class="b-14-r underline-link">{{settings.help_text | replace: '
+              <p>', '' | replace: '</p>', ''}}</p>
+            </div>
+          </div>
+          <div class="product-more-info">
+            <a class="b-18-r more-info" href="#more-products">{{settings.more_info}}</a>
+          </div>
+        </div>
+      </product-form>
+    </div>
+  </div>
+</div>
+  <div class="container-fluid">
+    <div id="more-products" class="more-products spotlight">
+      <div class="spotlight-head more-products-head">
+        <h3>More from {{author}}</h3>
+        {% assign author_collection = author | handleize %}
+        <a class=" btn cta text-right" href="/collections/{{author_collection}}">EXPLORE ALL WORK</a>
+      </div>
+      <div class="spotlight-slider">
+        {% assign author_collection = author | handleize %}
+        <div {% if collections[author_collection].all_products_count >3 %}class="spotlight-slides"{% endif %}>
+          {% for product in collections[author_collection].products %}
+          <div class="spotlight-slide">
+            <div class="spotlight-img">
+              <a href="{{product.url}}"></a>
+              <img src="{{product.featured_image | img_url: 'master'}}">
+            </div>
+            <div class="spotlight-info product-slider-info">
+              <a href="{{product.url}}"></a>
+              <div class="spotlight-text">
+                <p class="b-14-r">{{product.title}}</p>
+                {% assign author = product.metafields.custom.author %}
+                <p class="b-14-r text-grey">{{author}}</p>
+              </div>
+              <div class="spotlight-price text-right">
+                <p class="b-14-r">{{product.price | money_without_trailing_zeros | append: ',-'}}</p>
+                {% assign quantity_left = product.selected_or_first_available_variant.inventory_quantity %}
+                {% if quantity_left < 10 %}
+                <p class="b-14-r text-grey text-italic">Few left</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  function updateBtnDetails() {
+        var price = $("#variants-select").find(":selected").data('price');
+        var available = $("#variants-select").find(":selected").data('available');
+        if (available == false) {
+          $('#buy-btn').text('Not Available');
+          $('.buy-btn').removeClass('enabled').addClass('disabled');
+        } else {
+          $('#buy-btn').text('Buy Now - ' + price);
+          $('.buy-btn').removeClass('disabled').addClass('enabled');
+        }
+      }
+  $('#option-1').on('change',function(){
+  var s2 = $('#option-2').val();
+  var s1 = $('#option-1').val();
+  var t = $('#variants-select')
+  $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
+  updateBtnDetails();
+  var variant_id = $("#variants-select").find(":selected").attr('id');
+  $('#variant-id').val(variant_id);
+})
+$('#option-2').on('change',function(){
+  var s2 = $('#option-2').val();
+  var s1 = $('#option-1').val();
+  var t = $('#variants-select')
+  $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
+  var variant_id = $("#variants-select").find(":selected").attr('id');
+  $('#variant-id').val(variant_id);
+  updateBtnDetails();
+
+})
+</script>
+<script>
+$(function () {
+
+var activeIndex = $('.active-tab').index(),
+    $contentlis = $('.product-tabs-content div'),
+    $tabslis = $('.product-form-tabs div');
+
+// Show content of active tab on loads
+$contentlis.eq(activeIndex).show();
+
+$('.product-form-tabs').on('click', 'div', function (e) {
+  var $current = $(e.currentTarget),
+      index = $current.index();
+  
+  $tabslis.removeClass('active-tab');
+  $current.addClass('active-tab');
+  $contentlis.hide().eq(index).show();
+ });
+});
+
+$('.buy-btn').click(function(){
+  if($(this).data('available')==true){
+    var variant_id = $(this).data('product-id');
+    var quantity = 1;
+    console.log('variant click');
+    console.log(variant_id);
+    $('#variant-id').val(variant_id);
+    addToCartBtn(variant_id, quantity);
+  }
+})
+function updateDrawer(){
+  $.get("/", function (data) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(data, "text/html");
+    const drawerSelector = doc.querySelector("#cart-drawer-items").innerHTML;
+    const totalItems = document.querySelector("cart-drawer").getAttribute('data-total');
+    document.querySelector('.cart-count-bubble span').innerHTML = totalItems;
+    document.querySelector("#cart-drawer-items").innerHTML = drawerSelector;
+  });
+}
+  function addToCartBtn(variant_id, qty) {
+
+      let formData = {
+        'items': [{
+          'id': variant_id,
+          'quantity': 1
+        }]
+      };
+      fetch(window.Shopify.routes.root + 'cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+        .then(response => {
+          console.log(response);
+          if(response.status == 200){
+            console.log('done');
+            updateDrawer();
+            document.querySelector('#cart-icon-bubble').click();
+          }
+          return response.json();
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }
+  </script>
+{% schema %}
+{
+  "name": "t:sections.main-product.name",
+  "class": "section",
+  "settings": []
+}
+{% endschema %}

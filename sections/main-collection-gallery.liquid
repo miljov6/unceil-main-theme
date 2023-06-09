@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="gallery-collection">
+            <div class="gallery-filters">
+
+            </div>
+            <div class="gallery-grid">
+                {% for product in collection.products %}
+                {% render 'product-item' product: product %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+  "name": "Collection Gallery",
+  "class": "section",
+  "settings": []
+}
+{% endschema %}

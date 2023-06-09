@@ -1,0 +1,150 @@
+<article class="journal-template" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="container">
+    <div class="container-fluid">
+      <div class="article-intro">
+        <div class="article-intro-text">
+          <p class="b-14-m">{{ article.created_at | date: "%d.%m.%Y" | replace: '202', '2'}}</p>
+          <h1 class="m-h3">{{article.title}}</h1>
+          <div class="article-text">
+            <p class="b-18-r m-b-16-r">{{article.content | strip_html}}</p>
+          </div>
+        </div>
+        <div class="article-intro-img">
+          <img src="{{ article.image.src | img_url: 'master' }}">
+        </div>
+      </div>
+      <div class="article-blocks">
+        {%- for block in section.blocks -%}
+        {%- case block.type -%}
+        {% when 'text' %}
+        <div class="text-block-center">
+          <p class="b-18-r m-b-16-r">{{block.settings.text}}</p>
+        </div>
+        {% when 'textimage' %}
+        <div class="text-image-block">
+          <div class="text-image-left">
+            <img src={{block.settings.img | img_url: 'master' }}>
+          </div>
+          <div class="text-image-right">
+            <p class="b-18-r m-b-16-r">{{block.settings.text}}</p>
+          </div>
+        </div>
+        {% when 'image' %}
+        <div class="images-block">
+          <div class="images-block-left">
+            <img src={{block.settings.img_1 | img_url: 'master' }}>
+          </div>
+          <div class="images-block-right">
+            <img src={{block.settings.img_2 | img_url: 'master' }}>
+          </div>
+        </div>
+        {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+
+</article>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "articleBody": {{ article.content | strip_html | json }},
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ request.origin | append: page.url | json }}
+    },
+    "headline": {{ article.title | json }},
+    {% if article.excerpt != blank %}
+      "description": {{ article.excerpt | strip_html | json }},
+    {% endif %}
+    {% if article.image %}
+      "image": [
+        {{ article | image_url: width: 1920 | prepend: "https:" | json }}
+      ],
+    {% endif %}
+    "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "dateCreated": {{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "author": {
+      "@type": "Person",
+      "name": {{ article.author | json }}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ shop.name | json }}
+    }
+  }
+</script>
+
+{% schema %}
+{
+"name": "t:sections.main-article.name",
+"tag": "section",
+"class": "section",
+"blocks": [
+{
+"type": "text",
+"name": "Text",
+"settings": [
+{
+"type": "textarea",
+"id": "text",
+"label": "Text",
+"default": "Default Text"
+}
+]
+},
+{
+"type": "textimage",
+"name": "Text&Image",
+"settings": [
+{
+"type": "textarea",
+"id": "text",
+"label": "Text",
+"default": "Default Text"
+},
+{
+"type": "image_picker",
+"id": "img",
+"label": "Image"
+}
+]
+},
+{
+"type": "image",
+"name": "Images",
+"settings": [
+{
+"type": "image_picker",
+"id": "img_1",
+"label": "Left Image"
+},
+{
+"type": "image_picker",
+"id": "img_2",
+"label": "Right Image"
+}
+]
+}
+],
+"default": {
+"blocks": [
+{
+"type": "text",
+"settings": {}
+},
+{
+"type": "textimage",
+"settings": {}
+},
+{
+"type": "image",
+"settings": {}
+}
+]
+}
+}
+{% endschema %}

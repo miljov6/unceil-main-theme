@@ -1,0 +1,56 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="support-artists">
+            <div class="support-text-block">
+                <h1 class="m-h3">{{section.settings.title}}</h1>
+                <p class="b-18-r m-b-16-r">{{section.settings.text}}</p>
+            </div>
+            <div class="support-image-block">
+                <img src="{{section.settings.img | img_url: 'master'}}">
+                <div class="standard-block">
+                    <p class="artist-name text-grey">{{section.settings.artist_name}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+    "name": "Support Artist",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "artist_name",
+        "label": "Artist Name"
+      }
+    ],
+      "presets": [
+      {
+        "category": "Support Artist",
+        "name": "Support Artist",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}
+  

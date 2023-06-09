@@ -1,0 +1,175 @@
+<footer class="footer-unceil">
+    <div class="footer-upper">
+        <div class="footer-left text-left">
+            <div class="footer-form">
+                <p class="b-18-r">{{section.settings.join}}</p>
+                <div class="footer-form-block">
+                    <div class="footer-form-input">
+                        <input id="email" type="text" class="footer_email_input" name="contact[email]"
+                            placeholder="{{ section.settings.email}}" required>
+                        <button class="btn btn-black">
+                            {{section.settings.btn}}
+                        </button>
+                    </div>
+                    <div class="footer-form-checkbox">
+                        <input type="checkbox" id="confirm" name="confirm" value="confirm">
+                        <label class="b-18-r m-b-14-r" for="confirm">{{section.settings.confirm}}</label><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-right-block m-o-1">
+                <p class="allcaps">{{section.settings.footer_1}}</p>
+                <div class="footer-menu-block">
+                    {% for link in linklists.footer-1.links %}
+                    <a class="b-14-r" class="b-14-r" href="{{link.url}}">{{link.title}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="footer-right-block m-o-3">
+                <p class="allcaps">{{section.settings.footer_2}}</p>
+                <div class="footer-menu-block">
+                    {% for link in linklists.footer-2.links %}
+                    <a class="b-14-r" href="{{link.url}}">{{link.title}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="footer-right-block m-o-2">
+                <p class="allcaps">{{section.settings.footer_3}}</p>
+                <div class="footer-menu-block">
+                    <a class="b-14-r" href="{{settings.social_instagram_link}}">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-logo">
+            <svg width="1320" height="235" viewBox="0 0 1320 235" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.05">
+                    <path
+                        d="M109.246 233.852C133.737 233.852 153.717 227.728 168.541 214.836C183.365 202.266 190.777 182.605 190.777 156.175V43.6872C190.777 35.307 192.71 27.5714 197.222 20.4805C201.411 13.7119 207.212 8.55491 214.624 5.00947V4.36483H143.727V5.00947C150.817 8.55491 156.618 13.7119 161.129 20.4805C165.319 27.5714 167.574 35.307 167.574 43.6872V155.53C167.574 172.29 163.385 185.183 155.651 194.208C147.917 203.233 136.638 207.745 121.814 207.745C90.2323 207.745 74.4417 190.662 74.4417 155.852V43.6872C74.4417 35.307 76.3752 27.5714 80.8868 20.4805C85.0762 13.7119 90.8768 8.55491 98.611 5.00947V4.36483H0V5.00947C7.08968 8.55491 12.8903 13.7119 17.4019 20.4805C21.5913 27.5714 23.8471 35.307 23.8471 43.6872V160.687C23.8471 183.894 31.5813 201.943 47.372 214.836C63.1626 227.728 83.7872 233.852 109.246 233.852Z"
+                        fill="#777E84" />
+                    <path
+                        d="M410.411 4.36483V5.00947C417.823 8.55491 423.624 13.7119 428.135 20.4805C432.325 27.5714 434.58 35.307 434.58 43.6872V128.456L327.268 4.36483H255.405V5.00947C262.817 8.55491 268.617 13.7119 273.129 20.4805C277.318 27.5714 279.574 35.307 279.574 43.6872V190.662C279.574 199.365 277.318 207.1 273.129 213.869C268.617 220.96 262.817 226.117 255.405 229.34V229.985H326.946V229.34C319.212 226.117 313.411 220.96 309.222 213.869C304.71 207.1 302.777 199.365 302.777 190.662V55.2904L456.816 234.497H457.783V43.6872C457.783 35.307 459.717 27.5714 464.228 20.4805C468.418 13.7119 474.218 8.55491 481.952 5.00947V4.36483H410.411Z"
+                        fill="#777E84" />
+                    <path
+                        d="M632.883 233.852C654.796 233.852 673.487 226.762 688.633 212.58C703.779 198.398 714.092 179.381 719.892 155.53H719.248C707.324 169.067 696.367 178.414 686.377 183.571C676.065 189.051 665.431 191.629 654.474 191.629C633.849 191.629 616.447 183.249 602.59 166.489C588.733 149.728 581.966 126.2 581.966 95.902C581.966 70.7615 586.8 51.4227 596.467 38.2078C606.135 25.3152 618.059 18.5467 632.56 18.5467C658.663 18.5467 685.088 38.8524 711.836 79.1417H712.48L707.969 1.78633C704.102 3.07557 699.268 3.3979 692.823 3.3979C687.022 3.3979 679.288 3.07557 669.298 2.10864C658.985 1.14169 650.284 0.49707 642.873 0.49707C628.693 0.49707 614.836 3.07557 601.301 8.2326C587.766 13.3896 575.843 20.4805 564.886 29.8276C553.929 39.1748 544.906 51.4227 538.461 66.5714C531.693 82.0425 528.471 98.8029 528.471 117.497C528.471 136.191 531.693 153.274 538.461 168.745C545.228 184.216 553.929 196.464 564.564 205.489C574.876 214.514 586.155 221.605 598.079 226.439C609.68 231.596 621.281 233.852 632.883 233.852Z"
+                        fill="#777E84" />
+                    <path
+                        d="M761.388 229.985H936.374L941.208 155.208H940.564C933.152 173.58 924.773 187.439 915.75 196.786C906.726 206.133 894.803 210.646 879.979 210.646H835.83V117.175H850.976C861.61 117.175 869.667 120.076 875.145 125.233C880.624 130.712 886.102 140.059 891.258 153.274H891.903V68.183H891.258C885.457 79.7863 879.979 87.5219 874.823 91.7119C869.667 95.902 861.61 97.8359 850.976 97.8359H835.83V23.7037H879.979C892.869 23.7037 903.504 27.8938 911.883 35.9516C920.261 44.3318 927.996 56.5797 935.085 73.34H935.73L931.218 4.36483H761.388V5.00947C768.8 8.55491 774.601 13.7119 779.112 20.4805C783.302 27.5714 785.557 35.307 785.557 43.6872V190.662C785.557 199.365 783.302 207.1 779.112 213.869C774.601 220.96 768.8 226.117 761.388 229.34V229.985Z"
+                        fill="#777E84" />
+                    <path
+                        d="M986.528 229.985H1085.14V229.34C1077.73 226.117 1071.93 220.96 1067.74 213.869C1063.23 207.1 1061.29 199.365 1061.29 190.662V43.6872C1061.29 35.307 1063.23 27.5714 1067.74 20.4805C1071.93 13.7119 1077.73 8.55491 1085.14 5.00947V4.36483H986.528V5.00947C993.94 8.55491 999.741 13.7119 1004.25 20.4805C1008.44 27.5714 1010.7 35.307 1010.7 43.6872V190.662C1010.7 199.365 1008.44 207.1 1004.25 213.869C999.741 220.96 993.94 226.117 986.528 229.34V229.985Z"
+                        fill="#777E84" />
+                    <path
+                        d="M1319.36 142.315C1315.17 152.629 1311.3 161.332 1307.75 168.1C1303.89 175.191 1299.38 182.282 1293.57 189.373C1287.77 196.464 1281.01 201.943 1273.27 205.489C1265.54 209.034 1256.52 210.646 1246.53 210.646H1203.66V43.6872C1203.66 35.307 1205.6 27.5714 1210.11 20.4805C1214.3 13.7119 1220.1 8.55491 1227.51 5.00947V4.36483H1128.9V5.00947C1136.31 8.55491 1142.11 13.7119 1146.63 20.4805C1150.81 27.5714 1153.07 35.307 1153.07 43.6872V190.662C1153.07 199.365 1150.81 207.1 1146.63 213.869C1142.11 220.96 1136.31 226.117 1128.9 229.34V229.985H1313.23L1320 142.315H1319.36Z"
+                        fill="#777E84" />
+                </g>
+            </svg>
+
+        </div>
+        <div class="footer-btm">
+            <p class="b-14-r text-left">{{section.settings.copyright}}</p>
+            <div class="footer-right-bottom text-right m-m-0">
+                <a class="b-14-r" href="{{section.settings.privacy_url}}">{{section.settings.privacy}}</a>
+                <a class="b-14-r" href="{{section.settings.tos_url}}">{{section.settings.tos}}</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% schema %}
+{
+    "name": "t:sections.footer.name",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Newsletter"
+        },
+        {
+            "type": "text",
+            "id": "join",
+            "label": "Join Text"
+        },
+        {
+            "type": "textarea",
+            "id": "confirm",
+            "label": "Confirm Text",
+            "default": "Subscribe to receive communications from Unceil about our products."
+        },
+        {
+            "type": "text",
+            "id": "email",
+            "label": "E-mail Placeholder"
+        },
+        {
+            "type": "text",
+            "id": "btn",
+            "label": "Button Text",
+            "default": "Sign Up"
+        },
+        {
+            "type": "header",
+            "content": "Footer Menus"
+        },
+        {
+            "type": "text",
+            "id": "footer_1",
+            "label": "Footer 1 Menu Title",
+            "default": "Unceil"
+        },
+        {
+            "type": "text",
+            "id": "footer_2",
+            "label": "Footer 2 Menu Title",
+            "default": "Support"
+        },
+        {
+            "type": "text",
+            "id": "footer_3",
+            "label": "Footer 3 Menu Title",
+            "default": "Social"
+        },
+        {
+            "type": "header",
+            "content": "Bottom"
+        },
+        {
+            "type": "text",
+            "id": "copyright",
+            "label": "Copyright",
+            "default": "© 2023 Unceil"
+        },
+        {
+            "type": "text",
+            "id": "privacy",
+            "label": "Privacy Policy",
+            "default": "Privacy Policy"
+        },
+        {
+            "type": "url",
+            "id": "privacy_url",
+            "label": "Privacy Policy URL"
+        },
+        {
+            "type": "text",
+            "id": "tos",
+            "label": "Terms & Conditions",
+            "default": "Terms & Conditions"
+        },
+        {
+            "type": "url",
+            "id": "tos_url",
+            "label": "Terms & Conditions URL"
+        }
+    ],
+    "presets": [
+        {
+            "category": "Footer",
+            "name": "Footer",
+            "settings": {}
+        }
+    ]
+}
+{% endschema %}

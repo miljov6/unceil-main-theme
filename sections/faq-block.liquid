@@ -1,0 +1,82 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="faq-block">
+            <div class="faq-block-head">
+                <p class="allcaps">{{section.settings.title}}</p>
+            </div>
+            <div class="faq-items">
+                {% for block in section.blocks %}
+                <div class="faq-item open-tab">
+                    <p class="faq-question">{{block.settings.question}}</p>
+                    <div class="faq-answer">
+                        <p class="b-16-r">{{block.settings.answer}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+    {
+    "name": "FAQ Block",
+    "class": "faq-section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }
+    ],
+    "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Question?"
+        },
+        {
+            "type":"richtext",
+            "id": "answer",
+            "label": "Answer",
+            "default": "<p>Answer</p>" 
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "FAQ",
+      "name": "faq",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "faq",
+          "settings": {}
+        },
+        {
+          "type": "faq",
+          "settings": {}
+        },
+        {
+          "type": "faq",
+          "settings": {}
+        },
+        {
+          "type": "faq",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+  

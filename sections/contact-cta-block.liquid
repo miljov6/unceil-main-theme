@@ -1,0 +1,65 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="contact-block">
+            <div class="contact-block-right">
+              <div class="contact-block-text">
+                <h3 class="m-h6">{{section.settings.title}}</h3>
+                <p class="b-18-r m-b-16-r">{{section.settings.text}}</p>
+                <div class="contact-block-cta"><a href="{{section.settings.cta_url}}" class="btn cta">{{section.settings.cta}}</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-block-left">
+              <div class="contact-block-photo-slider">
+                <div class="contact-block-item">
+                  <img src="{{section.settings.img | img_url: 'master'}}">
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+    {
+    "name": "Contact CTA block",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "text",
+        "id": "cta",
+        "label": "CTA text",
+        "default": "Explore work"
+      },
+      {
+        "type": "url",
+        "id": "cta_url",
+        "label": "CTA Url"
+      },
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      }
+    ],
+  "presets": [
+    {
+      "category": "Contact Block",
+      "name": "Contact Block",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

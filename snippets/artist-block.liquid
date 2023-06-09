@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="artist-block">
+            <div class="artist-block-right">
+                <div class="artist-block-text">
+                    <h3 class="m-h6">{{artist_title}}</h3>
+                    <p class="b-18-r m-b-16-r">{{artist_description}}</p>
+                    <div class="artist-block-cta"><a href="{{artist_cta_url}}"
+                            class="btn cta text-left">{{artist_cta}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="artist-block-left">
+                <img src="{{artist_img | img_url: 'master'}}">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="newsletter-block">
+            <img class="ds" src="{{section.settings.img | img_url: 'master'}}">
+            {% if section.settings.img_mobile != blank %}
+                <img class="mb" src="{{section.settings.img_mobile | img_url: 'master'}}">
+            {% else %}
+            <img class="mb" src="{{section.settings.img | img_url: 'master'}}">
+            {% endif %}
+            <div class="newsletter-text">
+                <h3 class="m-h5 text-beige">{{section.settings.title}}</h3>
+                <p class="b-18-r m-b-16-r text-beige">{{section.settings.text}}</p>
+                <div class="newsletter-form-block">
+                    <input id="email" type="text" class="email_input" name="contact[email]"
+                        placeholder="{{ section.settings.email}}" required>
+                    <button class="btn-white btn">
+                        {{section.settings.btn}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Newsletter Block",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Text"
+        },
+        {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "img_mobile",
+            "label": "Mobile Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "text",
+            "id": "email",
+            "label": "E-mail Placeholder"
+        },
+        {
+            "type": "text",
+            "id": "btn",
+            "label": "Button Text",
+            "default": "Sign Up"
+        }
+    ],
+    "presets": [
+        {
+            "category": "Newsletter Block",
+            "name": "Newsletter Block",
+            "settings": {}
+        }
+    ]
+}
+{% endschema %}

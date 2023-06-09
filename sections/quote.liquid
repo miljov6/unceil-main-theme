@@ -1,0 +1,66 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="quote-block">
+            <div class="quote-block-right">
+                <div class="quote-block-text">
+                    <h3 class="m-h6">{{section.settings.title}}</h3>
+                    <p class="b-18-r m-b-16-r">{{section.settings.text}}</p>
+                    <div>
+                        <p class="artist-name">{{section.settings.name}}</p>
+                        <p class="b-14-r text-grey text-italic">{{section.settings.position}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-block-left">
+                <img src="{{section.settings.img | img_url: 'master'}}">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+    "name": "Quote",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "text",
+        "id": "name",
+        "label": "Name",
+        "default": "Name"
+      },
+      {
+        "type": "text",
+        "id": "position",
+        "label": "Position",
+        "default": "Position"
+      },
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Photo"
+      }
+    ],
+    "presets": [
+    {
+      "category": "Quote Block",
+      "name": "Quote Block",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+  

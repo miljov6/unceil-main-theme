@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="questions-cta">
+            <p class="b-20-r m-b-18-r">{{section.settings.text | replace: '<p>', '' | replace: '</p>', ''}}</p>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+    "name": "Questions",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Default Text</p>"
+      }
+    ],
+      "presets": [
+      {
+        "category": "Question",
+        "name": "Question",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}
+  

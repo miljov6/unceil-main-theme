@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="title-text-block">
+            <h2 class="m-h4">{{section.settings.title}}</h2>
+            <div class="standard-block">
+                <p class="b-18-r m-b16-r">{{section.settings.text}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{% schema %}
+{
+    "name": "Title Text Block",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Text"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text"
+        }
+    ],
+    "presets": [
+        {
+            "category": "Title Text Block",
+            "name": "Title Text Block",
+            "settings": {}
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,49 @@
+<div class="journal-articles">
+  <div class="container-fluid">
+    <div class="container">
+      {% for article in blog.articles limit: 1 %}
+      <div class="journal-article-first">
+        <div class="journal-article-first-left">
+          <div class="article-date">
+            <p class="b-14-m">{{ article.created_at | date: "%d.%m.%Y" | replace: '202', '2'}}</p>
+          </div>
+          <div class="article-text blog-text">
+            <h3 class="m-h5">{{article.title}}</h3>
+            <p class="b-18-r m-b-16-r">{{article.content | strip_html}}</p>
+            <a href="{{article.url}}" class="btn cta">READ STORY</a>
+          </div>
+        </div>
+        <div class="journal-article-first-right">
+          <img src="{{article.image | img_url: 'master'}}">
+        </div>
+      </div>
+      {% endfor %}
+      <div class="journal-grid">
+        {% for article in blog.articles %}
+        {% if forloop.index > 1 %}
+        <div class="journal-item">
+          <img src="{{article.image | img_url: 'master'}}">
+          <a class="b-18-r" href="{{article.url}}">{{article.title}}</a>
+          <p class="b-14-r text-grey text-itali">{{ article.created_at | date: "%d.%m.%Y" | replace: '202', '2'}}</p>
+        </div>
+
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "t:sections.main-blog.name",
+"tag": "section",
+"class": "section",
+"settings": [
+{
+"type": "header",
+"content": "t:sections.main-blog.settings.header.content"
+}
+]
+}
+{% endschema %}
