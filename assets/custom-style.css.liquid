@@ -332,6 +332,11 @@ a.disabled {
   .btn {
     max-width: 335px;
   }
+  .text-right {
+    float: right;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 /* CONTAINER */
@@ -944,6 +949,14 @@ a.disabled {
   display: grid;
   align-content: center;
   overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  display: flex;
+}
+.product-item-photo-zoom {
+  padding: 0;
 }
 .product-item-photo a {
   position: absolute;
@@ -958,12 +971,7 @@ a.disabled {
 }
 .product-item-photo img {
   max-width: 100%;
-  transition: all 0.5s;
   object-fit: contain;
-  transform: scale(1);
-}
-.product-item-photo img:hover {
-  transform: scale(1.3);
 }
 
 @media screen(min-width: 999px) and (max-width: 642px) {
@@ -1466,6 +1474,48 @@ a.disabled {
   margin-bottom: 80px;
 }
 
+.product-form-info {
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 641px) {
+  .product-grid {
+    display: block;
+  }
+  .product-media-featured {
+    padding: 83px 93px;
+  }
+  .product-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+  }
+  .product-aditional {
+    padding: 0 20px;
+    margin: 100px auto;
+  }
+  .product-additional-photos {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+  }
+  .product-additional-photos-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+  }
+  .product-form {
+    margin: 50px auto 100px;
+    padding: 0 20px;
+  }
+  .product-additional-photo img {
+    width: 100%;
+  }
+  .product-tabs {
+    margin: 48px auto;
+  }
+  .product-help-block {
+    margin-bottom: 48px;
+  }
+}
+
 /* TITLE TEXT BLOCK */
 
 .title-text-block {
@@ -1869,6 +1919,17 @@ a.disabled {
   gap: 24px;
 }
 
+@media screen and (max-width: 641px) {
+  .drawer__inner {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+  .drawer__close {
+    right: 22px !important;
+    top: 12px !important;
+  }
+}
+
 /* CART */
 
 .cart-items-block {
@@ -2188,4 +2249,13 @@ product-recommendations {
   .additional-class-block {
     margin: 0;
   }
+}
+
+@media screen and (max-width: 641px) {
+  #Details-menu-drawer-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
 }

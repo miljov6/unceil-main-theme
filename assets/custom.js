@@ -73,3 +73,136 @@ $(".faq-item").each(function () {
     }
   })
 })
+$('.product-item-photo img').each(function () {
+  $(this).hover(function () {
+    $(this).parent().addClass('product-item-photo-zoom');
+    var check = $(this).parent().data('zoom-img').toString();
+    $(this).fadeOut('500', function () {
+      $(this).attr('src', check);
+      $(this).fadeIn('500');
+    })
+  })
+  $(this).mouseleave(function () {
+    $(this).parent().removeClass('product-item-photo-zoom');
+    var check = $(this).parent().data('product-img').toString();
+    $(this).fadeOut('500', function () {
+      $(this).attr('src', check);
+      $(this).fadeIn('500');
+    })
+  })
+})
+function updateBtnDetails() {
+  var price = $("#variants-select").find(":selected").data('price');
+  var available = $("#variants-select").find(":selected").data('available');
+  if (available == false) {
+    $('#buy-btn').text('Not Available');
+    $('.buy-btn').removeClass('enabled').addClass('disabled');
+  } else {
+    $('#buy-btn').text('Buy Now - ' + price);
+    $('.buy-btn').removeClass('disabled').addClass('enabled');
+  }
+}
+$('#option-1').on('change', function () {
+  var s2 = $('#option-2').val();
+  var s1 = $('#option-1').val();
+  var t = $('#variants-select')
+  $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
+  updateBtnDetails();
+  var variant_id = $("#variants-select").find(":selected").attr('id');
+  $('#variant-id').val(variant_id);
+})
+$('#option-2').on('change', function () {
+  var s2 = $('#option-2').val();
+  var s1 = $('#option-1').val();
+  var t = $('#variants-select')
+  $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
+  var variant_id = $("#variants-select").find(":selected").attr('id');
+  $('#variant-id').val(variant_id);
+  updateBtnDetails();
+
+})
+$(function () {
+
+  var activeIndex = $('.active-tab').index(),
+    $contentlis = $('.product-tabs-content-d div'),
+    $tabslis = $('.product-form-tabs-d div');
+
+  // Show content of active tab on loads
+  $contentlis.eq(activeIndex).show();
+
+  $('.product-form-tabs-d').on('click', 'div', function (e) {
+    var $current = $(e.currentTarget),
+      index = $current.index();
+
+    $tabslis.removeClass('active-tab');
+    $current.addClass('active-tab');
+    $contentlis.hide().eq(index).show();
+  });
+});
+$(function () {
+
+  var activeIndex = $('.active-tab').index(),
+    $contentlis = $('.product-tabs-content-m div'),
+    $tabslis = $('.product-form-tabs-m div');
+
+  // Show content of active tab on loads
+  $contentlis.eq(activeIndex).show();
+
+  $('.product-form-tabs-m').on('click', 'div', function (e) {
+    var $current = $(e.currentTarget),
+      index = $current.index();
+
+    $tabslis.removeClass('active-tab');
+    $current.addClass('active-tab');
+    $contentlis.hide().eq(index).show();
+  });
+});
+
+$('.buy-btn').click(function () {
+  if ($(this).data('available') == true) {
+    var variant_id = $(this).data('product-id');
+    var quantity = 1;
+    console.log('variant click');
+    console.log(variant_id);
+    $('#variant-id').val(variant_id);
+    addToCartBtn(variant_id, quantity);
+  }
+})
+function updateDrawer() {
+  $.get("/", function (data) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(data, "text/html");
+    const drawerSelector = doc.querySelector("#cart-drawer-items").innerHTML;
+    const totalItems = document.querySelector("cart-drawer").getAttribute('data-total');
+    document.querySelector('.cart-count-bubble span').innerHTML = totalItems;
+    document.querySelector("#cart-drawer-items").innerHTML = drawerSelector;
+  });
+}
+function addToCartBtn(variant_id, qty) {
+
+  let formData = {
+    'items': [{
+      'id': variant_id,
+      'quantity': 1
+    }]
+  };
+  fetch(window.Shopify.routes.root + 'cart/add.js', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  })
+    .then(response => {
+      console.log(response);
+      if (response.status == 200) {
+        console.log('done');
+        updateDrawer();
+        document.querySelector('#cart-icon-bubble').click();
+      }
+      return response.json();
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+}
