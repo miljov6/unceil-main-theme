@@ -285,6 +285,7 @@ html.no-js .no-js-hidden {
   .header:not(.drawer-menu).page-width {
     padding-left: 60px;
     padding-right: 60px;
+    max-width: 1440px;
   }
 
   .page-width--narrow {
@@ -2301,7 +2302,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 
 .header-wrapper--border-bottom {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  border-bottom: 0.8px solid #262B30;
 }
 
 .header {
@@ -2715,6 +2716,7 @@ details[open] > .header__submenu {
 @media screen and (min-width: 990px) {
   .header__inline-menu {
     display: block;
+    margin: 0;
   }
 
   .header--top-center .header__inline-menu {

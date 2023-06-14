@@ -1,1 +1,68 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"padding_top":28,"padding_bottom":28}},"8b6a0745-f46b-4183-8b55-368a95859c6b":{"type":"hero-text-image","settings":{"title":"In awe of  innocent beauty","text":"At Unceil, the untamed beauty of the natural world is celebrated and transformed into art that inspires and captivates. By nurturing the creative growth of artists, we have put a new genre of fine art photography out into the world.","img":"shopify:\/\/shop_images\/Frame_851.png"}},"f26672bc-148b-4a77-a562-cf623a717406":{"type":"title-text","settings":{"title":"Liberation in nudity","text":"No disguise, just bare skin - nudity puts things into perspective. It makes us aware how small and finite we are, living in the vast time and space. I simultaneously feel tiny but as a part of something bigger. This sense of insignificance but connectedness at the same time is such a humbling yet liberating experience. That’s what we want to deliver with our curated photographs."}},"c14015d7-07b5-4b89-982f-bb160ba22a71":{"type":"hero-image","settings":{"img":"shopify:\/\/shop_images\/Frame_830_1.png"}},"b73b02d1-4076-45b7-9554-ffff1f6d6bec":{"type":"support-artists","settings":{"title":"Support independent artists","text":"Unceil is dedicated to promoting and celebrating independent artists, recognizing the visionary work that emerges from their unique perspectives. We believe that creativity should not be limited by traditional boundaries, and we work tirelessly to give artists the freedom and support they need to create. We are committed to nurturing creativity and promoting the untamed beauty of the natural world, and we are honored to do so alongside some of the most talented and independent artists in the world. At Unceil, we celebrate independent artists and the unique vision they bring to the world of fine art photography.","img":"shopify:\/\/shop_images\/Frame_854.png","artist_name":"Natalie Karphushenko"}},"d5ec0454-da7d-4796-9fa2-9ad8d174f1f4":{"type":"text-map","settings":{"title":"Breaking boundaries","text":"Unceil is more than just an online platform; it's a visionary space that transcends the boundaries of traditional art galleries. By bringing artists and collectors closer together, Unceil celebrates the untamed beauty of the natural world and inspires creativity and connection. Through its commitment to innovation and passion for art, Unceil is redefining what it means to distribute art in a digital age. Accessible to all, Unceil is breaking down the barriers that once separated artists from their audiences, creating a world where art can be appreciated and celebrated by all."}},"e1425097-aa52-44c4-90cc-dfc810d77a86":{"type":"quote","settings":{"title":"Unceil is a balance of risqué, pure innocence, and untamed wildness","text":"No disguise, just bareskin - nudity puts things into perspective. It makes us aware how small and finite we are, living in the vast time and space. I simultaneously feel tiny but as a part of something bigger. This sense of insignificance but connectedness at the same time is such a humbling yet liberating experience. My passion is to share this with the world in the form of photography.","name":"Megan Lee","position":"Founder","img":"shopify:\/\/shop_images\/Frame_775_7.png"}}},"order":["main","8b6a0745-f46b-4183-8b55-368a95859c6b","f26672bc-148b-4a77-a562-cf623a717406","c14015d7-07b5-4b89-982f-bb160ba22a71","b73b02d1-4076-45b7-9554-ffff1f6d6bec","d5ec0454-da7d-4796-9fa2-9ad8d174f1f4","e1425097-aa52-44c4-90cc-dfc810d77a86"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "8b6a0745-f46b-4183-8b55-368a95859c6b": {
+      "type": "hero-text-image",
+      "settings": {
+        "title": "In awe of  innocent beauty",
+        "text": "At Unceil, the untamed beauty of the natural world is celebrated and transformed into art that inspires and captivates. By nurturing the creative growth of artists, we have put a new genre of fine art photography out into the world.",
+        "img": "shopify:\/\/shop_images\/Frame_851.png"
+      }
+    },
+    "f26672bc-148b-4a77-a562-cf623a717406": {
+      "type": "title-text",
+      "settings": {
+        "title": "Liberation in nudity",
+        "text": "No disguise, just bare skin - nudity puts things into perspective. It makes us aware how small and finite we are, living in the vast time and space. I simultaneously feel tiny but as a part of something bigger. This sense of insignificance but connectedness at the same time is such a humbling yet liberating experience. That’s what we want to deliver with our curated photographs."
+      }
+    },
+    "c14015d7-07b5-4b89-982f-bb160ba22a71": {
+      "type": "hero-image",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Frame_830_1.png"
+      }
+    },
+    "b73b02d1-4076-45b7-9554-ffff1f6d6bec": {
+      "type": "support-artists",
+      "settings": {
+        "title": "Support independent artists",
+        "text": "Unceil is dedicated to promoting and celebrating independent artists, recognizing the visionary work that emerges from their unique perspectives. We believe that creativity should not be limited by traditional boundaries, and we work tirelessly to give artists the freedom and support they need to create. We are committed to nurturing creativity and promoting the untamed beauty of the natural world, and we are honored to do so alongside some of the most talented and independent artists in the world. At Unceil, we celebrate independent artists and the unique vision they bring to the world of fine art photography.",
+        "img": "shopify:\/\/shop_images\/Frame_854.png",
+        "artist_name": "Natalie Karphushenko"
+      }
+    },
+    "d5ec0454-da7d-4796-9fa2-9ad8d174f1f4": {
+      "type": "text-map",
+      "settings": {
+        "title": "Breaking boundaries",
+        "text": "Unceil is more than just an online platform; it's a visionary space that transcends the boundaries of traditional art galleries. By bringing artists and collectors closer together, Unceil celebrates the untamed beauty of the natural world and inspires creativity and connection. Through its commitment to innovation and passion for art, Unceil is redefining what it means to distribute art in a digital age. Accessible to all, Unceil is breaking down the barriers that once separated artists from their audiences, creating a world where art can be appreciated and celebrated by all."
+      }
+    },
+    "e1425097-aa52-44c4-90cc-dfc810d77a86": {
+      "type": "quote",
+      "settings": {
+        "title": "Unceil is a balance of risqué, pure innocence, and untamed wildness",
+        "text": "No disguise, just bareskin - nudity puts things into perspective. It makes us aware how small and finite we are, living in the vast time and space. I simultaneously feel tiny but as a part of something bigger. This sense of insignificance but connectedness at the same time is such a humbling yet liberating experience. My passion is to share this with the world in the form of photography.",
+        "name": "Megan Lee",
+        "position": "Founder",
+        "img": "shopify:\/\/shop_images\/Frame_775_7.png"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8b6a0745-f46b-4183-8b55-368a95859c6b",
+    "f26672bc-148b-4a77-a562-cf623a717406",
+    "c14015d7-07b5-4b89-982f-bb160ba22a71",
+    "b73b02d1-4076-45b7-9554-ffff1f6d6bec",
+    "d5ec0454-da7d-4796-9fa2-9ad8d174f1f4",
+    "e1425097-aa52-44c4-90cc-dfc810d77a86"
+  ]
+}

@@ -1,37 +1,35 @@
 <div class="container-fluid">
-    <div class="container">
-        <div class="spotlight">
-            <div class="spotlight-head">
-                <h3 class="m-h5">{{section.settings.title}}</h3>
-                <a href="{{section.settings.cta_url}}" class="btn cta text-right">{{section.settings.cta}}</a>
-            </div>
-            <div class="spotlight-slider">
-                <div class="spotlight-slides">
-                    {% for block in section.blocks %}
-                    <div class="spotlight-slide">
-                        <div class="spotlight-img">
-                            <a href="{{block.settings.product.url}}"></a>
-                            <img src="{{block.settings.img | img_url: 'master'}}">
-                        </div>
-                        <div class="spotlight-info">
-                            <a href="{{block.settings.product.url}}"></a>
-                            <div class="spotlight-text">
-                                <p class="b-14-r">{{block.settings.title}}</p>
-                                <p class="b-14-r text-grey">{{block.settings.artist}}</p>
-                            </div>
-                            <div class="spotlight-price text-right">
-                                <p class="b-14-r">{{block.settings.price}}</p>
-                                {% if block.settings.few_left != blank %}
-                                <p class="b-14-r text-grey text-italic">{{block.settings.few_left}}</p>
-                                {% endif %}
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
+  <div class="spotlight">
+    <div class="spotlight-head">
+      <h3 class="m-h5">{{section.settings.title}}</h3>
+      <a href="{{section.settings.cta_url}}" class="btn cta text-right">{{section.settings.cta}}</a>
     </div>
+    <div class="spotlight-slider">
+      <div class="spotlight-slides">
+        {% for block in section.blocks %}
+        <div class="spotlight-slide">
+          <div class="spotlight-img">
+            <a href="{{block.settings.product.url}}"></a>
+            <img src="{{block.settings.img | img_url: 'master'}}">
+          </div>
+          <div class="spotlight-info">
+            <a href="{{block.settings.product.url}}"></a>
+            <div class="spotlight-text">
+              <p class="b-14-r">{{block.settings.title}}</p>
+              <p class="b-14-r text-grey">{{block.settings.artist}}</p>
+            </div>
+            <div class="spotlight-price text-right">
+              <p class="b-14-r">{{block.settings.price}}</p>
+              {% if block.settings.few_left != blank %}
+              <p class="b-14-r text-grey text-italic">{{block.settings.few_left}}</p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>
 
 {% schema %}

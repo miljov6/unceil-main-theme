@@ -3,8 +3,8 @@
 {% assign image_on_hover = product.metafields.custom.image_on_hover %}
 <div class="product-item" data-filter="{{orientation}}">
     <div class="product-item-photo{% if orientation == 'landscape' %} landscape-photo {% endif %}"
-        data-zoom-img="{% if  image_on_hover != blank %} {image_on_hover | img_url: 'master'}}{% else %}{{product.featured_image | img_url: 'master'}}{% endif %}">
-        <a href="{{product.url}}"></a>
+        data-zoom-img="{% if  image_on_hover != blank %} {{image_on_hover | img_url: 'master'}}{% else %}{{product.featured_image | img_url: 'master'}}{% endif %}"
+        data-product-img="{{product.featured_image | img_url: 'master'}}">
         <img src="{{product.featured_image | img_url: 'master'}}">
     </div>
     <div class="product-item-info spotlight-info">

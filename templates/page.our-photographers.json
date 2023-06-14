@@ -1,1 +1,100 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"padding_top":28,"padding_bottom":28}},"5ae8e817-d2a5-4d84-b2da-12de36310ced":{"type":"our-photographers","blocks":{"template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-0":{"type":"photo","settings":{"img":"shopify:\/\/shop_images\/Frame_775.png","name":"Hector Alamilla","url":"shopify:\/\/collections\/hector-alamilla"}},"template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-1":{"type":"photo","settings":{"img":"shopify:\/\/shop_images\/Frame_775_1.png","name":"Fleur Panhuijzen","url":"shopify:\/\/collections\/fleur-panhuijzen"}},"template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-2":{"type":"photo","settings":{"img":"shopify:\/\/shop_images\/Frame_775_2.png","name":"Laurens Esmonde","url":"#"}},"template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-3":{"type":"photo","settings":{"img":"shopify:\/\/shop_images\/Frame_776.png","name":"Natalie Karphushenko","url":"shopify:\/\/collections\/natalie-karpushenko"}},"597d46fc-9c52-485c-87cc-9783f908a7bd":{"type":"photo","settings":{"img":"shopify:\/\/shop_images\/Frame_775_3.png","name":"Jorie Meekins","url":"#"}},"bafbf11c-44c2-4377-9560-42c6b4cb04dd":{"type":"photo","settings":{"img":"shopify:\/\/shop_images\/Frame_775_4.png","name":"Cristi Conaghy","url":""}}},"block_order":["template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-0","template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-1","template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-2","template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-3","597d46fc-9c52-485c-87cc-9783f908a7bd","bafbf11c-44c2-4377-9560-42c6b4cb04dd"],"settings":{"title":"Our Photographers"}},"dfc708d9-6e46-4c18-b93a-f68667376463":{"type":"contact-cta-block","settings":{"title":"Create a visionary space together with us","text":"Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.","cta":"Work with unceil","cta_url":"#","img":"shopify:\/\/shop_images\/Frame_775_6.png"}}},"order":["main","5ae8e817-d2a5-4d84-b2da-12de36310ced","dfc708d9-6e46-4c18-b93a-f68667376463"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "5ae8e817-d2a5-4d84-b2da-12de36310ced": {
+      "type": "our-photographers",
+      "blocks": {
+        "e2c4fc25-e9f8-410b-8fe8-c8c7d5f74b71": {
+          "type": "photo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_775_8.png",
+            "name": "Test",
+            "url": "shopify:\/\/collections\/test-artist"
+          }
+        },
+        "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-0": {
+          "type": "photo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_775.png",
+            "name": "Hector Alamilla",
+            "url": "shopify:\/\/collections\/hector-alamilla"
+          }
+        },
+        "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-1": {
+          "type": "photo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_775_1.png",
+            "name": "Fleur Panhuijzen",
+            "url": "shopify:\/\/collections\/fleur-panhuijzen"
+          }
+        },
+        "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-2": {
+          "type": "photo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_775_2.png",
+            "name": "Laurens Esmonde",
+            "url": "#"
+          }
+        },
+        "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-3": {
+          "type": "photo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_776.png",
+            "name": "Natalie Karphushenko",
+            "url": "shopify:\/\/collections\/natalie-karpushenko"
+          }
+        },
+        "597d46fc-9c52-485c-87cc-9783f908a7bd": {
+          "type": "photo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_775_3.png",
+            "name": "Jorie Meekins",
+            "url": "#"
+          }
+        },
+        "bafbf11c-44c2-4377-9560-42c6b4cb04dd": {
+          "type": "photo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_775_4.png",
+            "name": "Cristi Conaghy",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "e2c4fc25-e9f8-410b-8fe8-c8c7d5f74b71",
+        "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-0",
+        "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-1",
+        "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-2",
+        "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-3",
+        "597d46fc-9c52-485c-87cc-9783f908a7bd",
+        "bafbf11c-44c2-4377-9560-42c6b4cb04dd"
+      ],
+      "settings": {
+        "title": "Our Photographers"
+      }
+    },
+    "dfc708d9-6e46-4c18-b93a-f68667376463": {
+      "type": "contact-cta-block",
+      "settings": {
+        "title": "Create a visionary space together with us",
+        "text": "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+        "cta": "Work with unceil",
+        "cta_url": "#",
+        "img": "shopify:\/\/shop_images\/Frame_775_6.png"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5ae8e817-d2a5-4d84-b2da-12de36310ced",
+    "dfc708d9-6e46-4c18-b93a-f68667376463"
+  ]
+}

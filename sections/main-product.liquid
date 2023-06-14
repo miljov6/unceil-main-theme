@@ -21,97 +21,96 @@
           <img src="{{product.featured_image | img_url: 'master'}}">
         </div>
         <product-form class="product-form mb">
-          <div class="product-form-block">
-            <h2 class="m-h3">{{product.title}}</h2>
-            <div class="product-form-info">
+            <div class="product-form-block">
+              <h2 class="m-h3">{{product.title}}</h2>
+              <div class="product-form-info">
               <p class="b-16-r">{{author}}</p>
               {% if limited != blank %}
               <p class="b-14-r text-grey">{{limited}}</p>
               {% endif %}
             </div>
-          </div>
-          <div class="product-options-block">
-            <div class="product-variants">
-              {% for product_option in product.options_with_values %}
-              <div class="product-options">
-                <div class="product-option-left">
-                  {% if product_option.name contains 'Size' %}
-                  <span class="b-14-r text-grey">Select size</span>
-                  {% else %}
-                  <span class="b-14-r text-grey">Framing</span>
-                  {% endif %}
+            </div>
+            <div class="product-options-block">
+              <div class="product-variants">
+                {% for product_option in product.options_with_values %}
+                <div class="product-options">
+                  <div class="product-option-left">
+                    {% if product_option.name contains 'Size' %}
+                    <span class="b-14-r text-grey">Select size</span>
+                    {% else %}
+                    <span class="b-14-r text-grey">Framing</span>
+                    {% endif %}
+                  </div>
+  
+                  <select class="select-options b-16-m" id="option-{{forloop.index}}">
+                    {% for value in product_option.values %}
+                    <option {% if product_option.selected_value==value %}selected{% endif %} val="{{value | downcase}}">
+                      {{ value }}
+                    </option>
+                    {% endfor %}
+                  </select>
                 </div>
-
-                <select class="select-options b-16-m" id="option-{{forloop.index}}">
-                  {% for value in product_option.values %}
-                  <option {% if product_option.selected_value==value %}selected{% endif %} val="{{value | downcase}}">
-                    {{ value }}
-                  </option>
+                {% endfor %}
+                <select id="variants-select">
+                  {% for variant in product.variants %}
+                  <option id="{{variant.id}}" data-available="{{variant.available}}" data-option1="{{variant.option1}}"
+                    data-option2="{{variant.option2}}" data-price="{{variant.price | money_without_trailing_zeros}}">
+                    {{variant.title}}</option>
                   {% endfor %}
                 </select>
               </div>
-              {% endfor %}
-              <select id="variants-select">
-                {% for variant in product.variants %}
-                <option id="{{variant.id}}" data-available="{{variant.available}}" data-option1="{{variant.option1}}"
-                  data-option2="{{variant.option2}}" data-price="{{variant.price | money_without_trailing_zeros}}">
-                  {{variant.title}}</option>
-                {% endfor %}
-              </select>
             </div>
-          </div>
-          <div class="product-form-add">
-            {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
-            {%- form 'product', product, id: product_form_installment_id, class: 'add-to-cart-form' -%}
-            <input type="hidden" name="id" id="variant-id" value="{{ product.selected_or_first_available_variant.id }}">
-            {{ form | payment_terms }}
-            {%- endform -%}
-            <div class="buy-btn" data-product-id="{{ product.selected_or_first_available_variant.id }}"
-              data-available="{{ product.selected_or_first_available_variant.available }}" type="submit" name="add"
-              aria-haspopup="dialog">
-              {% if product.selected_or_first_available_variant.available %}
-              <span class="b-18-r" id="buy-btn">Buy now - {{product.selected_or_first_available_variant.price |
-                money_without_trailing_zeros }}</span>
-              {% else %}
-              <span class="b-18-r" id="buy-btn">Not Available</span>
-              {% endif %}
-            </div>
-          </div>
-          <div class="product-tabs">
-            <div class="product-form-tabs product-form-tabs-m">
-              <div class="product-form-tab active-tab">
-                <p class="b-14-m">Product Details</p>
-              </div>
-              <div class="product-form-tab">
-                <p class="b-14-m">{{settings.payment_title}}</p>
-
-              </div>
-              <div class="product-form-tab">
-                <p class="b-14-m">{{settings.shipping_title}}</p>
+            <div class="product-form-add">
+              {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+              {%- form 'product', product, id: product_form_installment_id, class: 'add-to-cart-form' -%}
+              <input type="hidden" name="id" id="variant-id" value="{{ product.selected_or_first_available_variant.id }}">
+              {{ form | payment_terms }}
+              {%- endform -%}
+              <div class="buy-btn" data-product-id="{{ product.selected_or_first_available_variant.id }}"
+                data-available="{{ product.selected_or_first_available_variant.available }}" type="submit" name="add" aria-haspopup="dialog">
+                {% if product.selected_or_first_available_variant.available %}
+                <span class="b-18-r" id="buy-btn">Buy now - {{product.selected_or_first_available_variant.price |
+                  money_without_trailing_zeros }}</span>
+                {% else %}
+                <span class="b-18-r" id="buy-btn">Not Available</span>
+                {% endif %}
               </div>
             </div>
-            <div class="product-tabs-content product-tabs-content-m">
-              <div class="product-tab-text standard-block">
-                <p class="b-14-r">{{product.content}}</p>
+            <div class="product-tabs">
+              <div class="product-form-tabs product-form-tabs-m">
+                <div class="product-form-tab active-tab">
+                  <p class="b-14-m">Product Details</p>
+                </div>
+                <div class="product-form-tab">
+                  <p class="b-14-m">{{settings.payment_title}}</p>
+  
+                </div>
+                <div class="product-form-tab">
+                  <p class="b-14-m">{{settings.shipping_title}}</p>
+                </div>
               </div>
-              <div class="product-tab-text standard-block">
-                <p class="b-14-r">{{settings.payment_text}}</p>
-              </div>
-              <div class="product-tab-text standard-block">
-                <p class="b-14-r">{{settings.shipping_text}}</p>
+              <div class="product-tabs-content product-tabs-content-m">
+                <div class="product-tab-text standard-block">
+                  <p class="b-14-r">{{product.content}}</p>
+                </div>
+                <div class="product-tab-text standard-block">
+                  <p class="b-14-r">{{settings.payment_text}}</p>
+                </div>
+                <div class="product-tab-text standard-block">
+                  <p class="b-14-r">{{settings.shipping_text}}</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="product-help-block">
-            <p class="b-14-m">{{settings.help_title}}</p>
-            <div class="standard-block">
-              <p class="b-14-r underline-link">{{settings.help_text | replace: '
-              <p>', '' | replace: '</p>', ''}}</p>
+            <div class="product-help-block">
+              <p class="b-14-m">{{settings.help_title}}</p>
+              <div class="standard-block">
+                <p class="b-14-r underline-link">{{settings.help_text | replace: '
+                <p>', '' | replace: '</p>', ''}}</p>
+              </div>
             </div>
-          </div>
-          <div class="product-more-info">
-            <a class="b-18-r more-info" href="#more-products">{{settings.more_info}}</a>
-          </div>
+            <div class="product-more-info">
+              <a class="b-18-r more-info" href="#more-products">{{settings.more_info}}</a>
+            </div>
         </product-form>
         <div class="product-gallery">
           {% for image in product.images %}
@@ -227,8 +226,7 @@
             {{ form | payment_terms }}
             {%- endform -%}
             <div class="buy-btn" data-product-id="{{ product.selected_or_first_available_variant.id }}"
-              data-available="{{ product.selected_or_first_available_variant.available }}" type="submit" name="add"
-              aria-haspopup="dialog">
+              data-available="{{ product.selected_or_first_available_variant.available }}" type="submit" name="add" aria-haspopup="dialog">
               {% if product.selected_or_first_available_variant.available %}
               <span class="b-18-r" id="buy-btn">Buy now - {{product.selected_or_first_available_variant.price |
                 money_without_trailing_zeros }}</span>
@@ -277,42 +275,43 @@
     </div>
   </div>
 </div>
-<div class="container-fluid">
-  <div id="more-products" class="more-products spotlight">
-    <div class="spotlight-head more-products-head">
-      <h3 class="m-h5">More from {{author}}</h3>
-      {% assign author_collection = author | handleize %}
-      <a class=" btn cta text-right" href="/collections/{{author_collection}}">EXPLORE ALL WORK</a>
-    </div>
-    <div class="spotlight-slider">
-      {% assign author_collection = author | handleize %}
-      <div {% if collections[author_collection].all_products_count>3 %}class="spotlight-slides"{% endif %}>
-        {% for product in collections[author_collection].products %}
-        <div class="spotlight-slide">
-          <div class="spotlight-img">
-            <a href="{{product.url}}"></a>
-            <img src="{{product.featured_image | img_url: 'master'}}">
-          </div>
-          <div class="spotlight-info product-slider-info">
-            <a href="{{product.url}}"></a>
-            <div class="spotlight-text">
-              <p class="b-14-r">{{product.title}}</p>
-              {% assign author = product.metafields.custom.author %}
-              <p class="b-14-r text-grey">{{author}}</p>
+  <div class="container-fluid">
+    <div id="more-products" class="more-products spotlight">
+      <div class="spotlight-head more-products-head">
+        <h3 class="m-h5">More from {{author}}</h3>
+        {% assign author_collection = author | handleize %}
+        <a class=" btn cta text-right" href="/collections/{{author_collection}}">EXPLORE ALL WORK</a>
+      </div>
+      <div class="spotlight-slider">
+        {% assign author_collection = author | handleize %}
+        <div {% if collections[author_collection].all_products_count >3 %}class="spotlight-slides"{% endif %}>
+          {% for product in collections[author_collection].products %}
+          <div class="spotlight-slide">
+            <div class="spotlight-img">
+              <a href="{{product.url}}"></a>
+              <img src="{{product.featured_image | img_url: 'master'}}">
             </div>
-            <div class="spotlight-price text-right">
-              <p class="b-14-r">{{product.price | money_without_trailing_zeros | append: ',-'}}</p>
-              {% assign quantity_left = product.selected_or_first_available_variant.inventory_quantity %}
-              {% if quantity_left < 10 %} <p class="b-14-r text-grey text-italic">Few left</p>
+            <div class="spotlight-info product-slider-info">
+              <a href="{{product.url}}"></a>
+              <div class="spotlight-text">
+                <p class="b-14-r">{{product.title}}</p>
+                {% assign author = product.metafields.custom.author %}
+                <p class="b-14-r text-grey">{{author}}</p>
+              </div>
+              <div class="spotlight-price text-right">
+                <p class="b-14-r">{{product.price | money_without_trailing_zeros | append: ',-'}}</p>
+                {% assign quantity_left = product.selected_or_first_available_variant.inventory_quantity %}
+                {% if quantity_left < 10 %}
+                <p class="b-14-r text-grey text-italic">Few left</p>
                 {% endif %}
+              </div>
             </div>
           </div>
+          {% endfor %}
         </div>
-        {% endfor %}
       </div>
     </div>
   </div>
-</div>
 {% schema %}
 {
   "name": "t:sections.main-product.name",

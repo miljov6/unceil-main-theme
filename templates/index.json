@@ -1,1 +1,123 @@
-{"sections":{"cc144c7a-195a-4dbb-b83b-9bdb08601dea":{"type":"hero-home","settings":{"title":"Celebrating nude, untamed beauty  and the raw power of nature","text":"A carefully curated collection and a tribute to the power and majesty of nature, and the raw, authentic beauty of the human form."}},"c24b38d2-7d1d-4069-ac03-318881a43923":{"type":"new-in-slider","blocks":{"template--19218765381944__c24b38d2-7d1d-4069-ac03-318881a43923-168511409245de86bb-1":{"type":"image","settings":{"img":"shopify:\/\/shop_images\/image_15.png"}},"template--19218765381944__c24b38d2-7d1d-4069-ac03-318881a43923-168511409245de86bb-2":{"type":"image","settings":{"img":"shopify:\/\/shop_images\/image_15.png"}},"template--19218765381944__c24b38d2-7d1d-4069-ac03-318881a43923-168511409245de86bb-3":{"type":"image","settings":{"img":"shopify:\/\/shop_images\/image_15.png"}}},"block_order":["template--19218765381944__c24b38d2-7d1d-4069-ac03-318881a43923-168511409245de86bb-1","template--19218765381944__c24b38d2-7d1d-4069-ac03-318881a43923-168511409245de86bb-2","template--19218765381944__c24b38d2-7d1d-4069-ac03-318881a43923-168511409245de86bb-3"],"settings":{"subtitle":"New In","title":"Natalie Karpushenko","text":"Natalie draws inspiration from nature to inspire appreciation and ignite passion for our planet and ourselves. Her unique vision merges the beauty of nature with the human form, creating art that is both captivating and inspiring.","cta":"Explore Natalie’s limited work","cta_url":"#"}},"0f5d62e7-0bb3-44e0-888a-0aae2e983e2b":{"type":"spotlight","blocks":{"template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-0":{"type":"slide","settings":{"img":"shopify:\/\/shop_images\/image_5.png","title":"Renaissance","artist":"Natalie Karpushenko","price":"€1400,-","few_left":"Few left","product":""}},"template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-1":{"type":"slide","settings":{"img":"shopify:\/\/shop_images\/image_4.png","title":"Renaissance","artist":"Natalie Karpushenko","price":"€1400,-","few_left":"","product":""}},"template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-2":{"type":"slide","settings":{"img":"shopify:\/\/shop_images\/image_13.png","title":"Renaissance","artist":"Natalie Karpushenko","price":"€1400,-","few_left":"Few left","product":"gift-card"}},"template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-3":{"type":"slide","settings":{"img":"shopify:\/\/shop_images\/image_13_1.png","title":"Renaissance","artist":"Natalie Karpushenko","price":"€1400,-","few_left":"","product":""}}},"block_order":["template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-0","template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-1","template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-2","template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-3"],"settings":{"title":"In the spotlight","cta":"Explore All Photography","cta_url":"#"}},"594f557e-461e-420a-bfd4-0919a7fdc989":{"type":"newsletter-block","settings":{"img":"shopify:\/\/shop_images\/image_16.png","img_mobile":"shopify:\/\/shop_images\/Background.png","title":"Get new works straight in your inbox","text":"Always be in to know about our limited work, special editions, and other news","email":"E-mail","btn":"Sign Up"}}},"order":["cc144c7a-195a-4dbb-b83b-9bdb08601dea","c24b38d2-7d1d-4069-ac03-318881a43923","0f5d62e7-0bb3-44e0-888a-0aae2e983e2b","594f557e-461e-420a-bfd4-0919a7fdc989"]}
+{
+  "sections": {
+    "cc144c7a-195a-4dbb-b83b-9bdb08601dea": {
+      "type": "hero-home",
+      "settings": {
+        "title": "Celebrating nude, untamed beauty  and the raw power of nature",
+        "text": "A carefully curated collection and a tribute to the power and majesty of nature, and the raw, authentic beauty of the human form."
+      }
+    },
+    "c24b38d2-7d1d-4069-ac03-318881a43923": {
+      "type": "new-in-slider",
+      "blocks": {
+        "template--19218765381944__c24b38d2-7d1d-4069-ac03-318881a43923-168511409245de86bb-1": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/image_15.png"
+          }
+        },
+        "template--19218765381944__c24b38d2-7d1d-4069-ac03-318881a43923-168511409245de86bb-2": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/image_15.png"
+          }
+        },
+        "template--19218765381944__c24b38d2-7d1d-4069-ac03-318881a43923-168511409245de86bb-3": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/image_15.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--19218765381944__c24b38d2-7d1d-4069-ac03-318881a43923-168511409245de86bb-1",
+        "template--19218765381944__c24b38d2-7d1d-4069-ac03-318881a43923-168511409245de86bb-2",
+        "template--19218765381944__c24b38d2-7d1d-4069-ac03-318881a43923-168511409245de86bb-3"
+      ],
+      "settings": {
+        "subtitle": "New In",
+        "title": "Natalie Karpushenko",
+        "text": "Natalie draws inspiration from nature to inspire appreciation and ignite passion for our planet and ourselves. Her unique vision merges the beauty of nature with the human form, creating art that is both captivating and inspiring.",
+        "cta": "Explore Natalie’s limited work",
+        "cta_url": "#"
+      }
+    },
+    "0f5d62e7-0bb3-44e0-888a-0aae2e983e2b": {
+      "type": "spotlight",
+      "blocks": {
+        "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-0": {
+          "type": "slide",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/image_5.png",
+            "title": "Renaissance",
+            "artist": "Natalie Karpushenko",
+            "price": "€1400,-",
+            "few_left": "Few left",
+            "product": ""
+          }
+        },
+        "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-1": {
+          "type": "slide",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/image_4.png",
+            "title": "Renaissance",
+            "artist": "Natalie Karpushenko",
+            "price": "€1400,-",
+            "few_left": "",
+            "product": ""
+          }
+        },
+        "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-2": {
+          "type": "slide",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/image_13.png",
+            "title": "Renaissance",
+            "artist": "Natalie Karpushenko",
+            "price": "€1400,-",
+            "few_left": "Few left",
+            "product": "gift-card"
+          }
+        },
+        "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-3": {
+          "type": "slide",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/image_13_1.png",
+            "title": "Renaissance",
+            "artist": "Natalie Karpushenko",
+            "price": "€1400,-",
+            "few_left": "",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-0",
+        "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-1",
+        "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-2",
+        "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-3"
+      ],
+      "settings": {
+        "title": "In the spotlight",
+        "cta": "Explore All Photography",
+        "cta_url": "#"
+      }
+    },
+    "594f557e-461e-420a-bfd4-0919a7fdc989": {
+      "type": "newsletter-block",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/image_16.png",
+        "img_mobile": "shopify:\/\/shop_images\/Background.png",
+        "title": "Get new works straight in your inbox",
+        "text": "Always be in to know about our limited work, special editions, and other news",
+        "email": "Email address",
+        "btn": "Sign Up"
+      }
+    }
+  },
+  "order": [
+    "cc144c7a-195a-4dbb-b83b-9bdb08601dea",
+    "c24b38d2-7d1d-4069-ac03-318881a43923",
+    "0f5d62e7-0bb3-44e0-888a-0aae2e983e2b",
+    "594f557e-461e-420a-bfd4-0919a7fdc989"
+  ]
+}
