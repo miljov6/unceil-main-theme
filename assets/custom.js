@@ -214,7 +214,8 @@ function updateDrawer() {
     const doc = parser.parseFromString(data, "text/html");
     const drawerSelector = doc.querySelector("#cart-drawer-items").innerHTML;
     const totalItems = document.querySelector("cart-drawer").getAttribute('data-total');
-    document.querySelector('.cart-count-bubble span').innerHTML = totalItems;
+    document.querySelector('.cart-count-bubble-m span').innerHTML = totalItems;
+    document.querySelector('.cart-count-bubble-d span').innerHTML = totalItems;
     document.querySelector("#cart-drawer-items").innerHTML = drawerSelector;
   });
 }
