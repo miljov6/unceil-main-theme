@@ -247,6 +247,7 @@ function addToCartBtn(variant_id, qty) {
       console.error('Error:', error);
     });
 }
-$('#cart-icon-bubble-m').click(function(){
+$('#cart-icon-bubble-m').click(function(e){
+  e.preventDefault();
   $('#cart-icon-bubble').click();
 })
