@@ -198,6 +198,16 @@ $('.buy-btn').click(function () {
     addToCartBtn(variant_id, quantity);
   }
 })
+$('.buy-btn-m').click(function () {
+  if ($(this).data('available') == true) {
+    var variant_id = $(this).data('product-id');
+    var quantity = 1;
+    console.log('variant click');
+    console.log(variant_id);
+    $('#variant-id-m').val(variant_id);
+    addToCartBtn(variant_id, quantity);
+  }
+})
 function updateDrawer() {
   $.get("/", function (data) {
     const parser = new DOMParser();

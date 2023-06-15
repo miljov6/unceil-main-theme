@@ -63,7 +63,7 @@
             <div class="product-form-add">
               {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
               {%- form 'product', product, id: product_form_installment_id, class: 'add-to-cart-form' -%}
-              <input type="hidden" name="id" id="variant-id" value="{{ product.selected_or_first_available_variant.id }}">
+              <input type="hidden" name="id" id="variant-id-m" value="{{ product.selected_or_first_available_variant.id }}">
               {{ form | payment_terms }}
               {%- endform -%}
               <div class="buy-btn-m" data-product-id="{{ product.selected_or_first_available_variant.id }}"
