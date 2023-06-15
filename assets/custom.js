@@ -121,7 +121,7 @@ $('#option-2').on('change', function () {
   updateBtnDetails();
 
 })
-function updateBtnDetails() {
+function updateBtnDetailsM() {
   var price = $("#variants-select-m").find(":selected").data('price');
   var available = $("#variants-select-m").find(":selected").data('available');
   if (available == false) {
@@ -137,7 +137,7 @@ $('#option-1-m').on('change', function () {
   var s1 = $('#option-1-m').val();
   var t = $('#variants-select-m')
   $("#variants-select-m option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
-  updateBtnDetails();
+  updateBtnDetailsM();
   var variant_id = $("#variants-select-m").find(":selected").attr('id');
   $('#variant-id').val(variant_id);
 })
@@ -148,7 +148,7 @@ $('#option-2-m').on('change', function () {
   $("#variants-select-m option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
   var variant_id = $("#variants-select-m").find(":selected").attr('id');
   $('#variant-id-m').val(variant_id);
-  updateBtnDetails();
+  updateBtnDetailsM();
 
 })
 $(function () {
