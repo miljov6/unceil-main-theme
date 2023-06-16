@@ -80,12 +80,6 @@ $('.product-item-photo img').each(function () {
     $(this).attr('src', check);
     $(this).prev().addClass('hover-url');
   })
-  $(this).mouseout(function() {
-    $(this).parent().removeClass('product-item-photo-zoom');
-    var check = $(this).parent().data('product-img').toString();
-      $(this).attr('src', check);
-      $(this).prev().removeClass('hover-url');
-  })
 })
 function updateBtnDetails() {
   var price = $("#variants-select").find(":selected").data('price');
