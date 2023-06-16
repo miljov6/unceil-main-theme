@@ -74,7 +74,7 @@ $(".faq-item").each(function () {
   })
 })
 $('.product-item-photo img').each(function () {
-  $(this).on("mouseover", function () {
+  $(this).on("hover", function () {
     $(this).parent().addClass('product-item-photo-zoom');
     var check = $(this).parent().data('zoom-img').toString();
     $(this).fadeOut('slow', function () {
