@@ -77,17 +77,19 @@ $('.product-item-photo img').each(function () {
   $(this).on("mouseover", function () {
     $(this).parent().addClass('product-item-photo-zoom');
     var check = $(this).parent().data('zoom-img').toString();
-    $(this).fadeOut('500', function () {
+    $(this).fadeOut('slow', function () {
       $(this).attr('src', check);
-      $(this).fadeIn('500');
+      $(this).fadeIn('1000');
+      $(this).prev().addClass('hover-url').fadeIn('1100');
     })
   })
   $(this).on("mouseleave", function () {
     $(this).parent().removeClass('product-item-photo-zoom');
     var check = $(this).parent().data('product-img').toString();
-    $(this).fadeOut('500', function () {
+    $(this).fadeOut('slow', function () {
       $(this).attr('src', check);
-      $(this).fadeIn('500');
+      $(this).fadeIn('1000');
+      $(this).prev().removeClass('hover-url').fadeIn('1100');
     })
   })
 })
