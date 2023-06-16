@@ -81,6 +81,15 @@ $('.product-item-photo img').each(function () {
     $(this).prev().addClass('hover-url');
   })
 })
+$('.product-item-photo').each(function(){
+  $(this).mouseleave(function() {
+    $(this).removeClass('product-item-photo-zoom');
+    var check = $(this).data('product-img').toString();
+      $(this).fint('img').attr('src', check);
+      $(this).find('a').removeClass('hover-url');
+  })
+})
+
 function updateBtnDetails() {
   var price = $("#variants-select").find(":selected").data('price');
   var available = $("#variants-select").find(":selected").data('available');
