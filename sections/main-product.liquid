@@ -121,6 +121,7 @@
           {% endif %}
           {% endfor %}
         </div>
+        {% if block_1_text != blank %}
         <div class="product-aditional">
           {% if block_1_text != blank %}
           <div class="product-additional-block">
@@ -163,6 +164,8 @@
           </div>
           {% endif %}
         </div>
+        {% endif %}
+        {% if additional_photos.value != blank %}
         <div class="product-additional-photos">
           {% for photo in additional_photos.value limit:1 %}
           <div class="product-additional-photo">
@@ -179,6 +182,7 @@
             {% endfor %}
           </div>
         </div>
+        {% endif %}
       </div>
       <product-form class="product-form ds">
         <div class="product-form-sticky">
