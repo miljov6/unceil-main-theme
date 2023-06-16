@@ -74,7 +74,7 @@ $(".faq-item").each(function () {
   })
 })
 $('.product-item-photo img').each(function () {
-  $(this).on("hover", function () {
+  $(this).mouseenter(function () {
     $(this).parent().addClass('product-item-photo-zoom');
     var check = $(this).parent().data('zoom-img').toString();
     $(this).fadeOut('slow', function () {
@@ -82,8 +82,7 @@ $('.product-item-photo img').each(function () {
       $(this).fadeIn('1000');
       $(this).prev().addClass('hover-url').fadeIn('1100');
     })
-  })
-  $(this).on("mouseleave", function () {
+  }).mouseleave(function () {
     $(this).parent().removeClass('product-item-photo-zoom');
     var check = $(this).parent().data('product-img').toString();
     $(this).fadeOut('slow', function () {
