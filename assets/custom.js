@@ -73,6 +73,14 @@ $(".faq-item").each(function () {
     }
   })
 })
+$('.product-item-photo').each(function () {
+  $(this).mouseleave(function () {
+    $(this).removeClass('product-item-photo-zoom');
+    var check = $(this).data('product-img').toString();
+    $(this).find('img').attr('src', check);
+    $(this).find('a').removeClass('hover-url');
+  })
+})
 $('.product-item-photo img').each(function () {
   $(this).hover(function () {
     $(this).parent().addClass('product-item-photo-zoom');
@@ -80,13 +88,11 @@ $('.product-item-photo img').each(function () {
     $(this).attr('src', check);
     $(this).prev().addClass('hover-url');
   })
-})
-$('.product-item-photo').each(function () {
-  $(this).mouseleave(function () {
-    $(this).removeClass('product-item-photo-zoom');
-    var check = $(this).data('product-img').toString();
-    $(this).find('img').attr('src', check);
-    $(this).find('a').removeClass('hover-url');
+  $(this).parent().on('touchstart',function () {
+    $(this).parent().addClass('product-item-photo-zoom');
+    var check = $(this).parent().data('zoom-img').toString();
+    $(this).attr('src', check);
+    $(this).prev().addClass('hover-url');
   })
 })
 
