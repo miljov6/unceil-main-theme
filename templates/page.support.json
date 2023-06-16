@@ -29,7 +29,8 @@
         "template--19304804057400__2da97f75-f17c-4cb2-8c0c-4a6b8be51862-1685344553221dacb8-0"
       ],
       "settings": {
-        "title": "Nº1 — Contact us"
+        "title": "Nº1 — Contact us",
+        "block_id": ""
       }
     },
     "8232c4a5-d3ae-4f6c-a753-900fc6e2b6d7": {
@@ -71,7 +72,51 @@
         "template--19304804057400__8232c4a5-d3ae-4f6c-a753-900fc6e2b6d7-1685344553221dacb8-3"
       ],
       "settings": {
-        "title": "Nº2 — Order and payment"
+        "title": "Nº2 — Order and payment",
+        "block_id": ""
+      }
+    },
+    "b0035cc0-6e37-44f3-b7be-bb1b46cde4d3": {
+      "type": "faq-block",
+      "blocks": {
+        "template--19085322682695__b0035cc0-6e37-44f3-b7be-bb1b46cde4d3-168690624098ba8dec-0": {
+          "type": "faq",
+          "settings": {
+            "question": "Question?",
+            "answer": "<p>Answer<\/p>"
+          }
+        },
+        "template--19085322682695__b0035cc0-6e37-44f3-b7be-bb1b46cde4d3-168690624098ba8dec-1": {
+          "type": "faq",
+          "settings": {
+            "question": "Question?",
+            "answer": "<p>Answer<\/p>"
+          }
+        },
+        "template--19085322682695__b0035cc0-6e37-44f3-b7be-bb1b46cde4d3-168690624098ba8dec-2": {
+          "type": "faq",
+          "settings": {
+            "question": "Question?",
+            "answer": "<p>Answer<\/p>"
+          }
+        },
+        "template--19085322682695__b0035cc0-6e37-44f3-b7be-bb1b46cde4d3-168690624098ba8dec-3": {
+          "type": "faq",
+          "settings": {
+            "question": "Question?",
+            "answer": "<p>Answer<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19085322682695__b0035cc0-6e37-44f3-b7be-bb1b46cde4d3-168690624098ba8dec-0",
+        "template--19085322682695__b0035cc0-6e37-44f3-b7be-bb1b46cde4d3-168690624098ba8dec-1",
+        "template--19085322682695__b0035cc0-6e37-44f3-b7be-bb1b46cde4d3-168690624098ba8dec-2",
+        "template--19085322682695__b0035cc0-6e37-44f3-b7be-bb1b46cde4d3-168690624098ba8dec-3"
+      ],
+      "settings": {
+        "title": "Block 3",
+        "block_id": ""
       }
     },
     "b044276d-2cdc-4e80-aef6-6e138e4be492": {
@@ -86,6 +131,7 @@
     "fd907905-7956-4506-b7a1-f4bb6cf60777",
     "2da97f75-f17c-4cb2-8c0c-4a6b8be51862",
     "8232c4a5-d3ae-4f6c-a753-900fc6e2b6d7",
+    "b0035cc0-6e37-44f3-b7be-bb1b46cde4d3",
     "b044276d-2cdc-4e80-aef6-6e138e4be492"
   ]
 }
