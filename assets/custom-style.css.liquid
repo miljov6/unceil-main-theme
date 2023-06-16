@@ -966,7 +966,6 @@ a.disabled {
   width: 100%;
   max-height: 533px;
   height: 100%;
-  display: grid;
   align-content: center;
   overflow: hidden;
   margin: 0 auto;
@@ -974,6 +973,7 @@ a.disabled {
   justify-content: center;
   justify-items: center;
   display: flex;
+  transition: 0.5s ease-in-out;
 }
 .product-item-photo-zoom {
   padding: 0;
@@ -991,7 +991,9 @@ a.disabled {
 }
 .product-item-photo img {
   max-width: 100%;
-  object-fit: contain;
+  transition: 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
 }
 
 @media screen(min-width: 999px) and (max-width: 642px) {
