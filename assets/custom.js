@@ -74,23 +74,17 @@ $(".faq-item").each(function () {
   })
 })
 $('.product-item-photo img').each(function () {
-  $(this).mouseenter(function () {
+  if($(this).is(':hover')) {
     $(this).parent().addClass('product-item-photo-zoom');
     var check = $(this).parent().data('zoom-img').toString();
-    $(this).fadeOut('slow', function () {
-      $(this).attr('src', check);
-      $(this).fadeIn('1000');
-      $(this).prev().addClass('hover-url').fadeIn('1100');
-    })
-  }).mouseleave(function () {
+    $(this).attr('src', check);
+    $(this).prev().addClass('hover-url');
+  } else {
     $(this).parent().removeClass('product-item-photo-zoom');
     var check = $(this).parent().data('product-img').toString();
-    $(this).fadeOut('slow', function () {
       $(this).attr('src', check);
-      $(this).fadeIn('1000');
-      $(this).prev().removeClass('hover-url').fadeIn('1100');
-    })
-  })
+      $(this).prev().removeClass('hover-url');
+  }
 })
 function updateBtnDetails() {
   var price = $("#variants-select").find(":selected").data('price');
