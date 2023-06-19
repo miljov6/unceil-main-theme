@@ -248,9 +248,6 @@ endfor
                   </li>
                   {%- endfor -%}
                 </ul>
-                <div class="menu-item menu-drawer__menu-item">
-                  <span><a href="/pages/support" class="b-16-r">Support</a></span>
-                </div>
                 <div class="cart-item-menu menu-drawer__menu-item">
                   <a href="{{ routes.cart_url }}" class="b-16-r" id="cart-icon-bubble-m" role="button" aria-haspopup="dialog">
                     <span>Cart</span>
@@ -654,9 +651,6 @@ endfor
           </localization-form>
         {%- endif -%}
       </div>
-     <div class="menu-item ds">
-      <span><a href="/pages/support" class="b-16-r">Support</a></span>
-     </div>
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
           {% render 'icon-account' %}
