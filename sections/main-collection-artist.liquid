@@ -54,8 +54,10 @@
                 {% for collection in collections %}
                 {% if collection.template_suffix contains 'artist' %}
                 <div class="more-item-block">
+                  <div class="more-item-block-img">
                     {% assign artist_img = collection.metafields.custom.artist_photo %}
                     <img src="{{artist_img | img_url: 'master'}}">
+                  </div>
                     <h4 class="more-item-title m-h6"><a href="{{collection.url}}">{{collection.title}}</a></h4>
                 </div>
                 {% endif %}
