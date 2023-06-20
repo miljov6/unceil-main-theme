@@ -4,6 +4,8 @@
 {% assign artist_cta = section.settings.artist_cta %}
 {% assign artist_cta_url = section.settings.artist_cta %}
 {% assign artist_img = collection.metafields.custom.artist_photo %}
+{% assign artist_collection_img = collection.metafields.custom.artist_collection_photo %}
+{% assign artist_photo_orientation = collection.metafields.custom.artist_collection_photo_orientation %}
 {% assign artist_title = collection.metafields.custom.artist_title %}
 {% assign artist_description = collection.metafields.custom.artist_description %}
 <div class="container-fluid">
@@ -12,9 +14,15 @@
             <h1 class="jumbo m-h3">{{ collection.title }}</h1>
             <p class="b-18-r text-grey text-italic">{{collection.metafields.custom.artist_location}}</p>
         </div>
+        {% if artist_photo_orientation != blank %}
+        <div class="collection-hero-img {% if artist_photo_orientation == 'portait' %}portait-orientation {% else %}landscape-orientation{% endif %}">
+          <img src="{{ artist_photo_orientation | img_url: 'master' }}">
+      </div>
+        {% else %}
         <div class="collection-hero-img">
             <img src="{{ collection.image | img_url: 'master' }}">
         </div>
+        {% endif %}
         <div class="collection-description">
             <p class="b-18-r m-b-16-r">{{collection.description | strip_html}}</p>
         </div>
