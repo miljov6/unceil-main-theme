@@ -14,7 +14,7 @@
             <h1 class="jumbo m-h3">{{ collection.title }}</h1>
             <p class="b-18-r text-grey text-italic">{{collection.metafields.custom.artist_location}}</p>
         </div>
-        {% if artist_photo_orientation != blank %}
+        {% if artist_collection_img != blank %}
         <div class="collection-hero-img {% if artist_photo_orientation == 'portait' %}portait-orientation {% else %}landscape-orientation{% endif %}">
           <img src="{{ artist_photo_orientation | img_url: 'master' }}">
       </div>
