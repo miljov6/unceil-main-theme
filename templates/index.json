@@ -3,8 +3,8 @@
     "cc144c7a-195a-4dbb-b83b-9bdb08601dea": {
       "type": "hero-home",
       "settings": {
-        "title": "Celebrating nude, untamed beauty  and the raw power of nature",
-        "text": "A carefully curated collection and a tribute to the power and majesty of nature, and the raw, authentic beauty of the human form."
+        "title": "In awe of innocent beauty",
+        "text": "A carefully curated collection and a tribute to the power and majesty of nature, and the raw, authentic beauty in femininity."
       }
     },
     "c24b38d2-7d1d-4069-ac03-318881a43923": {
@@ -106,7 +106,6 @@
       "type": "newsletter-block",
       "settings": {
         "img": "shopify:\/\/shop_images\/image_16.png",
-        "img_mobile": "shopify:\/\/shop_images\/Background.png",
         "title": "Get new works straight in your inbox",
         "text": "Always be in to know about our limited work, special editions, and other news",
         "email": "Email address",
