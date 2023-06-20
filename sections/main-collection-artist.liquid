@@ -15,8 +15,8 @@
             <p class="b-18-r text-grey text-italic">{{collection.metafields.custom.artist_location}}</p>
         </div>
         {% if artist_collection_img != blank %}
-        <div class="collection-hero-img {% if artist_photo_orientation == 'portait' %}portait-orientation {% else %}landscape-orientation{% endif %}">
-          <img src="{{ artist_photo_orientation | img_url: 'master' }}">
+        <div class="collection-hero-img {{artist_photo_orientation}}-orientation">
+          <img src="{{ artist_collection_img | img_url: 'master' }}">
       </div>
         {% else %}
         <div class="collection-hero-img">
