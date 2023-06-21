@@ -20,7 +20,7 @@
         "template--19304804057400__2da97f75-f17c-4cb2-8c0c-4a6b8be51862-1685344553221dacb8-0": {
           "type": "faq",
           "settings": {
-            "question": "How do I know the authenticity of the art I bought?",
+            "question": "How do I know the authenticity of the art I bought?{{ page.title }}",
             "answer": "<p>We issue COA(Certificate of Authenticity) for every and each one of the original artworks sold. It indicates the artist's name, title of the work, edition size and all the other necessary details along with our certification sticker.<\/p>"
           }
         },
