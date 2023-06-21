@@ -20,21 +20,70 @@
         "template--19304804057400__2da97f75-f17c-4cb2-8c0c-4a6b8be51862-1685344553221dacb8-0": {
           "type": "faq",
           "settings": {
-            "question": "How to contact Unceil?",
-            "answer": "<p>Do you have questions, comments or suggestions about our webshop? We'd love to hear it! Send your email to: <a href=\"mailto:customerservice@unceil.com\" title=\"mailto:customerservice@unceil.com\">customerservice@unceil.com<\/a> . <\/p>"
+            "question": "How do I know the authenticity of the art I bought?",
+            "answer": "<p>We issue COA(Certificate of Authenticity) for every and each one of the original artworks sold. It indicates the artist's name, title of the work, edition size and all the other necessary details along with our certification sticker.<\/p>"
+          }
+        },
+        "e21bed31-57f1-41a5-9a17-deb762230d78": {
+          "type": "faq",
+          "settings": {
+            "question": "Will my artwork arrive ready to hang?",
+            "answer": "<p>No, currently we only cater prints. We recommend you to ship or bring the art directly to the framing company once received that it can be opened by a framer using cotton gloves. Contact with oil\/moisture of skin could cause damage.<\/p>"
+          }
+        },
+        "58b0292c-60bd-40c2-9977-9817b2f4597d": {
+          "type": "faq",
+          "settings": {
+            "question": "How long will it take to receive my order?",
+            "answer": "<p>1- 21 days, depending on your chosen shipping destination. Please check Delivery page for details.<\/p>"
+          }
+        },
+        "10021d49-0abf-495d-b9cf-75a44ab004a2": {
+          "type": "faq",
+          "settings": {
+            "question": "How can I trace my order?",
+            "answer": "<p>You will recevie an email notification with track & trace number once the shipment is out.<\/p>"
+          }
+        },
+        "416cf5ce-7081-405e-8e3d-6d57810aa673": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I cancel an order prior to shipment?",
+            "answer": "<p>It cannot be cancelled once the shipment is out. Please contact <a href=\"mailto:hello@unceil.com\">hello@unceil.com<\/a> immediately, we might catch it in time. If that's not the case, return process needs to be initiated at your cost within 14 days after your receipt.<\/p>"
+          }
+        },
+        "2e475f37-d6a2-4817-9817-214b176108ec": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I return the art?",
+            "answer": "<p> 1. Print the <a href=\"https:\/\/assets.website-files.com\/62f0f8b74c86f33e67842a8d\/633d727bc7846010c7b5668c_Return%20Form.pdf\" target=\"_blank\">RETURN FORM<\/a> and make sure to fill it in entirely, including the reason for your return.<\/p><p> 2. Place the Return Form with the item(s) you wish to return in a suitable and protected box, e.g. the one you got from Unceil to ensure it's not damaged in transit.<\/p><p>  3. Attach the address label to your parcel and use any of your preferred shipping methods. Return shipments are at the customer's own cost and responsibility.<\/p><p> 4. Save a proof of postage until we have confirmed that your refund has been processed.<\/p><p>‍<\/p><p>For details, please check Returns page.<\/p>"
+          }
+        },
+        "88993389-2f20-41ec-a478-e1f067ad2439": {
+          "type": "faq",
+          "settings": {
+            "question": "Who pays for return shipping cost?",
+            "answer": "<p>Unfortunately, returns happen at your own risk and own expense. This includes any taxes, customs duties, or charges. For details, please check Returns page.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--19304804057400__2da97f75-f17c-4cb2-8c0c-4a6b8be51862-1685344553221dacb8-0"
+        "template--19304804057400__2da97f75-f17c-4cb2-8c0c-4a6b8be51862-1685344553221dacb8-0",
+        "e21bed31-57f1-41a5-9a17-deb762230d78",
+        "58b0292c-60bd-40c2-9977-9817b2f4597d",
+        "10021d49-0abf-495d-b9cf-75a44ab004a2",
+        "416cf5ce-7081-405e-8e3d-6d57810aa673",
+        "2e475f37-d6a2-4817-9817-214b176108ec",
+        "88993389-2f20-41ec-a478-e1f067ad2439"
       ],
       "settings": {
-        "title": "Nº1 — Contact us",
+        "title": "",
         "block_id": ""
       }
     },
     "8232c4a5-d3ae-4f6c-a753-900fc6e2b6d7": {
       "type": "faq-block",
+      "disabled": true,
       "blocks": {
         "template--19304804057400__8232c4a5-d3ae-4f6c-a753-900fc6e2b6d7-1685344553221dacb8-0": {
           "type": "faq",
@@ -78,6 +127,7 @@
     },
     "b0035cc0-6e37-44f3-b7be-bb1b46cde4d3": {
       "type": "faq-block",
+      "disabled": true,
       "blocks": {
         "template--19085322682695__b0035cc0-6e37-44f3-b7be-bb1b46cde4d3-168690624098ba8dec-0": {
           "type": "faq",
@@ -121,6 +171,7 @@
     },
     "b044276d-2cdc-4e80-aef6-6e138e4be492": {
       "type": "questions-cta",
+      "disabled": true,
       "settings": {
         "text": "<p>Questions? Send us an <a href=\"#\" title=\"#\">email<\/a> or <a href=\"#\" title=\"#\">contact us<\/a>.<\/p>"
       }
