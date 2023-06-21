@@ -14,7 +14,7 @@
         "footer_3": "Social",
         "copyright": "© 2023 Unceil",
         "privacy": "Privacy Policy",
-        "privacy_url": "https:\/\/maxent-stage.myshopify.com\/pages\/privacy-policy",
+        "privacy_url": "shopify:\/\/pages\/privacy-policy",
         "tos": "Terms & Conditions",
         "tos_url": ""
       }
