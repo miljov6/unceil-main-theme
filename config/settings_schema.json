@@ -40,7 +40,7 @@
         "type": "number",
         "id": "few_left_quantity",
         "label": "Add Quantity For Few Left",
-        "default": "10"
+        "default": 10
       },
       {
         "type": "text",
