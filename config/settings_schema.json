@@ -37,6 +37,12 @@
     "name": "Product Page",
     "settings": [
       {
+        "type": "number",
+        "id": "few_left_quantity",
+        "label": "Add Quantity For Few Left",
+        "default": "10"
+      },
+      {
         "type": "text",
         "id": "payment_title",
         "label": "Payment",

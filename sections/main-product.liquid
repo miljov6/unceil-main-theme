@@ -305,7 +305,7 @@
               <div class="spotlight-price text-right">
                 <p class="b-14-r">{{product.price | money_without_trailing_zeros | append: ',-'}}</p>
                 {% assign quantity_left = product.selected_or_first_available_variant.inventory_quantity %}
-                {% if quantity_left < 10 %}
+                {% if quantity_left < settings.few_left_quantity %}
                 <p class="b-14-r text-grey text-italic">Few left</p>
                 {% endif %}
               </div>
