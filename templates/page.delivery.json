@@ -65,6 +65,13 @@
             "title": "",
             "text": "<p>Due to import restrictions, we are currently not able to ship to Russia<\/p>"
           }
+        },
+        "59c7009f-c88b-4a9b-b278-53200784b4b5": {
+          "type": "text",
+          "settings": {
+            "title": "TAX \/ CUSTOMS",
+            "text": "<p>Please be advised that local taxes and import duties may apply and is not included in the shipping costs. The payable import taxes and duties are the responsibility of the customer. Please check with your local authorities to get an idea of any duties or taxes that may apply.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -74,7 +81,8 @@
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-3",
         "5af20286-1544-47d4-986d-4d35e8eba1fc",
         "a16b211a-7a94-4759-b949-c89baf983b86",
-        "c0841d98-1ef5-4dbb-abb8-9640be262011"
+        "c0841d98-1ef5-4dbb-abb8-9640be262011",
+        "59c7009f-c88b-4a9b-b278-53200784b4b5"
       ],
       "settings": {
         "title": "Delivery"
