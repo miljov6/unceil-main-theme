@@ -58,6 +58,13 @@
             "title": "Zone 5 | Delivery time 3-21 days",
             "text": "<p>Afghanistan, Aland Islands, Angola, Anguilla, Antigua And Barbuda, Argentina, Armenia, Aruba, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belize, Benin, Bermuda, Bhutan, Bolivia, Bonaire, Sint Eustatius and Saba, Botswana, Bouvet Island, British Indian Ocean Territory, Brunei, Burkina Faso, Burundi, Cambodia, Cape Verde, Cayman Islands, Central African Republic, Chad, Chile, Christmas Island, Cocos (Keeling) Islands, Colombia, Comoros, Congo, Congo, The Democratic Republic Of The, Cook Islands, Costa Rica, Cuba, Curaçao, Côte d'Ivoire, Djibouti, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Ethiopia, Falkland Islands (Malvinas), Faroe Islands, Fiji, French Guiana, French Polynesia, French Southern Territories, Gabon, Gambia, Georgia, Ghana, Gibraltar, Greenland, Grenada, Guadeloupe, Guatemala, Guinea, Guinea Bissau, Guyana, Haiti, Heard Island And Mcdonald Islands, Honduras, India, Indonesia, Iran, Islamic Republic Of, Iraq, Ireland, Isle Of Man, Israel, Jamaica, Japan, Jersey, Jordan, Kazakhstan, Kenya, Kiribati, Kuwait, Kyrgyzstan, Lao People's Democratic Republic, Lebanon, Lesotho, Liberia, Libyan Arab Jamahiriya, Macao, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Martinique, Mauritania, Mauritius, Mayotte, Mexico, Moldova, Republic of, Mongolia, Montenegro, Montserrat, Morocco, Mozambique, Myanmar, Namibia, Nauru, Nepal, Netherlands Antilles, New Caledonia, New Zealand, Nicaragua, Niger, Nigeria, Niue, Norfolk Island, Oman, Pakistan, Palestinian Territory, Occupied, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Pitcairn, Qatar, Republic of Cameroon, Reunion, Russia, Rwanda, Saint Barthélemy, Saint Helena, Saint Kitts And Nevis, Saint Lucia, Saint Martin, Saint Pierre And Miquelon, Samoa, San Marino, Sao Tome And Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Sint Maarten, Solomon Islands, Somalia, South Georgia And The South Sandwich Islands, South Korea, South Sudan, Sri Lanka, St. Vincent, Sudan, Suriname, Svalbard And Jan Mayen, Swaziland, Syria, Taiwan, Tajikistan, Tanzania, United Republic Of, Thailand, Timor Leste, Togo, Tokelau, Tonga, Trinidad and Tobago, Tunisia, Turkey, Turkmenistan, Turks and Caicos Islands, Tuvalu, Uganda, Ukraine, United Arab Emirates, United States Minor Outlying Islands, Uruguay, Uzbekistan, Vanuatu, Venezuela, Vietnam, Virgin Islands, British, Wallis And Futuna, Western Sahara, Yemen, Zambia, Zimbabwe<\/p>"
           }
+        },
+        "c0841d98-1ef5-4dbb-abb8-9640be262011": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p>Due to import restrictions, we are currently not able to ship to Russia<\/p>"
+          }
         }
       },
       "block_order": [
@@ -66,7 +73,8 @@
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-2",
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-3",
         "5af20286-1544-47d4-986d-4d35e8eba1fc",
-        "a16b211a-7a94-4759-b949-c89baf983b86"
+        "a16b211a-7a94-4759-b949-c89baf983b86",
+        "c0841d98-1ef5-4dbb-abb8-9640be262011"
       ],
       "settings": {
         "title": "Delivery"
