@@ -28,7 +28,7 @@
           "type": "text",
           "settings": {
             "title": "Mastercard\/Visa",
-            "text": "<p>With Mastercard or Visa you can pay online with your credit card. Your credit card details are sent securely (locked) via an SSL-secured server. We also support the 3D-Secure and SecureCode technology that makes the online payment process with credit card even more secure.<br\/>If you have activated 3D-Secure on your credit card, you will be asked - before payment - to confirm your identity via an electronic signature. This protects you against misuse of your credit card number.<\/p>"
+            "text": "<p>With Mastercard or Visa you can pay online with your credit card. Your credit card details are sent securely (locked) via an SSL-secured server. We also support the 3D-Secure and SecureCode technology that makes the online payment process with credit card even more secure. If you have activated 3D-Secure on your credit card, you will be asked - before payment - to confirm your identity via an electronic signature. This protects you against misuse of your credit card number.<\/p>"
           }
         },
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-2": {
