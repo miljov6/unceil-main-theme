@@ -48,8 +48,15 @@
         "5af20286-1544-47d4-986d-4d35e8eba1fc": {
           "type": "text",
           "settings": {
-            "title": "Unique topic",
-            "text": "<p>Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. <\/p>"
+            "title": "Zone 4 | Delivery time 3-8 days",
+            "text": "<p>Australia, Brazil, Canada, China, Cyprus, Estonia, Hong Kong, Latvia, Lithuania, Romania<\/p>"
+          }
+        },
+        "a16b211a-7a94-4759-b949-c89baf983b86": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text<\/p>"
           }
         }
       },
@@ -58,7 +65,8 @@
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-1",
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-2",
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-3",
-        "5af20286-1544-47d4-986d-4d35e8eba1fc"
+        "5af20286-1544-47d4-986d-4d35e8eba1fc",
+        "a16b211a-7a94-4759-b949-c89baf983b86"
       ],
       "settings": {
         "title": "Delivery"
