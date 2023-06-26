@@ -1,81 +1,80 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-page",
-        "disabled": true,
-        "settings": {
-          "padding_top": 28,
-          "padding_bottom": 28
-        }
-      },
-      "7e8cda42-405c-4125-9420-8956c3a95df5": {
-        "type": "hero-image",
-        "settings": {
-          "img": "shopify:\/\/shop_images\/image_16_1.png"
-        }
-      },
-      "0d532776-3a39-488a-a302-d70d04e5846b": {
-        "type": "text-blocks",
-        "blocks": {
-          "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-0": {
-            "type": "text",
-            "settings": {
-              "title": "About Delivery",
-              "text": "<p>Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. <\/p>"
-            }
-          },
-          "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-1": {
-            "type": "text",
-            "settings": {
-              "title": "Unique topic",
-              "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non lobortis arcu. Integer congue sit amet lacus a euismod. Sed pretium vulputate nunc, vel volutpat magna interdum fringilla. Cras a tincidunt dolor, vel rutrum quam. Vivamus condimentum diam lacinia porttitor mattis. Suspendisse sed orci ac nisi ultrices accumsan sed sed sapien. Donec et facilisis turpis. Pellentesque finibus, tortor at pharetra luctus, eros est sollicitudin sem, elementum ultrices ipsum mauris et est. Nunc malesuada semper magna, ac vehicula odio porttitor a. Donec nec urna faucibus, lacinia risus eget, interdum nulla. Suspendisse quis dapibus nisl, at faucibus felis. Vivamus vitae vehicula dolor. Vestibulum aliquam sagittis magna.Phasellus a varius eros. Mauris aliquam varius tempor. Vestibulum ante enim, condimentum in viverra a, imperdiet vel diam. Donec vel lectus dignissim, tincidunt nibh eu, placerat risus. In sodales elementum arcu, a pretium magna gravida in. Nam elementum metus sollicitudin orci vehicula convallis. Pellentesque ultricies ipsum fringilla leo malesuada maximus. Etiam id accumsan lorem. <\/p>"
-            }
-          },
-          "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-2": {
-            "type": "text",
-            "settings": {
-              "title": "Unique topic",
-              "text": "<p>Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. <\/p>"
-            }
-          },
-          "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-3": {
-            "type": "text",
-            "settings": {
-              "title": "Unique topic",
-              "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non lobortis arcu. Integer congue sit amet lacus a euismod. Sed pretium vulputate nunc, vel volutpat magna interdum fringilla. Cras a tincidunt dolor, vel rutrum quam. Vivamus condimentum diam lacinia porttitor mattis. Suspendisse sed orci ac nisi ultrices accumsan sed sed sapien. Donec et facilisis turpis. Pellentesque finibus, tortor at pharetra luctus, eros est sollicitudin sem, elementum ultrices ipsum mauris et est. Nunc malesuada semper magna, ac vehicula odio porttitor a. Donec nec urna faucibus, lacinia risus eget, interdum nulla. Suspendisse quis dapibus nisl, at faucibus felis. Vivamus vitae vehicula dolor. Vestibulum aliquam sagittis magna.Phasellus a varius eros. Mauris aliquam varius tempor. Vestibulum ante enim, condimentum in viverra a, imperdiet vel diam. Donec vel lectus dignissim, tincidunt nibh eu, placerat risus. In sodales elementum arcu, a pretium magna gravida in. Nam elementum metus sollicitudin orci vehicula convallis. Pellentesque ultricies ipsum fringilla leo malesuada maximus. Etiam id accumsan lorem. <\/p>"
-            }
-          },
-          "5af20286-1544-47d4-986d-4d35e8eba1fc": {
-            "type": "text",
-            "settings": {
-              "title": "Unique topic",
-              "text": "<p>Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. <\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-0",
-          "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-1",
-          "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-2",
-          "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-3",
-          "5af20286-1544-47d4-986d-4d35e8eba1fc"
-        ],
-        "settings": {
-          "title": "Delivery"
-        }
-      },
-      "b044276d-2cdc-4e80-aef6-6e138e4be492": {
-        "type": "questions-cta",
-        "settings": {
-          "text": "<p>Questions? Send us an <a href=\"#\" title=\"#\">email<\/a> or <a href=\"#\" title=\"#\">contact us<\/a>.<\/p>"
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "order": [
-      "main",
-      "7e8cda42-405c-4125-9420-8956c3a95df5",
-      "0d532776-3a39-488a-a302-d70d04e5846b",
-      "b044276d-2cdc-4e80-aef6-6e138e4be492"
-    ]
-  }
-  
+    "7e8cda42-405c-4125-9420-8956c3a95df5": {
+      "type": "hero-image",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/image_16_1.png"
+      }
+    },
+    "0d532776-3a39-488a-a302-d70d04e5846b": {
+      "type": "text-blocks",
+      "blocks": {
+        "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-0": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "text": "<p>We offer a free worldwide shipping with track and trace. Tracking information will be emailed to you upon the payment confirmation. Item(s) are dispatchd within 1-3 business days.<\/p><p>‍<\/p><p>Delivery date estimates are good faith estimates only. Unceil cannot accept responsibility for delays, damages or loss caused by third party shipping partners, or customs officials in your chosen shipping destination. We reserve the right to withhold delivery to any particular place or location at our sole discretion.<\/p><p>‍<\/p>"
+          }
+        },
+        "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-1": {
+          "type": "text",
+          "settings": {
+            "title": "Unique topic",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non lobortis arcu. Integer congue sit amet lacus a euismod. Sed pretium vulputate nunc, vel volutpat magna interdum fringilla. Cras a tincidunt dolor, vel rutrum quam. Vivamus condimentum diam lacinia porttitor mattis. Suspendisse sed orci ac nisi ultrices accumsan sed sed sapien. Donec et facilisis turpis. Pellentesque finibus, tortor at pharetra luctus, eros est sollicitudin sem, elementum ultrices ipsum mauris et est. Nunc malesuada semper magna, ac vehicula odio porttitor a. Donec nec urna faucibus, lacinia risus eget, interdum nulla. Suspendisse quis dapibus nisl, at faucibus felis. Vivamus vitae vehicula dolor. Vestibulum aliquam sagittis magna.Phasellus a varius eros. Mauris aliquam varius tempor. Vestibulum ante enim, condimentum in viverra a, imperdiet vel diam. Donec vel lectus dignissim, tincidunt nibh eu, placerat risus. In sodales elementum arcu, a pretium magna gravida in. Nam elementum metus sollicitudin orci vehicula convallis. Pellentesque ultricies ipsum fringilla leo malesuada maximus. Etiam id accumsan lorem. <\/p>"
+          }
+        },
+        "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-2": {
+          "type": "text",
+          "settings": {
+            "title": "Unique topic",
+            "text": "<p>Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. <\/p>"
+          }
+        },
+        "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-3": {
+          "type": "text",
+          "settings": {
+            "title": "Unique topic",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non lobortis arcu. Integer congue sit amet lacus a euismod. Sed pretium vulputate nunc, vel volutpat magna interdum fringilla. Cras a tincidunt dolor, vel rutrum quam. Vivamus condimentum diam lacinia porttitor mattis. Suspendisse sed orci ac nisi ultrices accumsan sed sed sapien. Donec et facilisis turpis. Pellentesque finibus, tortor at pharetra luctus, eros est sollicitudin sem, elementum ultrices ipsum mauris et est. Nunc malesuada semper magna, ac vehicula odio porttitor a. Donec nec urna faucibus, lacinia risus eget, interdum nulla. Suspendisse quis dapibus nisl, at faucibus felis. Vivamus vitae vehicula dolor. Vestibulum aliquam sagittis magna.Phasellus a varius eros. Mauris aliquam varius tempor. Vestibulum ante enim, condimentum in viverra a, imperdiet vel diam. Donec vel lectus dignissim, tincidunt nibh eu, placerat risus. In sodales elementum arcu, a pretium magna gravida in. Nam elementum metus sollicitudin orci vehicula convallis. Pellentesque ultricies ipsum fringilla leo malesuada maximus. Etiam id accumsan lorem. <\/p>"
+          }
+        },
+        "5af20286-1544-47d4-986d-4d35e8eba1fc": {
+          "type": "text",
+          "settings": {
+            "title": "Unique topic",
+            "text": "<p>Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-0",
+        "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-1",
+        "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-2",
+        "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-3",
+        "5af20286-1544-47d4-986d-4d35e8eba1fc"
+      ],
+      "settings": {
+        "title": "Delivery"
+      }
+    },
+    "b044276d-2cdc-4e80-aef6-6e138e4be492": {
+      "type": "questions-cta",
+      "settings": {
+        "text": "<p>Questions? Send us an <a href=\"#\" title=\"#\">email<\/a> or <a href=\"#\" title=\"#\">contact us<\/a>.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7e8cda42-405c-4125-9420-8956c3a95df5",
+    "0d532776-3a39-488a-a302-d70d04e5846b",
+    "b044276d-2cdc-4e80-aef6-6e138e4be492"
+  ]
+}
