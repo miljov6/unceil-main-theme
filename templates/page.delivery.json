@@ -72,6 +72,13 @@
             "title": "TAX \/ CUSTOMS",
             "text": "<p>Please be advised that local taxes and import duties may apply and is not included in the shipping costs. The payable import taxes and duties are the responsibility of the customer. Please check with your local authorities to get an idea of any duties or taxes that may apply.<\/p>"
           }
+        },
+        "081caaf5-eb59-4797-8d25-b884b254ede7": {
+          "type": "text",
+          "settings": {
+            "title": "DAMAGED ITEM",
+            "text": "<p>We do our best to ship your order in a safe and secure way. If your order for any reason or in any way arrives damaged, let us know straight away at<a href=\"http:\/\/hello@unceil.com\/\">hello@unceil.com<\/a>. Please attach the photos of damage on item(s) with your order number. We will dispatch a replacement or give you a full refund on item(s) shipped back within 14 days.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -82,7 +89,8 @@
         "5af20286-1544-47d4-986d-4d35e8eba1fc",
         "a16b211a-7a94-4759-b949-c89baf983b86",
         "c0841d98-1ef5-4dbb-abb8-9640be262011",
-        "59c7009f-c88b-4a9b-b278-53200784b4b5"
+        "59c7009f-c88b-4a9b-b278-53200784b4b5",
+        "081caaf5-eb59-4797-8d25-b884b254ede7"
       ],
       "settings": {
         "title": "Delivery"
