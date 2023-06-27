@@ -27,16 +27,16 @@
             <p class="b-18-r m-b-16-r">{{collection.description | strip_html}}</p>
         </div>
         <div class="collection-gallery">
+          {% if section.settings.show_artist_block != false %}
             {% if collection.all_products_count > 6 %}
                <div class="gallery-grid collection-grid">
                 {% for product in collection.products %}
                 {% render 'product-item' product: product %}
                 {% unless forloop.index != half %}
             </div>
-            {% if section.settings.show_artist_block != false %}
             {% render 'artist-block' with artist_title: artist_title, artist_description: artist_description,
             artist_cta: artist_cta, artist_img: artist_img, artist_cta_url: artist_cta_url %}
-            {% endif %}
+           
             <div class="gallery-grid collection-grid">
                 {% endunless %}
                 {% endfor %}
@@ -49,12 +49,21 @@
             
             {% endfor %}
               </div>
+              {% if section.settings.show_artist_block != false %}
               <div class="additional-class-block">
-                {% if section.settings.show_artist_block != false %}
+                
             {% render 'artist-block' with artist_title: artist_title, artist_description: artist_description,
             artist_cta: artist_cta, artist_img: artist_img, artist_cta_url: artist_cta_url %}
-            {% endif %}
+            
         </div>
+        {% endif %}
+            {% endif %}
+            {% else %}
+            <div class="gallery-grid collection-grid">
+              {% for product in collection.products %}
+              {% render 'product-item' product: product %}
+              {% endfor %}
+            </div>
             {% endif %}
         </div>
         <div class="collection-rest">
