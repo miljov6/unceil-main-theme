@@ -1,27 +1,30 @@
 {
-    "sections": {
-      "banner": {
-        "type": "main-collection-banner",
-        "disabled": true,
-        "settings": {
-          "show_collection_description": true,
-          "show_collection_image": false,
-          "color_scheme": "background-1"
-        }
-      },
-      "product-grid": {
-        "type": "main-collection-artist",
-        "settings": {
-          "artist_title": "Fleur blends nature and humanity with her art",
-          "artist_description": "Fleur draws inspiration from nature to inspire appreciation and ignite passion for our planet and ourselves. Her unique vision merges the beauty of nature with the human form, creating art that is both captivating and inspiring.",
-          "artist_cta": "Read Fleur's story",
-          "artist_cta_url": "#"
-        }
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
       }
     },
-    "order": [
-      "banner",
-      "product-grid"
-    ]
-  }
-  
+    "product-grid": {
+      "type": "main-collection-artist",
+      "settings": {
+        "show_artist_block": false,
+        "artist_title": "Fleur blends nature and humanity with her art",
+        "artist_description": "Fleur draws inspiration from nature to inspire appreciation and ignite passion for our planet and ourselves. Her unique vision merges the beauty of nature with the human form, creating art that is both captivating and inspiring.",
+        "artist_cta": "Read Fleur's story",
+        "artist_cta_url": "#",
+        "more": "More Unceil photographers",
+        "more_cta": "meet all unceil photographers",
+        "more_cta_url": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid"
+  ]
+}
