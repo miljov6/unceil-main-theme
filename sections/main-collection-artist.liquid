@@ -33,8 +33,10 @@
                 {% render 'product-item' product: product %}
                 {% unless forloop.index != half %}
             </div>
+            {% if section.settings.show_artist_block != false %}
             {% render 'artist-block' with artist_title: artist_title, artist_description: artist_description,
             artist_cta: artist_cta, artist_img: artist_img, artist_cta_url: artist_cta_url %}
+            {% endif %}
             <div class="gallery-grid collection-grid">
                 {% endunless %}
                 {% endfor %}
@@ -48,8 +50,10 @@
             {% endfor %}
               </div>
               <div class="additional-class-block">
+                {% if section.settings.show_artist_block != false %}
             {% render 'artist-block' with artist_title: artist_title, artist_description: artist_description,
             artist_cta: artist_cta, artist_img: artist_img, artist_cta_url: artist_cta_url %}
+            {% endif %}
         </div>
             {% endif %}
         </div>
@@ -82,6 +86,12 @@
       {
         "type": "header",
         "content": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_artist_block",
+        "label": "Show Artist Story Box",
+        "default": false
       },
       {
         "type": "text",
