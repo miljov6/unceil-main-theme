@@ -12,6 +12,7 @@
     "product-grid": {
       "type": "main-collection-artist",
       "settings": {
+        "show_artist_block": false,
         "artist_title": "Test blends nature and humanity with her art",
         "artist_description": "Test draws inspiration from nature to inspire appreciation and ignite passion for our planet and ourselves. Her unique vision merges the beauty of nature with the human form, creating art that is both captivating and inspiring.",
         "artist_cta": "Read Natalie’s story",
