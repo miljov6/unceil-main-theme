@@ -73,7 +73,7 @@ $(".faq-item").each(function () {
     }
   })
 })
-$('.product-media-featured img').on('hover','touchstart', function(){
+$('.product-media-featured img').on('hover touchstart', function(){
   $(this).parent().addClass('product-media-featured-zoom');
   var check = $(this).parent().data('zoom-img').toString();
   $(this).attr('src', check);
