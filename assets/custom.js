@@ -73,6 +73,12 @@ $(".faq-item").each(function () {
     }
   })
 })
+$('.product-media-featured').hover(function(){
+  $(this).addClass('product-media-featured-zoom');
+})
+$('.product-media-featured').mouseleave(function(){
+  $(this).removeClass('product-media-featured-zoom');
+})
 $('.product-item-photo').each(function () {
   $(this).mouseleave(function () {
     $(this).removeClass('product-item-photo-zoom');
