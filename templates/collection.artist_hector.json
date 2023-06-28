@@ -12,10 +12,14 @@
     "product-grid": {
       "type": "main-collection-artist",
       "settings": {
+        "show_artist_block": false,
         "artist_title": "Hector blends nature and humanity with her art",
         "artist_description": "Hector draws inspiration from nature to inspire appreciation and ignite passion for our planet and ourselves. Her unique vision merges the beauty of nature with the human form, creating art that is both captivating and inspiring.",
         "artist_cta": "Read Hector’s story",
-        "artist_cta_url": "#"
+        "artist_cta_url": "#",
+        "more": "More Unceil photographers",
+        "more_cta": "meet all unceil photographers",
+        "more_cta_url": ""
       }
     }
   },
