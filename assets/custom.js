@@ -73,8 +73,7 @@ $(".faq-item").each(function () {
     }
   })
 })
-$(document).ready(function()
-{
+$(document).ready(function(){
   setTimeout(function(){
     $('.product-media-featured').css('height', $('.product-media-featured').outerHeight());
   },1000)
