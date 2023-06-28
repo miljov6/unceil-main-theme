@@ -38,18 +38,11 @@
             "answer": "<p>We offer two types of products: prints or products with a bespoke frame. If you order prints only, we highly recommend shipping or bringing the art directly to a framing company upon receiving it, so that it can be opened by a framer using cotton gloves. Contact with oil or moisture from the skin could cause damage. If you order with the bespoke frame option, your art will arrive ready to hang. The frames offered vary depending on the art, so please check the product page for more details.<\/p>"
           }
         },
-        "60dbf164-f82f-4cb7-8c3c-15ea99a8c47c": {
-          "type": "faq",
-          "settings": {
-            "question": "Question?",
-            "answer": "<p>Answer<\/p>"
-          }
-        },
         "43433022-cdf2-4c1c-80c9-68b6e217b945": {
           "type": "faq",
           "settings": {
             "question": "How can I trace my order?",
-            "answer": "<p>You will recevie an email notification with track & trace number once the shipment is out.<\/p>"
+            "answer": "<p>You will receive an email notification with a track & trace number once the shipment is sent out.<\/p>"
           }
         },
         "2e53715e-5037-4daa-93c1-6a40fc10cc5e": {
@@ -72,17 +65,25 @@
             "question": "Who pays for return shipping cost?",
             "answer": "<p>Unfortunately, returns happen at your own risk and own expense. This includes any taxes, customs duties, or charges. For details, please check Returns page.<\/p>"
           }
+        },
+        "60dbf164-f82f-4cb7-8c3c-15ea99a8c47c": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "question": "Question?",
+            "answer": "<p>Answer<\/p>"
+          }
         }
       },
       "block_order": [
         "774eef72-2498-46be-b33a-3c641d7830f2",
         "template--19304804057400__2da97f75-f17c-4cb2-8c0c-4a6b8be51862-1685344553221dacb8-0",
         "da1eaa1f-b390-487f-9ce4-69913fc8aef9",
-        "60dbf164-f82f-4cb7-8c3c-15ea99a8c47c",
         "43433022-cdf2-4c1c-80c9-68b6e217b945",
         "2e53715e-5037-4daa-93c1-6a40fc10cc5e",
         "103a4b17-8881-4e3d-87d4-739712d6ae40",
-        "35e7aff0-f89b-4189-889b-80f536ea4a4f"
+        "35e7aff0-f89b-4189-889b-80f536ea4a4f",
+        "60dbf164-f82f-4cb7-8c3c-15ea99a8c47c"
       ],
       "settings": {
         "title": "",
