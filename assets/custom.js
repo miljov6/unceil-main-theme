@@ -81,7 +81,7 @@ $('.product-media-featured img').on('hover','touchstart', function(){
 $('.product-media-featured').mouseleave(function(){
   $(this).removeClass('product-media-featured-zoom');
   var check = $(this).data('product-img').toString();
-    $(this).find('img').attr('src', check);
+  $(this).find('img').attr('src', check);
 })
 $('.product-item-photo').each(function () {
   $(this).mouseleave(function () {
