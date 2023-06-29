@@ -148,6 +148,24 @@
             </div>
           </div>
           {% endif %}
+          {% if additional_photos.value != blank %}
+        <div class="product-additional-photos">
+          {% for photo in additional_photos.value limit:1 %}
+          <div class="product-additional-photo">
+            <img src="{{photo | img_url: 'master'}}">
+          </div>
+          {% endfor %}
+          <div class="product-additional-photos-grid">
+            {% for photo in additional_photos.value %}
+            {% if forloop.index >1 %}
+            <div class="product-additional-photo">
+              <img src="{{photo | img_url: 'master'}}">
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
           {% if block_4_text != blank %}
           <div class="product-additional-block">
             <p class="b-14-m">{{block_4_title}}</p>
@@ -164,24 +182,6 @@
             </div>
           </div>
           {% endif %}
-        </div>
-        {% endif %}
-        {% if additional_photos.value != blank %}
-        <div class="product-additional-photos">
-          {% for photo in additional_photos.value limit:1 %}
-          <div class="product-additional-photo">
-            <img src="{{photo | img_url: 'master'}}">
-          </div>
-          {% endfor %}
-          <div class="product-additional-photos-grid">
-            {% for photo in additional_photos.value %}
-            {% if forloop.index >1 %}
-            <div class="product-additional-photo">
-              <img src="{{photo | img_url: 'master'}}">
-            </div>
-            {% endif %}
-            {% endfor %}
-          </div>
         </div>
         {% endif %}
       </div>
