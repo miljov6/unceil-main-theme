@@ -86,6 +86,20 @@
             "title": "Site management",
             "text": "<p>We reserve the right, but not the obligation, to: (1) monitor the Site for violations of these Terms of Use; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Terms of Use, including without limitation, reporting such user to law enforcement authorities; (3) in our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable (to the extent technologically feasible) any of your Contributions or any portion thereof; (4) in our sole discretion and without limitation, notice, or liability, to remove from the Site or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems; and (5) otherwise manage the Site in a manner designed to protect our rights and property and to facilitate the proper functioning of the Site.<\/p>"
           }
+        },
+        "fa791fee-ce68-4e02-bfe0-e0cfed843896": {
+          "type": "text",
+          "settings": {
+            "title": "Privacy policy",
+            "text": "<p>We care about data privacy and security. Please review our Privacy Policy:<a href=\"https:\/\/unceil.com\/privacy-cookie-policy\"><strong>https:\/\/unceil.com\/privacy-cookie-policy<\/strong><\/a>. By using the Site, you agree to be bound by our Privacy Policy, which is incorporated into these Terms of Use. Please be advised the Site is hosted in the Netherlands. If you access the Site from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in the Netherlands, then through your continued use of the Site, you are transferring your data to the Netherlands, and you agree to have your data transferred to and processed in the Netherlands.<\/p>"
+          }
+        },
+        "b6d72263-1ab9-4122-a9df-92c04a326f4a": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text<\/p>"
+          }
         }
       },
       "block_order": [
@@ -98,7 +112,9 @@
         "8c5e288e-a6d0-4fa3-a4f5-d3f90f78413f",
         "54fb393b-4eed-4768-a6e4-b471862bbb35",
         "2dd577cd-0054-439e-990c-2be205d657d0",
-        "90ef889f-d9dc-44bd-bed0-5ce551965feb"
+        "90ef889f-d9dc-44bd-bed0-5ce551965feb",
+        "fa791fee-ce68-4e02-bfe0-e0cfed843896",
+        "b6d72263-1ab9-4122-a9df-92c04a326f4a"
       ],
       "settings": {
         "title": "Terms & Conditions"
