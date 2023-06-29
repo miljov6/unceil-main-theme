@@ -55,8 +55,8 @@
         "5af20286-1544-47d4-986d-4d35e8eba1fc": {
           "type": "text",
           "settings": {
-            "title": "Unique topic",
-            "text": "<p>Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et nisi vel justo vestibulum faucibus vitae sodales diam. Duis accumsan urna sed est varius, ut ultricies dui dictum. Quisque lectus magna, euismod quis urna ut, congue posuere lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. <\/p>"
+            "title": "“Do Not Track” options will not affect how we use your Personal Information",
+            "text": "<p>Although we do our best to honour the privacy preferences of our customers, we are not able to respond to Do-Not-Track signals from your browser at this time. As discussed above, we track websites and app usage information through the use of cookies for analytic and internal purposes only. Because we do not collect this information to track you across websites or apps over time, your selection of the “Do Not Track” option provided by your browser will not have any effect on our collection of cookie information for analytics or internal purposes.<\/p>"
           }
         }
       },
