@@ -55,7 +55,7 @@
               </div>
               <div class="cart-price">
                 <p class="b-14-m">SUBTOTAL:</p>
-                <p class="b-16-m text-right">{{ cart.total_price | money_without_trailing_zeros }}</p>
+                <p  data-hulkapps-cart-total class="b-16-m text-right">{{ cart.total_price | money_without_trailing_zeros }}</p>
               </div>
             </div>
             <div class="btn-cart"><a href="/checkout"></a><span>Process order</span></div>
@@ -77,7 +77,7 @@
           </div>
           <div class="cart-price">
             <p class="b-14-m">SUBTOTAL:</p>
-            <p class="b-16-m text-right">{{ cart.total_price | money_without_trailing_zeros }}</p>
+            <p  data-hulkapps-cart-total class="b-16-m text-right">{{ cart.total_price | money_without_trailing_zeros }}</p>
           </div>
         </div>
         <div class="btn-cart"><a href="/checkout"></a><span>Process order</span></div>
