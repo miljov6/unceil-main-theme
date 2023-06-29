@@ -100,6 +100,13 @@
             "title": "Transfers and processing of your personal information",
             "text": "<p>Our Site is operated in the Netherlands. If you are located in another jurisdiction, please know that your information will be transferred to, stored, and processed in the Netherlands. By using this site and providing us with information, you consent to this transfer, processing, and storage, of your information in the Netherlands. It is important to note that the privacy laws in the Netherlands may not be as comprehensive as those in other countries such as the United States. Data that we collect from you may be processed by staff operating outside the Netherlands who work for us or for one of our suppliers. For example, such staff may be engaged in the processing of an order for our Services, the processing of your payment details and the provision of support services. By submitting your personal data, you agree to this transfer, storing or processing. We will take all reasonable steps to make sure that your data is treated securely and in agreement with this Privacy Policy. Data that is provided to us is stored on secure servers. Details relating to any transactions entered into via our site or service providers sites will be encrypted in motion and at rest. Please note, however, that the transmission of information via the internet is not completely secure, and therefore we cannot guarantee the security of data sent to us electronically. The transmission of such data is entirely at your own risk.<\/p>"
           }
+        },
+        "5c1eda22-895f-4312-bdf1-a888067658ae": {
+          "type": "text",
+          "settings": {
+            "title": "Special Provisions Applicable to Residents of the European Union",
+            "text": "<p>This section of our Privacy Notice applies to all personal information that is governed by the General Data Protection Regulations (the “GDPR”), within the territorial scope of the GDPR, that may be used to identify you as a visitor to our Site and that is obtained by us in connection with the Site or providing a product or service to you as part of our operations.<br\/><br\/>For general data protection regulation purposes, the “Data Controller” means the organization who decides the purposes for which, and the way in which, any Personal Information is processed. Where you are using our Services and making decisions about the Personal Information that is being processed in the Services, you are acting as a data controller and Studio Selé is acting as a data processor. In other cases, Studio Selé may be the controller of some of your Personal Information (such as when we collect your billing information, or contact information for marketing purposes, or when monitoring usage information on our Site).<br\/><br\/>A “Data Processor” is an organization which processes Personal Information for a Data Controller. As a Data Processor, we may be bound by the requirements of the GDPR.<br\/><br\/>“Data processing” is any operation or set of operations (whether automated or not) performed upon Personal Information. Examples of data processing explicitly listed in the text of the GDPR are: collection, recording, organizing, structuring, storing, adapting, altering, retrieving, consulting, using, disclosing by transmission, disseminating or making available, aligning or combining, restricting, erasure or destruction.<br\/><br\/>If the processing of personal data about you is subject to European Union data protection law, you have certain rights with respect to that data:<br\/>- You can request access to, and rectification or erasure of, personal data;<br\/>- If any automated processing of personal data is based on your consent or a contract with you, you have a right to transfer or receive a copy of your personal data in a usable and portable format;<br\/>- If the processing of personal data is based on your consent, you can withdraw consent at any time for future processing;<br\/>- You can to object to, or obtain a restriction of, the processing of personal data under certain circumstances; and<br\/>- For residents of France, you can send us specific instructions regarding the use of your data after your death.<br\/><\/p>"
+          }
         }
       },
       "block_order": [
@@ -114,7 +121,8 @@
         "73528226-20e8-4948-9b34-06daf23263a0",
         "40359b4a-857b-4a66-a774-1b6092bcb0e7",
         "83717029-557e-481b-9ad7-f9289e4ebb39",
-        "a1c779d2-686f-4c84-a010-aa9c69fc6f34"
+        "a1c779d2-686f-4c84-a010-aa9c69fc6f34",
+        "5c1eda22-895f-4312-bdf1-a888067658ae"
       ],
       "settings": {
         "title": "Privacy Policy"
