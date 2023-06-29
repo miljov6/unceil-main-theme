@@ -142,6 +142,20 @@
             "title": "Limitations of liability",
             "text": "<p>IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SITE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US DURING THE three (3) mONTH PERIOD PRIOR TO ANY CAUSE OF ACTION ARISING. CERTAIN US STATE LAWS AND INTERNATIONAL LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.<\/p>"
           }
+        },
+        "94aae46c-5020-487b-8d9b-07203e6bf344": {
+          "type": "text",
+          "settings": {
+            "title": "Indemnification",
+            "text": "<p>You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys’ fees and expenses, made by any third party due to or arising out of: (1) use of the Site; (2) breach of these Terms of Use; (3) any breach of your representations and warranties set forth in these Terms of Use; (4) your violation of the rights of a third party, including but not limited to intellectual property rights; or (5) any overt harmful act toward any other user of the Site with whom you connected via the Site. Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.<\/p>"
+          }
+        },
+        "1eae5f71-f29f-4c3a-b045-e670cebc089f": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text<\/p>"
+          }
         }
       },
       "block_order": [
@@ -162,7 +176,9 @@
         "f02ed8d5-09b8-4a3d-a6cf-31024e0be4c6",
         "a46d2999-8ce9-4dac-87ce-ef627f7ce220",
         "dba59e40-07cb-4eb6-8c5b-f2b072d29ff9",
-        "ff7c18f1-a048-49f9-8767-70469654fa03"
+        "ff7c18f1-a048-49f9-8767-70469654fa03",
+        "94aae46c-5020-487b-8d9b-07203e6bf344",
+        "1eae5f71-f29f-4c3a-b045-e670cebc089f"
       ],
       "settings": {
         "title": "Terms & Conditions"
