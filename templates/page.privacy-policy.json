@@ -69,8 +69,8 @@
         "e6b28629-8c38-4231-8b94-5887337d5b9e": {
           "type": "text",
           "settings": {
-            "title": "Title",
-            "text": "<p>Text<\/p>"
+            "title": "How do we protect your personal information?",
+            "text": "<p><strong>‍<\/strong>The security of your Personal Information is important to us; but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.<\/p>"
           }
         }
       },
