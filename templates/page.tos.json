@@ -58,6 +58,20 @@
             "title": "Contribution license",
             "text": "<p>You agree that we may access, store, process, and use any information and personal data that you provide following the terms of the Privacy Policy and your choices (including settings).<br\/><br\/>By submitting suggestions or other feedback regarding the Site, you agree that we can use and share such feedback for any purpose without compensation to you.<br\/><br\/>We do not assert any ownership over your Contributions. You retain full ownership of all of your Contributions and any intellectual property rights or other proprietary rights associated with your Contributions. We are not liable for any statements or representations in your Contributions provided by you in any area on the Site. You are solely responsible for your Contributions to the Site and you expressly agree to exonerate us from any and all responsibility and to refrain from any legal action against us regarding your Contributions.<\/p>"
           }
+        },
+        "8c5e288e-a6d0-4fa3-a4f5-d3f90f78413f": {
+          "type": "text",
+          "settings": {
+            "title": "Submissions",
+            "text": "<p>You acknowledge and agree that any questions, comments, suggestions, ideas, feedback, or other information regarding the Site (\"Submissions\") provided by you to us are non-confidential and shall become our sole property. We shall own exclusive rights, including all intellectual property rights, and shall be entitled to the unrestricted use and dissemination of these Submissions for any lawful purpose, commercial or otherwise, without acknowledgment or compensation to you. You hereby waive all moral rights to any such Submissions, and you hereby warrant that any such Submissions are original with you or that you have the right to submit such Submissions. You agree there shall be no recourse against us for any alleged or actual infringement or misappropriation of any proprietary right in your Submissions.<\/p>"
+          }
+        },
+        "54fb393b-4eed-4768-a6e4-b471862bbb35": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text<\/p>"
+          }
         }
       },
       "block_order": [
@@ -66,7 +80,9 @@
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-2",
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-3",
         "5af20286-1544-47d4-986d-4d35e8eba1fc",
-        "6d2bca6a-f874-4929-b5e0-384d4a8797b1"
+        "6d2bca6a-f874-4929-b5e0-384d4a8797b1",
+        "8c5e288e-a6d0-4fa3-a4f5-d3f90f78413f",
+        "54fb393b-4eed-4768-a6e4-b471862bbb35"
       ],
       "settings": {
         "title": "Terms & Conditions"
