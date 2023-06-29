@@ -17,68 +17,77 @@
     "2da97f75-f17c-4cb2-8c0c-4a6b8be51862": {
       "type": "faq-block",
       "blocks": {
+        "774eef72-2498-46be-b33a-3c641d7830f2": {
+          "type": "faq",
+          "settings": {
+            "question": "How long will it take to receive my order?",
+            "answer": "<p>Delivery time can vary from 1 to 21 days, depending on your chosen shipping destination. Please check the Delivery page for more details.<\/p>"
+          }
+        },
         "template--19304804057400__2da97f75-f17c-4cb2-8c0c-4a6b8be51862-1685344553221dacb8-0": {
           "type": "faq",
           "settings": {
             "question": "How do I know the authenticity of the art I bought?",
-            "answer": "<p>We issue COA(Certificate of Authenticity) for every and each one of the original artworks sold. It indicates the artist's name, title of the work, edition size and all the other necessary details along with our certification sticker.<\/p>"
+            "answer": "<p>We issue a Certificate of Authenticity (COA) for each original artwork sold. The COA includes the artist's name, title of the work, edition size, and all other necessary details.<\/p>"
           }
         },
         "da1eaa1f-b390-487f-9ce4-69913fc8aef9": {
           "type": "faq",
           "settings": {
             "question": "Will my artwork arrive ready to hang?",
-            "answer": "<p>No, currently we only cater prints. We recommend you to ship or bring the art directly to the framing company once received that it can be opened by a framer using cotton gloves. Contact with oil\/moisture of skin could cause damage.<\/p>"
-          }
-        },
-        "60dbf164-f82f-4cb7-8c3c-15ea99a8c47c": {
-          "type": "faq",
-          "settings": {
-            "question": "Question?",
-            "answer": "<p>Answer<\/p>"
+            "answer": "<p>We offer two types of products: prints or products with a bespoke frame. If you order prints only, we highly recommend shipping or bringing the art directly to a framing company upon receiving it, so that it can be opened by a framer using cotton gloves. Contact with oil or moisture from the skin could cause damage. If you order with the bespoke frame option, your art will arrive ready to hang. The frames offered vary depending on the art, so please check the product page for more details.<\/p>"
           }
         },
         "43433022-cdf2-4c1c-80c9-68b6e217b945": {
           "type": "faq",
           "settings": {
             "question": "How can I trace my order?",
-            "answer": "<p>You will recevie an email notification with track & trace number once the shipment is out.<\/p>"
+            "answer": "<p>You will receive an email notification with a track & trace number once the shipment is sent out.<\/p>"
           }
         },
         "2e53715e-5037-4daa-93c1-6a40fc10cc5e": {
           "type": "faq",
           "settings": {
             "question": "Can I cancel an order prior to shipment?",
-            "answer": "<p>It cannot be cancelled once the shipment is out. Please contact<a href=\"mailto:hello@unceil.com\">hello@unceil.com<\/a>immediately, we might catch it in time. If that's not the case, return process needs to be initiated at your cost within 14 days after your receipt.<\/p>"
+            "answer": "<p>It cannot be canceled once the shipment is sent out. Please contact <a href=\"mailto:hello@unceil.com\">hello@unceil.com<\/a> immediately; we might be able to catch it in time. If that's not the case, the return process needs to be initiated at your cost within 14 days after you receive the item.<\/p>"
           }
         },
         "103a4b17-8881-4e3d-87d4-739712d6ae40": {
           "type": "faq",
           "settings": {
             "question": "How do I return the art?",
-            "answer": "<p> 1. Print the <a href=\"https:\/\/assets.website-files.com\/62f0f8b74c86f33e67842a8d\/633d727bc7846010c7b5668c_Return%20Form.pdf\" target=\"_blank\">RETURN FORM<\/a> and make sure to fill it in entirely, including the reason for your return.<\/p><p> 2. Place the Return Form with the item(s) you wish to return in a suitable and protected box, e.g. the one you got from Unceil to ensure it's not damaged in transit.<\/p><p>  3. Attach the address label to your parcel and use any of your preferred shipping methods. Return shipments are at the customer's own cost and responsibility.<\/p><p> 4. Save a proof of postage until we have confirmed that your refund has been processed.<\/p><p>‍‍‍‍For details, please check Returns page.<\/p>"
+            "answer": "<p> 1. Print the <a href=\"https:\/\/assets.website-files.com\/62f0f8b74c86f33e67842a8d\/633d727bc7846010c7b5668c_Return%20Form.pdf\" target=\"_blank\">RETURN FORM<\/a> and make sure to fill it out entirely, including the reason for your return.<\/p><p> 2. Place the Return Form with the item(s) you wish to return in a suitable and protected box, such as the one you received from Unceil, to ensure it is not damaged during transit.<\/p><p>  3. Attach the address label to your parcel and use your preferred shipping method. Return shipments are at the customer's own cost and responsibility.<\/p><p> 4. Keep a proof of postage until we confirm that your refund has been processed. <br\/><br\/>For more details, please refer to our Returns page.<\/p>"
           }
         },
         "35e7aff0-f89b-4189-889b-80f536ea4a4f": {
           "type": "faq",
           "settings": {
             "question": "Who pays for return shipping cost?",
-            "answer": "<p>Unfortunately, returns happen at your own risk and own expense. This includes any taxes, customs duties, or charges. For details, please check Returns page.<\/p>"
+            "answer": "<p>Unfortunately, returns happen at your own risk and expense. This includes any taxes, customs duties, or charges. For more details, please refer to our Returns page.<\/p>"
+          }
+        },
+        "60dbf164-f82f-4cb7-8c3c-15ea99a8c47c": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "question": "Question?",
+            "answer": "<p>Answer<\/p>"
           }
         }
       },
       "block_order": [
+        "774eef72-2498-46be-b33a-3c641d7830f2",
         "template--19304804057400__2da97f75-f17c-4cb2-8c0c-4a6b8be51862-1685344553221dacb8-0",
         "da1eaa1f-b390-487f-9ce4-69913fc8aef9",
-        "60dbf164-f82f-4cb7-8c3c-15ea99a8c47c",
         "43433022-cdf2-4c1c-80c9-68b6e217b945",
         "2e53715e-5037-4daa-93c1-6a40fc10cc5e",
         "103a4b17-8881-4e3d-87d4-739712d6ae40",
-        "35e7aff0-f89b-4189-889b-80f536ea4a4f"
+        "35e7aff0-f89b-4189-889b-80f536ea4a4f",
+        "60dbf164-f82f-4cb7-8c3c-15ea99a8c47c"
       ],
       "settings": {
-        "title": "How long will it take to receive my order?",
-        "block_id": "1- 21 days, depending on your chosen shipping destination. Please check Delivery page for details."
+        "title": "",
+        "block_id": ""
       }
     },
     "8232c4a5-d3ae-4f6c-a753-900fc6e2b6d7": {
