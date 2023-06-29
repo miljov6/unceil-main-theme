@@ -156,6 +156,27 @@
             "title": "User data",
             "text": "<p>We will maintain certain data that you transmit to the Site for the purpose of managing the performance of the Site, as well as data relating to your use of the Site. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Site. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.<\/p>"
           }
+        },
+        "e390773d-c2f6-4530-b156-ea80f342ebfc": {
+          "type": "text",
+          "settings": {
+            "title": "Electronic communications, transactions, and signatures",
+            "text": "<p>Visiting the Site, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Site, satisfy any legal requirement that such communication be in writing. YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SITE. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means.<\/p>"
+          }
+        },
+        "4262a03d-17ab-453d-9811-8432b2a21ce0": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text<\/p>"
+          }
+        },
+        "0dfe942e-ac84-4e93-ab1f-51701547251f": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text<\/p>"
+          }
         }
       },
       "block_order": [
@@ -178,7 +199,10 @@
         "dba59e40-07cb-4eb6-8c5b-f2b072d29ff9",
         "ff7c18f1-a048-49f9-8767-70469654fa03",
         "94aae46c-5020-487b-8d9b-07203e6bf344",
-        "1eae5f71-f29f-4c3a-b045-e670cebc089f"
+        "1eae5f71-f29f-4c3a-b045-e670cebc089f",
+        "e390773d-c2f6-4530-b156-ea80f342ebfc",
+        "4262a03d-17ab-453d-9811-8432b2a21ce0",
+        "0dfe942e-ac84-4e93-ab1f-51701547251f"
       ],
       "settings": {
         "title": "Terms & Conditions"
