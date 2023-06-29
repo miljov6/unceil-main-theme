@@ -58,6 +58,20 @@
             "title": "“Do Not Track” options will not affect how we use your Personal Information",
             "text": "<p>Although we do our best to honour the privacy preferences of our customers, we are not able to respond to Do-Not-Track signals from your browser at this time. As discussed above, we track websites and app usage information through the use of cookies for analytic and internal purposes only. Because we do not collect this information to track you across websites or apps over time, your selection of the “Do Not Track” option provided by your browser will not have any effect on our collection of cookie information for analytics or internal purposes.<\/p>"
           }
+        },
+        "27677778-c242-492e-b590-762c7018c62e": {
+          "type": "text",
+          "settings": {
+            "title": "Do we disclose any information to outside parties?",
+            "text": "<p>Except as set out below, we do not sell or trade your Personal Information. Non-personally identifiable visitor information, however, may be provided to other parties for marketing, advertising or other uses. We may disclose your Personal Information to our subsidiaries and affiliates, or to contractors, service providers, and other third parties we use to support our business. These third-party providers are not permitted to use the information collected on our behalf except to help us conduct and improve our business. We may also release your Personal Information when we believe release is appropriate to comply with the law, enforce our site policies or protect our or others’ rights, property or safety.<br\/><br\/>Your Personal Information may also be transferred to another company in the event of a transfer, change of ownership, reorganization or assignment of all or part of our businesses or assets. This will occur if the parties have entered into an agreement under which the collection, use and disclosure of the information is limited to those purposes of the business transaction, including a determination whether or not to proceed with the business transaction. You will be notified via email or prominent notice on our websites for thirty (30) days of any such change in ownership or control of your Personal Information or as otherwise may be required or permitted by law.<br\/><br\/>We share your Personal Information with service providers to help us provide our services and fulfill our contracts with you, as described above. For example:<br\/>- We use Shopify to power our online store. You can read more about how Shopify uses your Personal Information here: https:\/\/www.shopify.com\/legal\/privacy.<br\/>- We may share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights.<br\/><\/p>"
+          }
+        },
+        "e6b28629-8c38-4231-8b94-5887337d5b9e": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text<\/p>"
+          }
         }
       },
       "block_order": [
@@ -66,7 +80,9 @@
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-1",
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-2",
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-3",
-        "5af20286-1544-47d4-986d-4d35e8eba1fc"
+        "5af20286-1544-47d4-986d-4d35e8eba1fc",
+        "27677778-c242-492e-b590-762c7018c62e",
+        "e6b28629-8c38-4231-8b94-5887337d5b9e"
       ],
       "settings": {
         "title": "Privacy Policy"
