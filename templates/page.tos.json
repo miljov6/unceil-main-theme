@@ -97,6 +97,20 @@
         "b6d72263-1ab9-4122-a9df-92c04a326f4a": {
           "type": "text",
           "settings": {
+            "title": "Term and termination",
+            "text": "<p>These Terms of Use shall remain in full force and effect while you use the Site. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS OF USE, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SITE (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE TERMS OF USE OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SITE OR DELETE ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION.<br\/><br\/>If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.<\/p>"
+          }
+        },
+        "31f13284-93f0-4baf-80f0-ef395a86051d": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text<\/p>"
+          }
+        },
+        "625ad9d1-4d4d-48a1-9eed-9c54b6737607": {
+          "type": "text",
+          "settings": {
             "title": "Title",
             "text": "<p>Text<\/p>"
           }
@@ -114,7 +128,9 @@
         "2dd577cd-0054-439e-990c-2be205d657d0",
         "90ef889f-d9dc-44bd-bed0-5ce551965feb",
         "fa791fee-ce68-4e02-bfe0-e0cfed843896",
-        "b6d72263-1ab9-4122-a9df-92c04a326f4a"
+        "b6d72263-1ab9-4122-a9df-92c04a326f4a",
+        "31f13284-93f0-4baf-80f0-ef395a86051d",
+        "625ad9d1-4d4d-48a1-9eed-9c54b6737607"
       ],
       "settings": {
         "title": "Terms & Conditions"
