@@ -111,6 +111,20 @@
         "625ad9d1-4d4d-48a1-9eed-9c54b6737607": {
           "type": "text",
           "settings": {
+            "title": "Governing law",
+            "text": "<p>These conditions are governed by and interpreted following the laws of the Netherlands, and the use of the United Nations Convention of Contracts for the International Sale of Goods is expressly excluded. If your habitual residence is in the EU, and you are a consumer, you additionally possess the protection provided to you by obligatory provisions of the law of your country of residence. Unceil B.V. and yourself both agree to submit to the non-exclusive jurisdiction of the courts of Amsterdam, which means that you may make a claim to defend your consumer protection rights in regards to these Terms of Use in the Netherlands, or in the EU country in which you reside.<\/p>"
+          }
+        },
+        "f02ed8d5-09b8-4a3d-a6cf-31024e0be4c6": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text<\/p>"
+          }
+        },
+        "a46d2999-8ce9-4dac-87ce-ef627f7ce220": {
+          "type": "text",
+          "settings": {
             "title": "Title",
             "text": "<p>Text<\/p>"
           }
@@ -130,7 +144,9 @@
         "fa791fee-ce68-4e02-bfe0-e0cfed843896",
         "b6d72263-1ab9-4122-a9df-92c04a326f4a",
         "31f13284-93f0-4baf-80f0-ef395a86051d",
-        "625ad9d1-4d4d-48a1-9eed-9c54b6737607"
+        "625ad9d1-4d4d-48a1-9eed-9c54b6737607",
+        "f02ed8d5-09b8-4a3d-a6cf-31024e0be4c6",
+        "a46d2999-8ce9-4dac-87ce-ef627f7ce220"
       ],
       "settings": {
         "title": "Terms & Conditions"
