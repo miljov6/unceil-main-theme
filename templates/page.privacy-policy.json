@@ -121,6 +121,13 @@
             "title": "Changes to our privacy policy",
             "text": "<p><strong>‍<\/strong>If we decide to change our privacy policy, we will post those changes on this page.<\/p>"
           }
+        },
+        "d8e20084-c196-401c-bd22-c6a85e3cc030": {
+          "type": "text",
+          "settings": {
+            "title": "Contact us",
+            "text": ""
+          }
         }
       },
       "block_order": [
@@ -138,7 +145,8 @@
         "a1c779d2-686f-4c84-a010-aa9c69fc6f34",
         "5c1eda22-895f-4312-bdf1-a888067658ae",
         "134ecf23-1c98-4e4f-8be5-c0454692fbb0",
-        "fdc9dccf-15c2-4cda-b301-eaeaea6c5e41"
+        "fdc9dccf-15c2-4cda-b301-eaeaea6c5e41",
+        "d8e20084-c196-401c-bd22-c6a85e3cc030"
       ],
       "settings": {
         "title": "Privacy Policy"
