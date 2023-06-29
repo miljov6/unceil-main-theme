@@ -182,7 +182,7 @@
           "type": "text",
           "settings": {
             "title": "Contact us",
-            "text": "<p>In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at‍:<br\/><br\/><\/p><p>Unceil B.V.<\/p><p>Herengracht 340<\/p><p>1013 CG, Amsterdam<\/p><p>Netherlands<\/p><p>hello@unceil.com<\/p>"
+            "text": "<p>In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at‍:<br\/><br\/><\/p><p>Unceil B.V.<\/p><p>Herengracht 340<\/p><p>1013 CG, Amsterdam<\/p><p>Netherlands<br\/><br\/><\/p><p><a href=\"mailto:hello@unceil.com\" title=\"mailto:hello@unceil.com\">hello@unceil.com<\/a><\/p>"
           }
         }
       },
