@@ -35,14 +35,14 @@
           "type": "text",
           "settings": {
             "title": "Return address",
-            "text": "<p>Unceil<br\/>Herengracht 340<br\/>1016 CG Amsterdam<br\/>Netherlands<br\/><br\/>If you have any questions regarding your return, please reach out to us at <a href=\"mailto:hello@unceil.com\">hello@unceil.com<\/a>, providing your question and order number.<\/p>"
+            "text": "<p>Unceil<br\/>Herengracht 340<br\/>1016 CG Amsterdam<br\/>Netherlands<\/p>"
           }
         },
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-3": {
           "type": "text",
           "settings": {
             "title": "",
-            "text": "<p><br\/><em>Please note that all returns are the responsibility of the customer. Unceil cannot be held liable for any loss or damage that occurs during transit. To ensure the safe arrival of your return, please securely package it. We highly recommend using a postal service that offers tracking and\/or insurance.<\/em><\/p>"
+            "text": "<p>If you have any questions regarding your return, please reach out to us at <a href=\"mailto:hello@unceil.com\">hello@unceil.com<\/a>, providing your question and order number.<br\/><br\/><em>Please note that all returns are the responsibility of the customer. Unceil cannot be held liable for any loss or damage that occurs during transit. To ensure the safe arrival of your return, please securely package it. We highly recommend using a postal service that offers tracking and\/or insurance.<\/em><\/p>"
           }
         },
         "5af20286-1544-47d4-986d-4d35e8eba1fc": {
