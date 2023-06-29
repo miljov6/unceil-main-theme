@@ -72,6 +72,20 @@
             "title": "How do we protect your personal information?",
             "text": "<p><strong>‍<\/strong>The security of your Personal Information is important to us; but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.<\/p>"
           }
+        },
+        "73528226-20e8-4948-9b34-06daf23263a0": {
+          "type": "text",
+          "settings": {
+            "title": "‍Retention of your Personal Information",
+            "text": "<p><strong>‍<\/strong>We retain your Personal Information for as long as you have an open account with us or as otherwise necessary to provide you with the Service, and thereafter as set forth in our any other written agreement with you to license our Services agreement with you. After it is no longer necessary for us to retain your Personal Information, we will dispose of it in a secure manner or anonymize the information. We also retain backups of the data in our Service for a period of ninety (90) days after termination of the service (or after deletion of the data from our production services). These backups may contain your Personal Information, and are deleted on a rolling ninety (90)-day basis unless otherwise retained as set forth in this policy. Despite the foregoing, in some cases we retain Personal Information for longer, if doing so is necessary to comply with our legal obligations, resolve disputes or collect fees owed, or is otherwise permitted or required by applicable law, rule, regulation or legal process. For example, if we are involved in litigation or a governmental or regulatory investigation, then we keep data throughout the period of litigation or investigation and for 5 years after that. If a settlement means that we have to keep data for longer, then we keep data for the period required to administer the settlement. If we provide data to law enforcement agencies, then we keep a record of this for one year beyond the end of the investigation.<\/p>"
+          }
+        },
+        "40359b4a-857b-4a66-a774-1b6092bcb0e7": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text<\/p>"
+          }
         }
       },
       "block_order": [
@@ -82,7 +96,9 @@
         "template--19305861054776__0d532776-3a39-488a-a302-d70d04e5846b-16853512545d12f610-3",
         "5af20286-1544-47d4-986d-4d35e8eba1fc",
         "27677778-c242-492e-b590-762c7018c62e",
-        "e6b28629-8c38-4231-8b94-5887337d5b9e"
+        "e6b28629-8c38-4231-8b94-5887337d5b9e",
+        "73528226-20e8-4948-9b34-06daf23263a0",
+        "40359b4a-857b-4a66-a774-1b6092bcb0e7"
       ],
       "settings": {
         "title": "Privacy Policy"
