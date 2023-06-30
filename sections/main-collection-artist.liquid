@@ -8,6 +8,7 @@
 {% assign artist_photo_orientation = collection.metafields.custom.artist_collection_photo_orientation %}
 {% assign artist_title = collection.metafields.custom.artist_title %}
 {% assign artist_description = collection.metafields.custom.artist_description %}
+{% assing collection_id = collection.id %}
 <div class="container-fluid">
   <div class="container">
     <div class="collection-title">
@@ -74,7 +75,7 @@
       </div>
       <div class="collection-more-slider">
         {% for collection in collections %}
-        {% if collection.template_suffix contains 'artist' %}
+        {% if collection.template_suffix contains 'artist' and collection.id != collection_id %}
         <div class="more-item-block">
           <div class="more-item-block-img">
             {% assign artist_img = collection.metafields.custom.artist_photo %}
