@@ -34,7 +34,7 @@ $(document).ready(function () {
       infinite: true,
       centerMode: true,
       slidesToScroll: 1,
-      slidesToShow: 2.5,
+      slidesToShow: 3,
       centerMode: false,
       variableWidth: false
     });
