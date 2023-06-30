@@ -19,7 +19,8 @@
       <div class="product-media">
         <div class="product-media-featured"  data-zoom-img="{% if  image_on_hover != blank %} {{image_on_hover | img_url: 'master'}}{% else %}{{product.featured_image | img_url: 'master'}}{% endif %}"
         data-product-img="{{product.featured_image | img_url: 'master'}}">
-          <img src="{{product.featured_image | img_url: 'master'}}">
+          <img src="{{product.featured_image | img_url: 'master'}}" class="img-nonhover">
+          <img src="{{image_on_hover | img_url: 'master'}}" class="img-hover">
         </div>
         <product-form class="product-form mb">
             <div class="product-form-block">
