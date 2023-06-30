@@ -91,7 +91,7 @@ $('.product-media-featured').on('touchstart', function(){
   
 })
 $('.product-media-featured').mouseleave(function(){
-  $(this).addClass('product-media-featured-zoom');
+  $(this).removeClass('product-media-featured-zoom');
   $('.img-hover').hide();
   $('.img-nonhover').show();
 })
