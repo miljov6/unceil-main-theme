@@ -78,6 +78,7 @@
         {% if collection.template_suffix contains 'artist' and collection.id != collection_id %}
         <div class="more-item-block">
           <div class="more-item-block-img">
+            <a href="{{collection.url}}"></a>
             {% assign artist_img = collection.metafields.custom.artist_photo %}
             <img src="{{artist_img | img_url: 'master'}}">
           </div>
