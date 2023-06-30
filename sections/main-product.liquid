@@ -291,8 +291,9 @@
         {% assign author_collection = author | handleize %}
         <div {% if collections[author_collection].all_products_count >3 %}class="spotlight-slides"{% endif %}>
           {% for product in collections[author_collection].products %}
+          {% assign orientation = product.metafields.custom.orientation | downcase %}
           <div class="spotlight-slide">
-            <div class="spotlight-img">
+            <div class="spotlight-img {% if orientation == 'landscape' %} landscape-photo {% endif %}">
               <a href="{{product.url}}"></a>
               <img src="{{product.featured_image | img_url: 'master'}}">
             </div>
