@@ -83,6 +83,11 @@
         "id": "more_info",
         "label": "More Info CTA",
         "default": "More information"
+      },
+      {
+        "type": "url",
+        "id": "all_photographers",
+        "label": "All Photographers URL"
       }
     ]
   },
