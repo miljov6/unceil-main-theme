@@ -12,12 +12,13 @@
 {% assign additional_photos = product.metafields.custom.description_photos %}
 {% assign author = product.metafields.custom.author %}
 {% assign image_on_hover = product.metafields.custom.image_on_hover %}
+{% assign orientation = product.metafields.custom.orientation | downcase %}
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 <div class="container">
   <div class="container-fluid">
     <div class="product-grid">
       <div class="product-media">
-        <div class="product-media-featured"  data-zoom-img="{% if  image_on_hover != blank %} {{image_on_hover | img_url: 'master'}}{% else %}{{product.featured_image | img_url: 'master'}}{% endif %}"
+        <div class="product-media-featured {% if orientation == 'landscape' %} landscape-photo {% endif %}"  data-zoom-img="{% if  image_on_hover != blank %} {{image_on_hover | img_url: 'master'}}{% else %}{{product.featured_image | img_url: 'master'}}{% endif %}"
         data-product-img="{{product.featured_image | img_url: 'master'}}">
           <img src="{{product.featured_image | img_url: 'master'}}" class="img-nonhover">
           <img src="{{image_on_hover | img_url: 'master'}}" class="img-hover">
