@@ -4,6 +4,7 @@
     "logo_width": 90,
     "payment_title": "Payment",
     "help_text": "<p>We are here to help you with any question you might have. <a href=\"#\" title=\"#\">Get in touch<\/a> with us via Whatsapp, chat, or by phone.<\/p>",
+    "all_photographers": "shopify:\/\/pages\/our-photographers",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
     "gradient_accent_1": "",
