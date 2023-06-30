@@ -75,7 +75,7 @@ $(".faq-item").each(function () {
 })
 $(document).ready(function(){
   setTimeout(function(){
-    $('.product-media-featured').css('height', $('.product-media-featured').outerHeight());
+    $('.product-media-featured').css('height', $('.img-hover').outerHeight());
   },1000)
 })
 $('.product-media-featured').hover(function(){
