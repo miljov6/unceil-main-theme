@@ -32,9 +32,9 @@ $(document).ready(function () {
       arrows: false,
       dots: false,
       infinite: true,
-      centerMode: true,
+      centerMode: false,
       slidesToScroll: 1,
-      slidesToShow: 3,
+      slidesToShow: 2.5,
       centerMode: false,
       variableWidth: false
     });
@@ -43,7 +43,7 @@ $(document).ready(function () {
       arrows: false,
       dots: false,
       infinite: true,
-      centerMode: true,
+      centerMode: false,
       slidesToScroll: 1,
       slidesToShow: 1.2,
       centerMode: false,
