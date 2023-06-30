@@ -31,7 +31,7 @@ $(document).ready(function () {
     $('.collection-more-slider').slick({
       arrows: false,
       dots: false,
-      infinite: false,
+      infinite: true,
       centerMode: true,
       slidesToScroll: 1,
       slidesToShow: 2.5,
@@ -42,7 +42,7 @@ $(document).ready(function () {
     $('.collection-more-slider').slick({
       arrows: false,
       dots: false,
-      infinite: false,
+      infinite: true,
       centerMode: true,
       slidesToScroll: 1,
       slidesToShow: 1.2,
