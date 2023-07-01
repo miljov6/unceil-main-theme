@@ -82,14 +82,14 @@ $('.product-media-featured').hover(function(){
   $(this).addClass('product-media-featured-zoom');
   $('.img-nonhover').hide();
   $('.img-hover').show();
-  $('.product-media-featured').css('height', $('.product-media-featured-zoom').outerHeight());
+  $('.product-media-featured').css('height', $('.img-hover').outerHeight());
   
 })
 $('.product-media-featured').on('touchstart', function(){
   $(this).addClass('product-media-featured-zoom');
   $('.img-nonhover').hide();
   $('.img-hover').show();
-  $('.product-media-featured').css('height', $('.product-media-featured-zoom').outerHeight());
+  $('.product-media-featured').css('height', $('.img-hover').outerHeight());
   
 })
 $('.product-media-featured').mouseleave(function(){
