@@ -82,18 +82,21 @@ $('.product-media-featured').hover(function(){
   $(this).addClass('product-media-featured-zoom');
   $('.img-nonhover').hide();
   $('.img-hover').show();
+  $('.product-media-featured').css('height', $('.product-media-featured-zoom').outerHeight());
   
 })
 $('.product-media-featured').on('touchstart', function(){
   $(this).addClass('product-media-featured-zoom');
   $('.img-nonhover').hide();
   $('.img-hover').show();
+  $('.product-media-featured').css('height', $('.product-media-featured-zoom').outerHeight());
   
 })
 $('.product-media-featured').mouseleave(function(){
   $(this).removeClass('product-media-featured-zoom');
   $('.img-hover').hide();
   $('.img-nonhover').show();
+  $('.product-media-featured').css('height', $('.product-media-featured').outerHeight());
 })
 $('.product-item-photo').each(function () {
   $(this).mouseleave(function () {
