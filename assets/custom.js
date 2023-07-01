@@ -80,16 +80,16 @@ $(document).ready(function(){
 })
 $('.product-media-featured').hover(function(){
   $(this).addClass('product-media-featured-zoom');
+  $('.product-media-featured').css('height', $('.img-hover').outerHeight());
   $('.img-nonhover').hide();
   $('.img-hover').show();
-  $('.product-media-featured').css('height', $('.img-hover').outerHeight());
   
 })
 $('.product-media-featured').on('touchstart', function(){
   $(this).addClass('product-media-featured-zoom');
+  $('.product-media-featured').css('height', $('.img-hover').outerHeight());
   $('.img-nonhover').hide();
   $('.img-hover').show();
-  $('.product-media-featured').css('height', $('.img-hover').outerHeight());
   
 })
 $('.product-media-featured').mouseleave(function(){
