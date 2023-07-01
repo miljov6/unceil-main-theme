@@ -96,6 +96,7 @@ $('.product-media-featured').mouseleave(function(){
   $(this).removeClass('product-media-featured-zoom');
   $('.img-hover').hide();
   $('.img-nonhover').show();
+  $('.product-media-featured').css('height', 'auto');
 })
 $('.product-item-photo').each(function () {
   $(this).mouseleave(function () {
