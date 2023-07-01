@@ -36,7 +36,7 @@ $(document).ready(function () {
       slidesToScroll: 1,
       slidesToShow: 2.5,
       centerMode: false,
-      variableWidth: true
+      variableWidth: false
     });
   } else {
     $('.collection-more-slider').slick({
@@ -47,7 +47,7 @@ $(document).ready(function () {
       slidesToScroll: 1,
       slidesToShow: 1.2,
       centerMode: false,
-      variableWidth: true
+      variableWidth: false
     });
   }
 })
