@@ -8,7 +8,8 @@ $(document).ready(function () {
       infinite: true,
       centerMode: true,
       slidesToShow: 3,
-
+      autoplay: true,
+      autoplaySpeed: 2000
     });
   } else {
     $('.spotlight-slides').slick({
@@ -17,6 +18,8 @@ $(document).ready(function () {
       infinite: true,
       centerMode: true,
       slidesToShow: 1,
+      autoplay: true,
+      autoplaySpeed: 2000
     });
   }
 })
@@ -36,7 +39,9 @@ $(document).ready(function () {
       slidesToScroll: 1,
       slidesToShow: 2.5,
       centerMode: false,
-      variableWidth: false
+      variableWidth: false,
+      autoplay: true,
+      autoplaySpeed: 2000
     });
   } else {
     $('.collection-more-slider').slick({
@@ -47,7 +52,9 @@ $(document).ready(function () {
       slidesToScroll: 1,
       slidesToShow: 1.2,
       centerMode: false,
-      variableWidth: false
+      variableWidth: false,
+      autoplay: true,
+      autoplaySpeed: 2000
     });
   }
 })
