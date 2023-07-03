@@ -104,10 +104,11 @@ $('.product-media-featured').on('touchstart', function(){
   
 })
 $('.product-media-featured').mouseleave(function(){
+  var h = $('.product-media-featured').outerHeight();
   $(this).removeClass('product-media-featured-zoom');
   $('.img-hover').hide();
   $('.img-nonhover').show();
-  $('.product-media-featured').css('height', 'auto');
+  $('.product-media-featured').css('height', h);
 })
 $('.product-item-photo').each(function () {
   $(this).mouseleave(function () {
