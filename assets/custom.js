@@ -88,7 +88,7 @@ $(document).ready(function(){
   },1000)
 })
 $('.product-media-featured').hover(function(){
-  var h = $('.product-media-featured').height();
+  var h = $('.product-media-featured').outerHeight();
   $(this).addClass('product-media-featured-zoom');
   $('.product-media-featured').css('height', h);
   $('.img-nonhover').hide();
@@ -96,7 +96,7 @@ $('.product-media-featured').hover(function(){
   
 })
 $('.product-media-featured').on('touchstart', function(){
-  var h = $('.product-media-featured').height();
+  var h = $('.product-media-featured').outerHeight();
   $(this).addClass('product-media-featured-zoom');
   $('.product-media-featured').css('height', h);
   $('.img-nonhover').hide();
