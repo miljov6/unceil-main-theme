@@ -7,22 +7,25 @@
     <div class="spotlight-slider">
       <div class="spotlight-slides">
         {% for block in section.blocks %}
+        {% assign shopifyProduct = block.settings.product %}
+        {% assign artist = shopifyProduct.metafields.custom.author %}
+        {% assign quantity_left = shopifyProduct.selected_or_first_available_variant.inventory_quantity %}
+        {% assign few_left_quantity = settings.few_left_quantity | plus: 0 %}
         <div class="spotlight-slide">
           <div class="spotlight-img">
-            <a href="{{block.settings.product.url}}"></a>
-            <img src="{{block.settings.img | img_url: 'master'}}">
+            <a href="{{shopifyProduct.url}}"></a>
+            <img src="{{shopifyProduct.featured_image | img_url: 'master'}}">
           </div>
           <div class="spotlight-info">
-            <a href="{{block.settings.product.url}}"></a>
+            <a href="{{shopifyProduct.url}}"></a>
             <div class="spotlight-text">
-              <p class="b-14-r">{{block.settings.title}}</p>
-              <p class="b-14-r text-grey">{{block.settings.artist}}</p>
+              <p class="b-14-r">{{shopifyProduct.title}}</p>
+              <p class="b-14-r text-grey">{{artist}}</p>
             </div>
             <div class="spotlight-price text-right">
-              <p class="b-14-r">{{block.settings.price}}</p>
-              {% if block.settings.few_left != blank %}
-              <p class="b-14-r text-grey text-italic">{{block.settings.few_left}}</p>
-              {% endif %}
+              <p class="b-14-r">{{shopifyProduct.price | money_without_trailing_zeros | append: ',-'}}</p>
+              {% if quantity_left < few_left_quantity %} <p class="b-14-r text-grey text-italic">Few left</p>
+                {% endif %}
             </div>
           </div>
         </div>
@@ -32,66 +35,41 @@
   </div>
 </div>
 
-{% schema %}
+{% schema %
+}
+{
+  "name": "Spotlight",
+  "settings": [
     {
-    "name": "Spotlight",
-    "settings": [
-      {
-        "type": "header",
-        "content": "Text"
-      },
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Title"
-      },
-      {
-        "type": "text",
-        "id": "cta",
-        "label": "CTA text",
-        "default": "Explore All Photography"
-      },
-      {
-        "type": "url",
-        "id": "cta_url",
-        "label": "CTA Url"
-      }
-    ],
-    "blocks": [
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "cta",
+      "label": "CTA text",
+      "default": "Explore All Photography"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Url"
+    }
+  ],
+  "blocks": [
     {
       "type": "slide",
       "name": "Slide",
       "settings": [
         {
-          "type": "image_picker",
-          "id": "img",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
-        {
-          "type": "text",
-          "id": "artist",
-          "label": "Artist",
-          "default": "Artist"
-        },
-        {
-          "type": "text",
-          "id": "price",
-          "label": "Price in EUR"
-        },
-        {
-            "type": "text",
-            "id": "few_left",
-            "label": "Few left"
-        },
-        {
-            "type": "product",
-            "id": "product",
-            "label": "Choose Product"
+          "type": "product",
+          "id": "product",
+          "label": "Choose Product"
         }
       ]
     }
@@ -122,5 +100,5 @@
     }
   ]
 }
-{% endschema %}
-  
+{% endschema %
+}
