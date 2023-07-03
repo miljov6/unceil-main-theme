@@ -88,15 +88,17 @@ $(document).ready(function(){
   },1000)
 })
 $('.product-media-featured').hover(function(){
+  var h = $('.product-media-featured').height();
   $(this).addClass('product-media-featured-zoom');
-  $('.product-media-featured').css('height', 'auto');
+  $('.product-media-featured').css('height', h);
   $('.img-nonhover').hide();
   $('.img-hover').show();
   
 })
 $('.product-media-featured').on('touchstart', function(){
+  var h = $('.product-media-featured').height();
   $(this).addClass('product-media-featured-zoom');
-  $('.product-media-featured').css('height', 'auto');
+  $('.product-media-featured').css('height', h);
   $('.img-nonhover').hide();
   $('.img-hover').show();
   

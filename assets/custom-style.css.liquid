@@ -7,10 +7,7 @@
 
 @font-face {
   font-family: "Helvetica Now Text";
-  src: url('{{ "HelveticaNowText-Regular.ttf" | asset_url }}') format("ttf"),
-  url('{{ "HelveticaNowText-Regular.otf" | asset_url }}') format("otf"),
-  url('{{ "HelveticaNowText-Regular.woff" | asset_url }}') format("woff"),
-  url('{{ "HelveticaNowText-Regular.woff2" | asset_url }}') format("woff2");
+  src: url('{{ "HelveticaNowText-Regular.ttf" | asset_url }}') format("ttf"), url('{{ "HelveticaNowText-Regular.otf" | asset_url }}') format("otf"), url('{{ "HelveticaNowText-Regular.woff" | asset_url }}') format("woff"), url('{{ "HelveticaNowText-Regular.woff2" | asset_url }}') format("woff2");
   font-style: normal;
   font-weight: 400;
 }
@@ -1047,7 +1044,7 @@ a.disabled {
 }
 
 .landscape-photo .product-item-photo-zoom {
-  padding: 0!important;
+  padding: 0 !important;
 }
 .product-item-photo img {
   max-width: 100%;
@@ -1487,6 +1484,11 @@ a.disabled {
   width: 100%;
   transition: 0.5s ease-in-out;
   max-height: 100%;
+  margin: 0 auto;
+}
+
+.product-media-featured-zoom img {
+  width: auto;
 }
 
 .product-gallery {
