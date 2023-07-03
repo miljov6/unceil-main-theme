@@ -9,7 +9,7 @@ $(document).ready(function () {
       centerMode: true,
       slidesToShow: 3,
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 3000
     });
   } else {
     $('.spotlight-slides').slick({
@@ -19,14 +19,16 @@ $(document).ready(function () {
       centerMode: true,
       slidesToShow: 1,
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 3000
     });
   }
 })
 
 $('.new-in-photo-slider').slick({
   arrows: false,
-  dots: true
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 3000
 });
 
 $(document).ready(function () {
@@ -41,7 +43,7 @@ $(document).ready(function () {
       centerMode: false,
       variableWidth: false,
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 3000
     });
   } else {
     $('.collection-more-slider').slick({
@@ -54,7 +56,7 @@ $(document).ready(function () {
       centerMode: false,
       variableWidth: false,
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 3000
     });
   }
 })
