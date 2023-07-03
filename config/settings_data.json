@@ -2,8 +2,9 @@
   "current": {
     "logo": "shopify:\/\/shop_images\/Unceil_logo.png",
     "logo_width": 90,
+    "few_left_quantity": 10,
     "payment_title": "Payment",
-    "help_text": "<p>We are here to help you with any question you might have. <a href=\"#\" title=\"#\">Get in touch<\/a> with us via Whatsapp, chat, or by phone.<\/p>",
+    "help_text": "<p>We are here to help you with any question you might have. <a href=\"mailto:hello@unceil.com\" title=\"mailto:hello@unceil.com\">Get in touch<\/a> with us. <\/p>",
     "all_photographers": "shopify:\/\/pages\/our-photographers",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
