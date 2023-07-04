@@ -216,13 +216,13 @@
       {
         "type": "range",
         "id": "h3",
-        "min": 42,
-        "max": 66,
+        "min": 43,
+        "max": 65,
         "step": 2,
         "unit": "px",
         "label": "H3 Font size",
         "default": 53
-      }, 
+      },
       {
         "type": "range",
         "id": "h4",
@@ -274,7 +274,7 @@
         "max": 46,
         "step": 1,
         "unit": "px",
-        "label": "H2 Mobile Font size",
+        "label": "H3 Mobile Font size",
         "default": 37
       },
       {
