@@ -54,17 +54,17 @@ $(document).ready(function () {
 })
 $('.spotlight-slides').mouseover(function(e){
   var x = $(window).width() - e.pageX;
-  if(e.pageX<80) {
+  if(e.pageX<120) {
     $(this).slick('slickPrev');
-  } else if(x<80) {
+  } else if(x<120) {
     $(this).slick('slickNext');
   } 
 });
 $('.collection-more-slider').mouseover(function(e){
   var x = $(window).width() - e.pageX;
-  if(e.pageX<80) {
+  if(e.pageX<120) {
     $(this).slick('slickPrev');
-  } else if(x<80) {
+  } else if(x<120) {
     $(this).slick('slickNext');
   } 
 });
