@@ -21,15 +21,6 @@ $(document).ready(function () {
   }
 })
 
-$('.spotlight-slides').mouseover(function(e){
-  var x = $(window).width() - e.pageX;
-  if(e.pageX<80) {
-    $(this).slick('slickPrev');
-  } else if(x<80) {
-    $(this).slick('slickNext');
-  } 
-});
-
 $('.new-in-photo-slider').slick({
   arrows: false,
   dots: true
@@ -61,7 +52,14 @@ $(document).ready(function () {
     });
   }
 })
-
+$('.spotlight-slides').mouseover(function(e){
+  var x = $(window).width() - e.pageX;
+  if(e.pageX<80) {
+    $(this).slick('slickPrev');
+  } else if(x<80) {
+    $(this).slick('slickNext');
+  } 
+});
 $('.collection-more-slider').mouseover(function(e){
   var x = $(window).width() - e.pageX;
   if(e.pageX<80) {
