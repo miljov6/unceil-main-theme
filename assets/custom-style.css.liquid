@@ -2568,3 +2568,39 @@ product-recommendations {
   }
 
 }
+
+{% if settings.adjust_fonts %}
+  .jumbo {
+    font-size: {{ settings.jumbo}};
+    line-height: 115%;
+  }
+  h1 {
+    font-size: {{ settings.h1}};
+  }
+  h2 {
+    font-size: {{ settings.h2}};
+  }
+  h3 {
+    font-size: {{ settings.h3}};
+  }
+  h4 {
+    font-size: {{ settings.h4}};
+  }
+  h5 {
+    font-size: {{ settings.h5}};
+  }
+  @media screen and (max-width: 641px) {
+    .m-h3 {
+      font-size: {{ settings.m-h3}};
+    }
+    .m-h4 {
+      font-size: {{ settings.m-h4}};
+    }
+    .m-h5 {
+      font-size: {{ settings.m-h4}};
+    }
+    .m-h6 {
+      font-size: {{ settings.m-h4}};
+    }
+  }
+{% endif %}
