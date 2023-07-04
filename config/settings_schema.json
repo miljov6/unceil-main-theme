@@ -274,7 +274,7 @@
         "max": 46,
         "step": 1,
         "unit": "px",
-        "label": "H2 Mobile Font size",
+        "label": "H3 Mobile Font size",
         "default": 37
       },
       {
