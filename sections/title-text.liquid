@@ -1,9 +1,15 @@
 {% if section.settings.adjust_fonts %}
 <style>
+  .section-{{section.id}} h2 {
+    font-size: {{ section.settings.h2}}px;
+  }
   .section-{{section.id}} .b-18-r {
     font-size: {{ section.settings.b-18-r}}px;
   }
   @media screen and (max-width: 641px) {
+    .section-{{section.id}} .m-h4 {
+      font-size: {{ section.settings.m-h4}}px;
+    }
     .section-{{section.id}} .m-b-16-r {
       font-size: {{ section.settings.m-b-16-r}}px;
     }
@@ -52,6 +58,16 @@
       },
       {
         "type": "range",
+        "id": "h2",
+        "min": 40,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Title Font size",
+        "default": 70
+      },
+      {
+        "type": "range",
         "id": "b-18-r",
         "min": 12,
         "max": 24,
@@ -63,6 +79,16 @@
       {
         "type": "header",
         "content": "Mobile Heading Font Sizes"
+      },
+      {
+        "type": "range",
+        "id": "m-h4",
+        "min": 20,
+        "max": 80,
+        "step": 2,
+        "unit": "px",
+        "label": "Mobile Title Font size",
+        "default": 44
       },
       {
         "type": "range",
