@@ -4,7 +4,12 @@
       "type": "hero-home",
       "settings": {
         "title": "In awe of innocent beauty",
-        "text": "<br>Discover the captivating allure of fine art photography, celebrating the power of nature and the authentic beauty of femininity. Immerse yourself in our curated collection, sourced from around the world, and experience the timeless elegance that truly sets our collection apart."
+        "text": "<br>Discover the captivating allure of fine art photography, celebrating the power of nature and the authentic beauty of femininity. Immerse yourself in our curated collection, sourced from around the world, and experience the timeless elegance that truly sets our collection apart.",
+        "adjust_fonts": true,
+        "h2": 74,
+        "b-18-r": 21,
+        "m-h4": 44,
+        "m-b-16-r": 16
       }
     },
     "c24b38d2-7d1d-4069-ac03-318881a43923": {
@@ -39,7 +44,13 @@
         "title": "Héctor Alamilla",
         "text": "Héctor discovered his passion for photography and cinema at the early age of 17. Over time, he refined his skills and turned his hobby into his official job. Everything in this world is an inspiration and he tries to convey delicate emotions such as self-love and vulnerability in his photographs. For him, the best part of photography is exploring his creativity and meeting people from diverse backgrounds.",
         "cta": "Explore Héctor's artwork",
-        "cta_url": "#"
+        "cta_url": "#",
+        "adjust_fonts": true,
+        "h3": 92,
+        "allcaps": 20,
+        "b-18-r": 20,
+        "m-h6": 30,
+        "m-b-16-r": 16
       }
     },
     "0f5d62e7-0bb3-44e0-888a-0aae2e983e2b": {
@@ -107,7 +118,10 @@
       "settings": {
         "title": "In the spotlight",
         "cta": "Explore all",
-        "cta_url": "#"
+        "cta_url": "#",
+        "h3": 84,
+        "b-14-r": 14,
+        "m-h5": 37
       }
     },
     "594f557e-461e-420a-bfd4-0919a7fdc989": {
