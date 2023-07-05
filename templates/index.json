@@ -45,10 +45,10 @@
         "text": "Héctor discovered his passion for photography and cinema at the early age of 17. Over time, he refined his skills and turned his hobby into his official job. Everything in this world is an inspiration and he tries to convey delicate emotions such as self-love and vulnerability in his photographs. For him, the best part of photography is exploring his creativity and meeting people from diverse backgrounds.",
         "cta": "Explore Héctor's artwork",
         "cta_url": "#",
-        "adjust_fonts": false,
-        "h3": 84,
-        "allcaps": 13,
-        "b-18-r": 13,
+        "adjust_fonts": true,
+        "h3": 72,
+        "allcaps": 16,
+        "b-18-r": 15,
         "m-h6": 30,
         "m-b-16-r": 16
       }
