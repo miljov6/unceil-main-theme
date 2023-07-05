@@ -67,37 +67,39 @@ Usage:
           </button>
         </div>
       </div>
-      <cart-drawer-items {% if cart.item_count==0 %} class=" is-empty" {% endif %} id="cart-drawer-items">
-        <div class="drawer-body">
-          <div class="drawer-items">
-            {% for item in cart.items %}
-            <div class="drawer-item">
-              <div class="drawer-item-img">
-                <img src="{{ item.image | image_url: width: 90 }}" loading="lazy">
-              </div>
-              <div class="drawer-item-info">
-                {% assign product_id = item.product_id %}
-                {% for product in collections.all.products %}
-                {% if product.id == product_id %}
-                {% assign shopifyProduct = product %}
-                {% endif %}
-                {% endfor %}
-                {% assign product_handle = shopifyProduct.handle %}
-                {% assign artist = shopifyProduct.metafields.custom.author %}
-                {% assign title = item.title | split: '-' %}
-                <p class="b-16-m">{{title.first}} by {{artist}}</p>
-                <div class="item-options">
-                  {% for option in item.options_with_values %}
-                  <p class="b-14-r text-grey">{{ option.value }}</p>
-                  {% endfor %}
+      <div id="cart-drawer-items">
+        <cart-drawer-items {% if cart.item_count==0 %} class=" is-empty" {% endif %}>
+          <div class="drawer-body">
+            <div class="drawer-items">
+              {% for item in cart.items %}
+              <div class="drawer-item">
+                <div class="drawer-item-img">
+                  <img src="{{ item.image | image_url: width: 90 }}" loading="lazy">
                 </div>
-                <p class="b-14-r">{{item.final_price | money_without_trailing_zeros}}</p>
+                <div class="drawer-item-info">
+                  {% assign product_id = item.product_id %}
+                  {% for product in collections.all.products %}
+                  {% if product.id == product_id %}
+                  {% assign shopifyProduct = product %}
+                  {% endif %}
+                  {% endfor %}
+                  {% assign product_handle = shopifyProduct.handle %}
+                  {% assign artist = shopifyProduct.metafields.custom.author %}
+                  {% assign title = item.title | split: '-' %}
+                  <p class="b-16-m">{{title.first}} by {{artist}}</p>
+                  <div class="item-options">
+                    {% for option in item.options_with_values %}
+                    <p class="b-14-r text-grey">{{ option.value }}</p>
+                    {% endfor %}
+                  </div>
+                  <p class="b-14-r">{{item.final_price | money_without_trailing_zeros}}</p>
+                </div>
               </div>
+              {% endfor %}
             </div>
-            {% endfor %}
           </div>
-        </div>
-      </cart-drawer-items>
+        </cart-drawer-items>
+      </div>
       {% endif %}
       <div class="drawer__footer">
         <div class="btn-cart"><a href="{{routes.cart_url}}"></a><span>View basket</span></div>
