@@ -1,16 +1,16 @@
 {% if section.settings.adjust_fonts %}
 <style>
-  .section-hero-text-image h1 {
+  .section-hero-text-image-{{section.id}} h1 {
     font-size: {{ section.settings.h1}}px;
   }
-  .section-hero-text-image .b-18-r {
+  .section-hero-text-image-{{section.id}} .b-18-r {
     font-size: {{ section.settings.b-18-r}}px;
   }
   @media screen and (max-width: 641px) {
-    .section-hero-text-image .m-h3 {
+    .section-hero-text-image-{{section.id}} .m-h3 {
       font-size: {{ section.settings.m-h3}}px;
     }
-    .section-hero-text-image .m-b-16-r {
+    .section-hero-text-image-{{section.id}} .m-b-16-r {
       font-size: {{ section.settings.m-b-16-r}}px;
     }
   }
@@ -18,7 +18,7 @@
 {% endif %}
 <div class="container-fluid">
     <div class="container">
-        <div class="hero-text-image section-hero-text-image">
+        <div class="hero-text-image section-hero-text-image-{{section.id}}">
             <div class="hero-text-block">
                 <h1 class="m-h3">{{section.settings.title}}</h1>
                 <p class="b-18-r m-b-16-r">{{section.settings.text}}</p>
