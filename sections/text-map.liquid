@@ -1,18 +1,18 @@
 {% if section.settings.adjust_fonts %}
 <style>
   .section-{{section.id}} h1 {
-    font-size: {{ settings.h1}}px;
+    font-size: {{ section.settings.h1}}px;
   }
 
   .section-{{section.id}} .b-18-r {
-    font-size: {{ settings.b-18-r}}px;
+    font-size: {{ section.settings.b-18-r}}px;
   }
   @media screen and (max-width: 641px) {
     .section-{{section.id}} .m-h3 {
-      font-size: {{ settings.m-h3}}px;
+      font-size: {{ section.settings.m-h3}}px;
     }
     .section-{{section.id}} .m-b-16-r {
-      font-size: {{ settings.m-b-16-r}}px;
+      font-size: {{ section.settings.m-b-16-r}}px;
     }
   }
 </style>
