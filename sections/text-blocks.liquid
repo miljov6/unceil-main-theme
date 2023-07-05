@@ -1,13 +1,13 @@
 {% if section.settings.adjust_fonts %}
 <style>
-  .section-text-block h2 {
+  .section-text-block-{{section.id}} h2 {
     font-size: {{ section.settings.h2}}px;
   }
-  .section-text-block .b-16-r {
+  .section-text-block-{{section.id}} .b-16-r {
     font-size: {{ section.settings.b-18-r}}px;
   }
   @media screen and (max-width: 641px) {
-    .section-text-block .m-h4 {
+    .section-text-block-{{section.id}}k .m-h4 {
       font-size: {{ section.settings.m-h4}}px;
     }
   }
@@ -15,7 +15,7 @@
 {% endif %}
 <div class="container-fluid">
     <div class="container">
-        <div class="text-block section-text-block">
+        <div class="text-block section-text-block-{{section.id}}">
             <div class="text-block-head">
                 <h2 class="m-h4">{{section.settings.title}}</p>
             </div>
