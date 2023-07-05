@@ -71,7 +71,7 @@ Usage:
         <div class="drawer-body">
           <div class="drawer-items">
             {% for item in cart.items %}
-            <div  data-hulkapps-lineitem class="drawer-item">
+            <div class="drawer-item">
               <div class="drawer-item-img">
                 <img src="{{ item.image | image_url: width: 90 }}" loading="lazy">
               </div>
@@ -91,7 +91,7 @@ Usage:
                   <p class="b-14-r text-grey">{{ option.value }}</p>
                   {% endfor %}
                 </div>
-                <p  data-hulkapps-ci-price data-key='{{item.key}}' class="b-14-r">{{item.final_price | money_without_trailing_zeros}}</p>
+                <p class="b-14-r">{{item.final_price | money_without_trailing_zeros}}</p>
               </div>
             </div>
             {% endfor %}
