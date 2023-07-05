@@ -118,7 +118,7 @@
       "settings": {
         "title": "In the spotlight",
         "cta": "Explore all",
-        "cta_url": "#",
+        "cta_url": "shopify:\/\/collections\/gallery",
         "h3": 96,
         "b-14-r": 18,
         "m-h5": 37
