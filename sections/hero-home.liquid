@@ -1,3 +1,22 @@
+{% if section.settings.adjust_fonts %}
+<style>
+  .section-{{section.id}} h2 {
+    font-size: {{ settings.h2}}px;
+  }
+  .section-{{section.id}} .b-18-r {
+    font-size: {{ settings.b-18-r}}px;
+  }
+  @media screen and (max-width: 641px) {
+    .section-{{section.id}} .m-h4 {
+      font-size: {{ settings.m-h4}}px;
+    }
+    .section-{{section.id}} .m-b-16-r {
+      font-size: {{ settings.m-b-16-r}}px;
+    }
+  }
+</style>
+{% endif %}
+
 <div class="container-fluid">
     <div class="container">
         <div class="hero-home">
@@ -24,6 +43,60 @@
         "type": "textarea",
         "id": "text",
         "label": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "adjust_fonts",
+        "label": "Adjust Font Sizes?",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Desktop Heading Font Sizes"
+      },
+      {
+        "type": "range",
+        "id": "h2",
+        "min": 66,
+        "max": 82,
+        "step": 2,
+        "unit": "px",
+        "label": "Title Font size",
+        "default": 70
+      },
+      {
+        "type": "range",
+        "id": "b-18-r",
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Regular Font size",
+        "default": 18
+      },
+      {
+        "type": "header",
+        "content": "Mobile Heading Font Sizes"
+      },
+      {
+        "type": "range",
+        "id": "m-h4",
+        "min": 38,
+        "max": 52,
+        "step": 1,
+        "unit": "px",
+        "label": "Title Mobile Font size",
+        "default": 44
+      },
+      {
+        "type": "range",
+        "id": "m-b-16-r",
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Regular Mobile Font size",
+        "default": 16
       }
     ],
       "presets": [

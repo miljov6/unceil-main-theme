@@ -1,3 +1,16 @@
+{% if section.settings.adjust_fonts %}
+<style>
+  .section-{{section.id}} .faq-question {
+    font-size: {{ settings.faq-question}}px;
+  }
+  .section-{{section.id}} .allcaps {
+    font-size: {{ settings.allcaps}}px;
+  }
+  .section-{{section.id}} .b-14-r  {
+    font-size: {{ settings.b-14-r }}px;
+  }
+</style>
+{% endif %}
 <div class="container-fluid">
     <div class="container">
         <div class="faq-block" id="{{section.settings.block_id}}">
@@ -35,6 +48,46 @@
         "type": "text",
         "id": "block_id",
         "label": "Block ID"
+      },
+      {
+        "type": "checkbox",
+        "id": "adjust_fonts",
+        "label": "Adjust Font Sizes?",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Desktop Heading Font Sizes"
+      },
+      {
+        "type": "range",
+        "id": "faq-question",
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Question Font Size",
+        "default": 18
+      },
+      {
+        "type": "range",
+        "id": "allcaps",
+        "min": 10,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Section Title Font size",
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "b-14-r",
+        "min": 10,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Regular Font size",
+        "default": 14
       }
     ],
     "blocks": [

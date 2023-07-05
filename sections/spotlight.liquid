@@ -1,3 +1,19 @@
+{% if section.settings.adjust_fonts %}
+<style>
+  .section-{{section.id}} h3 {
+    font-size: {{ settings.h3}}px;
+  }
+  .section-{{section.id}} .b-14-r {
+    font-size: {{ settings.b-14-r}}px;
+  }
+  @media screen and (max-width: 641px) {
+    .section-{{section.id}} .m-h5 {
+      font-size: {{ settings.m-h5}}px;
+    }
+  }
+</style>
+{% endif %}
+
 <div class="container-fluid">
   <div class="spotlight">
     <div class="spotlight-head">
@@ -58,6 +74,44 @@
       "type": "url",
       "id": "cta_url",
       "label": "CTA Url"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Heading Font Sizes"
+    },
+    {
+      "type": "range",
+      "id": "h3",
+      "min": 72,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "H1 Font size",
+      "default": 84
+    },
+    {
+      "type": "range",
+      "id": "b-14-r",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Regular Font size",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Mobile Font Sizes"
+    },
+    {
+      "type": "range",
+      "id": "m-h5",
+      "min": 30,
+      "max": 44,
+      "step": 1,
+      "unit": "px",
+      "label": "Heading Mobile Font size",
+      "default": 37
     }
   ],
   "blocks": [

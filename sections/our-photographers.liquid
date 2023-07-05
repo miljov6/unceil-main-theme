@@ -1,3 +1,21 @@
+{% if section.settings.adjust_fonts %}
+<style>
+  .section-{{section.id}} h1 {
+    font-size: {{ settings.h1}}px;
+  }
+  .section-{{section.id}} h5 {
+    font-size: {{ settings.h5}}px;
+  }
+  @media screen and (max-width: 641px) {
+    .section-{{section.id}} .m-h3 {
+      font-size: {{ settings.m-h3}}px;
+    }
+    .section-{{section.id}} .m-h6 {
+      font-size: {{ settings.m-h6}}px;
+    }
+  }
+</style>
+{% endif %}
 <div class="container-fluid">
     <div class="container">
         <div class="our-photographers">
@@ -33,6 +51,60 @@
         "type": "text",
         "id": "title",
         "label": "Title"
+      },
+      {
+        "type": "checkbox",
+        "id": "adjust_fonts",
+        "label": "Adjust Font Sizes?",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Desktop Heading Font Sizes"
+      },
+      {
+        "type": "range",
+        "id": "h1",
+        "min": 76,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "Title Font size",
+        "default": 84
+      },
+      {
+        "type": "range",
+        "id": "h5",
+        "min": 30,
+        "max": 44,
+        "step": 1,
+        "unit": "px",
+        "label": "Photographer's Name",
+        "default": 37
+      },
+      {
+        "type": "header",
+        "content": "Mobile Heading Font Sizes"
+      },
+      {
+        "type": "range",
+        "id": "m-h3",
+        "min": 48,
+        "max": 64,
+        "step": 1,
+        "unit": "px",
+        "label": "Title Mobile Font size",
+        "default": 53
+      },
+      {
+        "type": "range",
+        "id": "m-h6",
+        "min": 24,
+        "max": 36,
+        "step": 1,
+        "unit": "px",
+        "label": "Photographer's Name Mobile Font size",
+        "default": 30
       }
     ],
     "blocks": [

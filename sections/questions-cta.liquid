@@ -1,3 +1,15 @@
+{% if section.settings.adjust_fonts %}
+<style>
+  .section-{{section.id}} .b-16-r {
+    font-size: {{ settings.b-16-r}}px;
+  }
+  @media screen and (max-width: 641px) {
+    .section-{{section.id}} .m-b-14-r {
+      font-size: {{ settings.m-b-14-r}}px;
+    }
+  }
+</style>
+{% endif %}
 <div class="container-fluid">
         <div class="questions-cta">
             <p class="b-16-r m-b-14-r">{{section.settings.text | replace: '<p>', '' | replace: '</p>', ''}}</p>
@@ -17,6 +29,40 @@
         "id": "text",
         "label": "Text",
         "default": "<p>Default Text</p>"
+      },
+      {
+        "type": "checkbox",
+        "id": "adjust_fonts",
+        "label": "Adjust Font Sizes?",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Desktop Heading Font Sizes"
+      },
+      {
+        "type": "range",
+        "id": "b-16-r",
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Regular Font size",
+        "default": 16
+      },
+      {
+        "type": "header",
+        "content": "Mobile Heading Font Sizes"
+      },
+      {
+        "type": "range",
+        "id": "m-b-14-r",
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Regular Mobile Font size",
+        "default": 14
       }
     ],
       "presets": [

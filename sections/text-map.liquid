@@ -1,3 +1,22 @@
+{% if section.settings.adjust_fonts %}
+<style>
+  .section-{{section.id}} h1 {
+    font-size: {{ settings.h1}}px;
+  }
+
+  .section-{{section.id}} .b-18-r {
+    font-size: {{ settings.b-18-r}}px;
+  }
+  @media screen and (max-width: 641px) {
+    .section-{{section.id}} .m-h3 {
+      font-size: {{ settings.m-h3}}px;
+    }
+    .section-{{section.id}} .m-b-16-r {
+      font-size: {{ settings.m-b-16-r}}px;
+    }
+  }
+</style>
+{% endif %}
 <div class="container-fluid">
     <div class="container">
         <div class="text-map">
@@ -27,6 +46,60 @@
         "type": "textarea",
         "id": "text",
         "label": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "adjust_fonts",
+        "label": "Adjust Font Sizes?",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Desktop Heading Font Sizes"
+      },
+      {
+        "type": "range",
+        "id": "h1",
+        "min": 72,
+        "max": 100,
+        "step": 2,
+        "unit": "px",
+        "label": "H1 Font size",
+        "default": 84
+      },
+      {
+        "type": "range",
+        "id": "b-18-r",
+        "min": 14,
+        "max": 26,
+        "step": 1,
+        "unit": "px",
+        "label": "Regular Font size",
+        "default": 18
+      },
+      {
+        "type": "header",
+        "content": "Mobile Font Sizes"
+      },
+      {
+        "type": "range",
+        "id": "m-h3",
+        "min": 48,
+        "max": 64,
+        "step": 1,
+        "unit": "px",
+        "label": "H1 Mobile Font size",
+        "default": 53
+      },
+      {
+        "type": "range",
+        "id": "m-b-16-r",
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Mobile Regular Font size",
+        "default": 16
       }
     ],
       "presets": [
