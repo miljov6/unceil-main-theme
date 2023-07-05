@@ -1,19 +1,19 @@
 {% if section.settings.adjust_fonts %}
 <style>
-  .section-{{section.id}} .faq-question {
+  .section-faq-block .faq-question {
     font-size: {{ section.settings.faq-question}}px;
   }
-  .section-{{section.id}} .allcaps {
+  .section-faq-block .allcaps {
     font-size: {{ section.settings.allcaps}}px;
   }
-  .section-{{section.id}} .b-14-r  {
+  .section-faq-block .b-14-r  {
     font-size: {{ section.settings.b-14-r }}px;
   }
 </style>
 {% endif %}
 <div class="container-fluid">
     <div class="container">
-        <div class="faq-block" id="{{section.settings.block_id}}">
+        <div class="faq-block section-faq-block" id="{{section.settings.block_id}}">
             <div class="faq-block-head">
                 <p class="allcaps">{{section.settings.title}}</p>
             </div>

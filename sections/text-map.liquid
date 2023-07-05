@@ -1,17 +1,17 @@
 {% if section.settings.adjust_fonts %}
 <style>
-  .section-{{section.id}} h1 {
+  .section-text-map h1 {
     font-size: {{ section.settings.h1}}px;
   }
 
-  .section-{{section.id}} .b-18-r {
+  .section-text-map .b-18-r {
     font-size: {{ section.settings.b-18-r}}px;
   }
   @media screen and (max-width: 641px) {
-    .section-{{section.id}} .m-h3 {
+    .section-text-map .m-h3 {
       font-size: {{ section.settings.m-h3}}px;
     }
-    .section-{{section.id}} .m-b-16-r {
+    .section-text-map .m-b-16-r {
       font-size: {{ section.settings.m-b-16-r}}px;
     }
   }
@@ -19,7 +19,7 @@
 {% endif %}
 <div class="container-fluid">
     <div class="container">
-        <div class="text-map">
+        <div class="text-map section-text-map">
             <img src="{{'world-map.svg'|asset_url}}">
             <div class="text-map-block">
                 <h1 class="m-h3">{{section.settings.title}}</h1>

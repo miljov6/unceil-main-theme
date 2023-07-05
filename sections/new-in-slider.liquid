@@ -1,19 +1,19 @@
 {% if section.settings.adjust_fonts %}
 <style>
-  .section-{{section.id}} h3 {
+  .section-new-in h3 {
     font-size: {{ section.settings.h3}}px;
   }
-  .section-{{section.id}} .allcaps {
+  .section-new-in .allcaps {
     font-size: {{ section.settings.allcaps}}px;
   }
-  .section-{{section.id}} .b-18-r {
+  .section-new-in .b-18-r {
     font-size: {{ section.settings.b-18-r}}px;
   }
   @media screen and (max-width: 641px) {
-    .section-{{section.id}} .m-h6 {
+    .section-new-in .m-h6 {
       font-size: {{ section.settings.m-h6}}px;
     }
-    .section-{{section.id}} .m-b-16-r {
+    .section-new-in .m-b-16-r {
       font-size: {{ section.settings.m-b-16-r}}px;
     }
   }
@@ -22,7 +22,7 @@
 
 <div class="container-fluid">
   <div class="container">
-    <div class="new-in">
+    <div class="new-in section-new-in">
       <div class="new-in-right">
         <p class="allcaps">{{section.settings.subtitle}}</p>
         <div class="new-in-text">

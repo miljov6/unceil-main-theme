@@ -1,16 +1,16 @@
 {% if section.settings.adjust_fonts %}
 <style>
-  .section-{{section.id}} h1 {
+  .section-our-photographers h1 {
     font-size: {{ section.settings.h1}}px;
   }
-  .section-{{section.id}} h5 {
+  .section-our-photographers h5 {
     font-size: {{ section.settings.h5}}px;
   }
   @media screen and (max-width: 641px) {
-    .section-{{section.id}} .m-h3 {
+    .section-our-photographers .m-h3 {
       font-size: {{ section.settings.m-h3}}px;
     }
-    .section-{{section.id}} .m-h6 {
+    .section-our-photographers .m-h6 {
       font-size: {{ section.settings.m-h6}}px;
     }
   }
@@ -18,7 +18,7 @@
 {% endif %}
 <div class="container-fluid">
     <div class="container">
-        <div class="our-photographers">
+        <div class="our-photographers section-our-photographers">
             <div class="our-photographers-head">
                 <h1 class="m-h3">{{section.settings.title}}</h1>
             </div>

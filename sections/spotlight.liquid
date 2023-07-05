@@ -1,13 +1,13 @@
 {% if section.settings.adjust_fonts %}
 <style>
-  .section-{{section.id}} h3 {
+  .section-spotlight h3 {
     font-size: {{ section.settings.h3}}px;
   }
-  .section-{{section.id}} .b-14-r {
+  .section-spotlight .b-14-r {
     font-size: {{ section.settings.b-14-r}}px;
   }
   @media screen and (max-width: 641px) {
-    .section-{{section.id}} .m-h5 {
+    .section-spotlight .m-h5 {
       font-size: {{ section.settings.m-h5}}px;
     }
   }
@@ -15,7 +15,7 @@
 {% endif %}
 
 <div class="container-fluid">
-  <div class="spotlight">
+  <div class="spotlight section-spotlight">
     <div class="spotlight-head">
       <h3 class="m-h5">{{section.settings.title}}</h3>
       <a href="{{section.settings.cta_url}}" class="btn cta text-right">{{section.settings.cta}}</a>

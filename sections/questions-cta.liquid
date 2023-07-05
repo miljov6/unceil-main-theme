@@ -1,17 +1,17 @@
 {% if section.settings.adjust_fonts %}
 <style>
-  .section-{{section.id}} .b-16-r {
+  .section-questions-cta .b-16-r {
     font-size: {{ section.settings.b-16-r}}px;
   }
   @media screen and (max-width: 641px) {
-    .section-{{section.id}} .m-b-14-r {
+    .section-questions-cta .m-b-14-r {
       font-size: {{ section.settings.m-b-14-r}}px;
     }
   }
 </style>
 {% endif %}
 <div class="container-fluid">
-        <div class="questions-cta .section-{{section.id}}">
+        <div class="questions-cta .section-questions-cta">
             <p class="b-16-r m-b-14-r">{{section.settings.text | replace: '<p>', '' | replace: '</p>', ''}}</p>
         </div>
 </div>

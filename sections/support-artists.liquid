@@ -1,26 +1,26 @@
 {% if section.settings.adjust_fonts %}
 <style>
-  .section-{{section.id}} h1 {
+  .section-support-artists h1 {
     font-size: {{ section.settings.h1}}px;
   }
-  .section-{{section.id}} .b-18-r {
+  .section-support-artists .b-18-r {
     font-size: {{ section.settings.b-18-r}}px;
   }
-  .section-{{section.id}} .artist-name  {
+  .section-support-artists .artist-name  {
     font-size: {{ section.settings.artist-name }}px;
   }
   @media screen and (max-width: 641px) {
-    .section-{{section.id}} .m-h3 {
+    .section-support-artists .m-h3 {
       font-size: {{ section.settings.m-h3}}px;
     }
-    .section-{{section.id}} .m-b-16-r {
+    .section-support-artists .m-b-16-r {
       font-size: {{ section.settings.m-b-16-r}}px;
     }
   }
 </style>
 {% endif %}
 <div class="container-fluid">
-    <div class="container .section-{{section.id}}">
+    <div class="container section-support-artists">
         <div class="support-artists">
             <div class="support-text-block">
                 <h1 class="m-h3">{{section.settings.title}}</h1>
