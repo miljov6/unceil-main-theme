@@ -13,14 +13,22 @@
       "settings": {
         "title": "Experience a seamless art collecting journey",
         "text": "<br>How many times have you come across a photography you loved, only to give up on buying it due to the hassle involved? Contacting galleries or artists is one thing, but finding a secure way to purchase and have the artwork delivered is another challenge. We have eliminated all those complications for you. From curated photograph prints to bespoke framing that perfectly complements the art, we offer a smooth and effortless journey of collecting art.",
-        "img": "shopify:\/\/shop_images\/LR_Daisy_Hector_Alamilla.png"
+        "img": "shopify:\/\/shop_images\/LR_Daisy_Hector_Alamilla.png",
+        "adjust_fonts": true,
+        "h1": 76,
+        "b-18-r": 16,
+        "m-h3": 53,
+        "m-b-16-r": 16
       }
     },
     "f26672bc-148b-4a77-a562-cf623a717406": {
       "type": "title-text",
       "settings": {
         "title": "The beginning of Unceil",
-        "text": "<br>In a world abundant with countless fine art photographs, what distinguishes one as truly unique? This question ignited our mission to curate a collection of our own, giving birth to Unceil - an amalgamation of boldness and subtlety. Guided by a delicate equilibrium, we curate the intersection between the risqué and pure innocence, where refined beauty converges with untamed wildness. Join us as we venture into the essence of fine art photography and beyond."
+        "text": "<br>In a world abundant with countless fine art photographs, what distinguishes one as truly unique? This question ignited our mission to curate a collection of our own, giving birth to Unceil - an amalgamation of boldness and subtlety. Guided by a delicate equilibrium, we curate the intersection between the risqué and pure innocence, where refined beauty converges with untamed wildness. Join us as we venture into the essence of fine art photography and beyond.",
+        "adjust_fonts": false,
+        "b-18-r": 18,
+        "m-b-16-r": 16
       }
     },
     "c14015d7-07b5-4b89-982f-bb160ba22a71": {
@@ -35,14 +43,25 @@
         "title": "Empowering artistic independence",
         "text": "At Unceil, our passion lies in empowering artists and fostering their autonomy. We firmly believe that artists should have the freedom to represent themselves rather than being represented by others. That's why we have created an online gallery where any fine art photography that aligns with our values can be exhibited. <br>\n<br>\nBy embracing a non-exclusive approach, we actively encourage artists to develop their distinct voice, gain recognition, and cultivate a strong and unique artistic presence. We aim to break away from traditional restrictions and limitations imposed on artists, enabling them to maintain full control over their work and build their own path towards independence.",
         "img": "shopify:\/\/shop_images\/Frame_854.png",
-        "artist_name": ""
+        "artist_name": "",
+        "adjust_fonts": false,
+        "h1": 84,
+        "b-18-r": 18,
+        "artist-name": 36,
+        "m-h3": 53,
+        "m-b-16-r": 16
       }
     },
     "d5ec0454-da7d-4796-9fa2-9ad8d174f1f4": {
       "type": "text-map",
       "settings": {
         "title": "Unleashing creativity",
-        "text": "<br>\n<br>Imagine the collective time wasted by artists on commercializing their work. At Unceil, we offer a comprehensive range of services with lower commissions, effectively outsourcing the non-artistic tasks. We take care of managing the e-commerce side, printing, issuing certificates, handling shipping, framing, and more, allowing artists to fully immerse themselves in their creativity. By enabling artists to solely focus on their creative process, we unleash their true potential and cultivate the production of exceptional artwork."
+        "text": "<br>\n<br>Imagine the collective time wasted by artists on commercializing their work. At Unceil, we offer a comprehensive range of services with lower commissions, effectively outsourcing the non-artistic tasks. We take care of managing the e-commerce side, printing, issuing certificates, handling shipping, framing, and more, allowing artists to fully immerse themselves in their creativity. By enabling artists to solely focus on their creative process, we unleash their true potential and cultivate the production of exceptional artwork.",
+        "adjust_fonts": false,
+        "h1": 84,
+        "b-18-r": 18,
+        "m-h3": 53,
+        "m-b-16-r": 16
       }
     },
     "e1425097-aa52-44c4-90cc-dfc810d77a86": {
