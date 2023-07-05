@@ -81,7 +81,12 @@
         "597d46fc-9c52-485c-87cc-9783f908a7bd"
       ],
       "settings": {
-        "title": "Our Photographers"
+        "title": "Our Photographers",
+        "adjust_fonts": true,
+        "h1": 76,
+        "h5": 36,
+        "m-h3": 53,
+        "m-h6": 30
       }
     },
     "dfc708d9-6e46-4c18-b93a-f68667376463": {
