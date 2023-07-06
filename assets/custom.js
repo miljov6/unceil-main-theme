@@ -288,6 +288,7 @@ function updateDrawer() {
     document.querySelector('.cart-count-bubble-d span').innerHTML = totalItems;
     document.querySelector(".drawer-body").innerHTML = drawerSelector;
     document.querySelector('.drawer-header p').innerHTML = 'Product added to cart';
+    document.querySelector('.drawer__footer').style.display = 'block';
   });
 }
 function addToCartBtn(variant_id, qty) {
