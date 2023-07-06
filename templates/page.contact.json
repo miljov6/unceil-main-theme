@@ -50,7 +50,11 @@
         "4a659944-1252-422f-943c-e58ba3c134e8"
       ],
       "settings": {
-        "title": "Contact Us"
+        "title": "Contact Us",
+        "adjust_fonts": false,
+        "h2": 70,
+        "b-16-r": 16,
+        "m-h4": 44
       }
     }
   },
