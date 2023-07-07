@@ -73,7 +73,12 @@
         "text": "<br>We encounter numerous sources of awe throughout our lives. It may arise from the magnificent Egyptian Pyramids, the glistening turquoise waters of the Caribbean, or the gaze of a beloved sitting right in front of us. For me, awe manifests as the innocent beauty embodied by the female form. <br>\n<br> \nIn its purest form, nudity provides an unadorned perspective. It reminds us of our smallness and transience within the vast expanse of time and space. Simultaneously, it evokes a sense of belonging to something greater. This paradox of feeling insignificant yet connected is both humbling and liberating. Through photography, my passion is to share this experience with the world.",
         "name": "Megan Lee",
         "position": "Founder",
-        "img": "shopify:\/\/shop_images\/Frame_775_7.png"
+        "img": "shopify:\/\/shop_images\/Frame_775_7.png",
+        "adjust_fonts": true,
+        "h3": 53,
+        "b-18-r": 16,
+        "m-h6": 30,
+        "m-b-16-r": 16
       }
     }
   },
