@@ -1,3 +1,24 @@
+{% if section.settings.adjust_fonts %}
+<style>
+  .contact-block-text h3 {
+    font-size: {{ section.settings.h3}}px;
+  }
+  .contact-block-text .b-18-r {
+    font-size: {{ section.settings.b-18-r}}px;
+  }
+  .contact-block-cta .btn {
+    font-size: {{ section.settings.btn}}px;
+  }
+  @media screen and (max-width: 641px) {
+    .contact-block-text .m-h6 {
+      font-size: {{ section.settings.m-h6}}px;
+    }
+    .contact-block-text .m-b-16-r {
+      font-size: {{ section.settings.m-b-16-r}}px;
+    }
+  }
+</style>
+{% endif %}
 <div class="container-fluid">
     <div class="container">
         <div class="contact-block">
@@ -52,6 +73,64 @@
         "type": "image_picker",
         "id": "img",
         "label": "Image"
+      },
+      {
+        "type": "header",
+        "content": "Desktop Heading Font Sizes"
+      },
+      {
+        "type": "range",
+        "id": "h3",
+        "min": 30,
+        "max": 80,
+        "step": 1,
+        "unit": "px",
+        "label": "Title Font size",
+        "default": 53
+      },
+      {
+        "type": "range",
+        "id": "b-18-r",
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "label": "Regular Font Size",
+        "default": 18
+      },
+      {
+        "type": "range",
+        "id": "btn",
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "label": "Regular Font Size",
+        "default": 16
+      },
+      {
+        "type": "header",
+        "content": "Mobile Heading Font Sizes"
+      },
+      {
+        "type": "range",
+        "id": "m-h6",
+        "min": 20,
+        "max": 48,
+        "step": 1,
+        "unit": "px",
+        "label": "Mobile Title Font size",
+        "default": 30
+      },
+      {
+        "type": "range",
+        "id": "m-b-16-r",
+        "min": 10,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Mobile Regular Font size",
+        "default": 16
       }
     ],
   "presets": [
