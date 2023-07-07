@@ -96,7 +96,13 @@
         "text": "<br>As an artist, your responsibilities extend beyond creating art. You also need to focus on promoting and selling your work. We recognise that and that's why we're here. Our goal is to support you by taking care of the \"artless\" duties.<br>\n<br>\nWith our assistance, you can entrust us with promoting your art, managing orders, ensuring authenticity, and handling the printing and distribution process—all while maintaining the highest quality standards that your art deserves. Outsourcing to us means more time and headspace for your creativity to thrive.",
         "cta": "send portfolio",
         "cta_url": "mailto:hello@unceil.com",
-        "img": "shopify:\/\/shop_images\/Frame_775_6.png"
+        "img": "shopify:\/\/shop_images\/Frame_775_6.png",
+        "adjust_fonts": true,
+        "h3": 53,
+        "b-18-r": 18,
+        "btn": 16,
+        "m-h6": 30,
+        "m-b-16-r": 16
       }
     }
   },
