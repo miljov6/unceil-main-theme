@@ -160,37 +160,39 @@ $('.product-item-photo img').each(function () {
     $(this).prev().addClass('hover-url');
   })
 })
-
-function updateBtnDetails() {
-  var price = $("#variants-select").find(":selected").data('price');
-  var available = $("#variants-select").find(":selected").data('available');
-  if (available == false) {
-    $('#buy-btn').text('Not Available');
-    $('.buy-btn').removeClass('enabled').addClass('disabled');
-  } else {
-    $('#buy-btn').text('Buy Now - ' + price);
-    $('.buy-btn').removeClass('disabled').addClass('enabled');
+$(document).ready(function(){
+  function updateBtnDetails() {
+    var available = $("#variants-select").find(":selected").data('available');
+    var price = $("#variants-select").find(":selected").data('price');
+    if (available == false) {
+      $('#buy-btn').text('Not Available');
+      $('.buy-btn').removeClass('enabled').addClass('disabled');
+    } else {
+      $('#buy-btn').text('Buy now - ' + price);
+      $('.buy-btn').removeClass('disabled').addClass('enabled');
+    }
   }
-}
-$('#option-1').on('change', function () {
-  var s2 = $('#option-2').val();
-  var s1 = $('#option-1').val();
-  var t = $('#variants-select')
-  $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
-  updateBtnDetails();
-  var variant_id = $("#variants-select").find(":selected").attr('id');
-  $('#variant-id').val(variant_id);
+  $('#option-1').on('change', function () {
+    var s2 = $('#option-2').val();
+    var s1 = $('#option-1').val();
+    var t = $('#variants-select')
+    $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
+    updateBtnDetails();
+    var variant_id = $("#variants-select").find(":selected").attr('id');
+    $('#variant-id').val(variant_id);
+  })
+  $('#option-2').on('change', function () {
+    var s2 = $('#option-2').val();
+    var s1 = $('#option-1').val();
+    var t = $('#variants-select')
+    $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
+    var variant_id = $("#variants-select").find(":selected").attr('id');
+    $('#variant-id').val(variant_id);
+    updateBtnDetails();
+  
+  })
 })
-$('#option-2').on('change', function () {
-  var s2 = $('#option-2').val();
-  var s1 = $('#option-1').val();
-  var t = $('#variants-select')
-  $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
-  var variant_id = $("#variants-select").find(":selected").attr('id');
-  $('#variant-id').val(variant_id);
-  updateBtnDetails();
 
-})
 function updateBtnDetailsM() {
   var price = $("#variants-select-m").find(":selected").data('price');
   var available = $("#variants-select-m").find(":selected").data('available');
