@@ -171,7 +171,7 @@ $(document).ready(function () {
       $('.buy-btn').removeClass('enabled').addClass('disabled');
     } else {
       $('#buy-btn').text('Buy now - ' + price);
-      $('#buy-btn').data('product-id') = id;
+      $('#buy-btn').data('product-id', id);
       $('.buy-btn').removeClass('disabled').addClass('enabled');
     }
   }
@@ -216,7 +216,7 @@ function updateBtnDetailsM() {
     $('.buy-btn-m').removeClass('enabled').addClass('disabled');
   } else {
     $('#buy-btn-m').text('Buy Now - ' + price);
-    $('#buy-btn-m').data('product-id') = id;
+    $('#buy-btn-m').data('product-id', id);
     $('.buy-btn-m').removeClass('disabled').addClass('enabled');
   }
 }
