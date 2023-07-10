@@ -112,7 +112,7 @@
                 <select id="variants-select-m">
                   {% for variant in product.variants %}
                   <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-option1="{{variant.option1}}"
-                    {% if variant.option != blank %}data-option2="{{variant.option2}}"{% else %} data-option2="none" {% endif %} data-price="{{variant.price | money_without_trailing_zeros}}">
+                    data-option2="{{variant.option2}}" data-price="{{variant.price | money_without_trailing_zeros}}">
                     {{variant.title}}</option>
                   {% endfor %}
                 </select>
@@ -275,7 +275,7 @@
               <select id="variants-select">
                 {% for variant in product.variants %}
                 <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-option1="{{variant.option1}}"
-                {% if variant.option != blank %}data-option2="{{variant.option2}}"{% else %} data-option2="none" {% endif %} data-price="{{variant.price | money_without_trailing_zeros}}">
+                data-option2="{{variant.option2}}" data-price="{{variant.price | money_without_trailing_zeros}}">
                   {{variant.title}}</option>
                 {% endfor %}
               </select>

@@ -177,8 +177,8 @@ $(document).ready(function () {
   }
   if ($('#option-2').length > 0) {
     $('#option-1').on('change', function () {
-      var s2 = $('#option-2').val();
       var s1 = $('#option-1').val();
+      var s2 = $('#option-2').val();
       var t = $('#variants-select');
       $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
       updateBtnDetails();
