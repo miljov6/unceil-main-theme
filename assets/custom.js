@@ -164,11 +164,14 @@ $(document).ready(function () {
   function updateBtnDetails() {
     var available = $("#variants-select").find(":selected").data('available');
     var price = $("#variants-select").find(":selected").data('price');
+    var id = $("#variants-select").find(":selected").data('variant-id');
     if (available == false) {
+      $('#buy-btn').text('Not Available');
       $('#buy-btn').text('Not Available');
       $('.buy-btn').removeClass('enabled').addClass('disabled');
     } else {
       $('#buy-btn').text('Buy now - ' + price);
+      $('#buy-btn').data('product-id') = id;
       $('.buy-btn').removeClass('disabled').addClass('enabled');
     }
   }
@@ -207,11 +210,13 @@ $(document).ready(function () {
 function updateBtnDetailsM() {
   var price = $("#variants-select-m").find(":selected").data('price');
   var available = $("#variants-select-m").find(":selected").data('available');
+  var id = $("#variants-select-m").find(":selected").data('variant-id');
   if (available == false) {
     $('#buy-btn-m').text('Not Available');
     $('.buy-btn-m').removeClass('enabled').addClass('disabled');
   } else {
     $('#buy-btn-m').text('Buy Now - ' + price);
+    $('#buy-btn-m').data('product-id') = id;
     $('.buy-btn-m').removeClass('disabled').addClass('enabled');
   }
 }
