@@ -165,6 +165,7 @@ $(document).ready(function () {
     var available = $("#variants-select").find(":selected").data('available');
     var price = $("#variants-select").find(":selected").data('price');
     var id = $("#variants-select").find(":selected").data('variant-id');
+    console.log(id);
     if (available == false) {
       $('#buy-btn').text('Not Available');
       $('#buy-btn').text('Not Available');
@@ -172,6 +173,7 @@ $(document).ready(function () {
     } else {
       $('#buy-btn').text('Buy now - ' + price);
       $('.buy-btn').data('product-id', id);
+      console.log($('.buy-btn').data('product-id'));
       $('.buy-btn').removeClass('disabled').addClass('enabled');
     }
   }
