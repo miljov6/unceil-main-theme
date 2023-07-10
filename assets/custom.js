@@ -179,7 +179,7 @@ $(document).ready(function () {
     $('#option-1').on('change', function () {
       var s2 = $('#option-2').val();
       var s1 = $('#option-1').val();
-      var t = $('#variants-select')
+      var t = $('#variants-select');
       $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
       updateBtnDetails();
       var variant_id = $("#variants-select").find(":selected").attr('id');
@@ -188,7 +188,7 @@ $(document).ready(function () {
     $('#option-2').on('change', function () {
       var s2 = $('#option-2').val();
       var s1 = $('#option-1').val();
-      var t = $('#variants-select')
+      var t = $('#variants-select');
       $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
       var variant_id = $("#variants-select").find(":selected").attr('id');
       $('#variant-id').val(variant_id);
@@ -198,7 +198,7 @@ $(document).ready(function () {
   } else {
     $('#option-1').on('change', function () {
       var s1 = $('#option-1').val();
-      var t = $('#variants-select')
+      var t = $('#variants-select');
       $("#variants-select option[data-option1='" + s1 + "']").prop("selected", true);
       updateBtnDetails();
       var variant_id = $("#variants-select").find(":selected").attr('id');
