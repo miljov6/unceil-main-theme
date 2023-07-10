@@ -165,15 +165,13 @@ $(document).ready(function () {
     var available = $("#variants-select").find(":selected").data('available');
     var price = $("#variants-select").find(":selected").data('price');
     var id = $("#variants-select").find(":selected").data('variant-id');
-    console.log(id);
     if (available == false) {
       $('#buy-btn').text('Not Available');
       $('#buy-btn').text('Not Available');
       $('.buy-btn').removeClass('enabled').addClass('disabled');
     } else {
       $('#buy-btn').text('Buy now - ' + price);
-      $('.buy-btn').data('product-id', id);
-      console.log($('.buy-btn').data('product-id'));
+      $('.buy-btn').attr('data-product-id', id);
       $('.buy-btn').removeClass('disabled').addClass('enabled');
     }
   }
@@ -218,7 +216,7 @@ function updateBtnDetailsM() {
     $('.buy-btn-m').removeClass('enabled').addClass('disabled');
   } else {
     $('#buy-btn-m').text('Buy Now - ' + price);
-    $('.buy-btn-m').data('product-id', id);
+    $('.buy-btn-m').attr('data-product-id', id);
     $('.buy-btn-m').removeClass('disabled').addClass('enabled');
   }
 }
