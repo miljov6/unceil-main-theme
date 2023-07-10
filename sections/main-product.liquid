@@ -13,6 +13,61 @@
 {% assign author = product.metafields.custom.author %}
 {% assign image_on_hover = product.metafields.custom.image_on_hover %}
 {% assign orientation = product.metafields.custom.orientation | downcase %}
+{% if section.settings.adjust_fonts %}
+<style>
+.product-form-block .h2 {
+  font-size: {{ section.settings.h2}}px;
+}
+.product-form-block .b-16-r {
+  font-size: {{ section.settings.photographer-name}}px;
+}
+
+.product-form-tab .b-14-m {
+  font-size: {{ section.settings.tab-title}}px;
+}
+.product-tab-text .b-14-r {
+  font-size: {{ section.settings.tab-text}}px;
+}
+.buy-btn .b-18-r {
+  font-size: {{ section.settings.add-btn}}px;
+}
+.product-help-block .b-14-m {
+  font-size: {{ section.settings.help-title}}px;
+}
+.standard-block p {
+  font-size: {{ section.settings.help-text}}px;
+}
+.product-more-info .b-18-r {
+  font-size: {{ section.settings.discover-cta}}px;
+}
+@media screen and (max-width: 641px) {
+    .product-form-block .m-h3 {
+      font-size: {{ section.settings.m-h3}}px;
+    }
+    .product-form-block .b-16-r {
+      font-size: {{ section.settings.photographer-name-m}}px;
+    }
+    .product-form-tab .b-14-m {
+      font-size: {{ section.settings.tab-title-m}}px;
+    }
+    .product-tab-text .b-14-r {
+      font-size: {{ section.settings.tab-text-m}}px;
+    }
+    .buy-btn .b-18-r {
+      font-size: {{ section.settings.add-btn-m}}px;
+    }
+    .product-help-block .b-14-m {
+      font-size: {{ section.settings.help-title-m}}px;
+    }
+    .standard-block p {
+      font-size: {{ section.settings.help-text-m}}px;
+    }
+    .product-more-info .b-18-r {
+      font-size: {{ section.settings.discover-cta-m}}px;
+    }
+  }
+</style>
+{% endif %}
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 <div class="container">
   <div class="container-fluid">
@@ -191,7 +246,7 @@
         <div class="product-form-sticky">
           <div class="product-form-block">
             <h2>{{product.title}}</h2>
-            <p>{{author}}</p>
+            <p class="b-16-r">{{author}}</p>
             {% if limited != blank %}
             <p class="b-14-r text-grey">{{limited}}</p>
             {% endif %}
@@ -270,8 +325,7 @@
           <div class="product-help-block">
             <p class="b-14-m">{{settings.help_title}}</p>
             <div class="standard-block">
-              <p class="b-14-r underline-link">{{settings.help_text | replace: '
-              <p>', '' | replace: '</p>', ''}}</p>
+              <p class="b-14-r underline-link">{{settings.help_text | replace: '<p>', '' | replace: '</p>', ''}}</p>
             </div>
           </div>
           <div class="product-more-info">
@@ -325,6 +379,181 @@
 {
   "name": "t:sections.main-product.name",
   "class": "section",
-  "settings": []
+  "settings": [
+  {
+    "type": "checkbox",
+    "id": "adjust_fonts",
+    "label": "Adjust Font Sizes?",
+    "default": false
+  },
+  {
+    "type": "header",
+    "content": "Desktop Heading Font Sizes"
+  },
+  {
+    "type": "range",
+    "id": "h2",
+    "min": 40,
+    "max": 100,
+    "step": 2,
+    "unit": "px",
+    "label": "Product Title Font size",
+    "default": 70
+  },
+  {
+    "type": "range",
+    "id": "photographer-name",
+    "min": 12,
+    "max": 24,
+    "step": 1,
+    "unit": "px",
+    "label": "Photographer Name Font size",
+    "default": 16
+  },
+  {
+    "type": "range",
+    "id": "tab-title",
+    "min": 12,
+    "max": 24,
+    "step": 1,
+    "unit": "px",
+    "label": "Tab Title",
+    "default": 14
+  },
+  {
+    "type": "range",
+    "id": "tab-text",
+    "min": 12,
+    "max": 24,
+    "step": 1,
+    "unit": "px",
+    "label": "Tab Text",
+    "default": 14
+  },
+  {
+    "type": "range",
+    "id": "add-btn",
+    "min": 12,
+    "max": 30,
+    "step": 1,
+    "unit": "px",
+    "label": "Tab Text",
+    "default": 18
+  },
+  {
+    "type": "range",
+    "id": "help-title",
+    "min": 10,
+    "max": 24,
+    "step": 1,
+    "unit": "px",
+    "label": "Help Block Title",
+    "default": 14
+  },
+  {
+    "type": "range",
+    "id": "help-text",
+    "min": 10,
+    "max": 24,
+    "step": 1,
+    "unit": "px",
+    "label": "Help Block Text",
+    "default": 14
+  },
+  {
+    "type": "range",
+    "id": "discover-cta",
+    "min": 10,
+    "max": 30,
+    "step": 1,
+    "unit": "px",
+    "label": "Discover More CTA",
+    "default": 18
+  },
+  {
+    "type": "header",
+    "content": "Mobile Heading Font Sizes"
+  },
+  {
+    "type": "range",
+    "id": "m-h3",
+    "min": 30,
+    "max": 80,
+    "step": 1,
+    "unit": "px",
+    "label": "Mobile Title Font size",
+    "default": 53
+  },
+  {
+    "type": "range",
+    "id": "photographer-name-m",
+    "min": 12,
+    "max": 24,
+    "step": 1,
+    "unit": "px",
+    "label": "Photographer Name Font size",
+    "default": 16
+  },
+  {
+    "type": "range",
+    "id": "tab-title-m",
+    "min": 12,
+    "max": 24,
+    "step": 1,
+    "unit": "px",
+    "label": "Tab Title",
+    "default": 14
+  },
+  {
+    "type": "range",
+    "id": "tab-text-m",
+    "min": 12,
+    "max": 24,
+    "step": 1,
+    "unit": "px",
+    "label": "Tab Text",
+    "default": 14
+  },
+  {
+    "type": "range",
+    "id": "add-btn-m",
+    "min": 12,
+    "max": 30,
+    "step": 1,
+    "unit": "px",
+    "label": "Tab Text",
+    "default": 18
+  },
+  {
+    "type": "range",
+    "id": "help-title-m",
+    "min": 10,
+    "max": 24,
+    "step": 1,
+    "unit": "px",
+    "label": "Help Block Title",
+    "default": 14
+  },
+  {
+    "type": "range",
+    "id": "help-text-m",
+    "min": 10,
+    "max": 24,
+    "step": 1,
+    "unit": "px",
+    "label": "Help Block Text",
+    "default": 14
+  },
+  {
+    "type": "range",
+    "id": "discover-cta-m",
+    "min": 10,
+    "max": 30,
+    "step": 1,
+    "unit": "px",
+    "label": "Discover More CTA",
+    "default": 18
+  }
+  ]
 }
 {% endschema %}
