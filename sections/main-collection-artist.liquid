@@ -9,6 +9,32 @@
 {% assign artist_title = collection.metafields.custom.artist_title %}
 {% assign artist_description = collection.metafields.custom.artist_description %}
 {% assign collection_id = collection.id%}
+{% if section.settings.adjust_fonts %}
+<style>
+.collection-title .jumbo {
+  font-size: {{ section.settings.h1}}px;
+}
+.collection-title .b-18-r {
+  font-size: {{ section.settings.artist-location}}px;
+}
+
+.collection-description .b-18-r {
+  font-size: {{ section.settings.artist-description}}px;
+}
+
+@media screen and (max-width: 641px) {
+    .collection-title .m-h3 {
+      font-size: {{ section.settings.m-h3}}px;
+    }
+    .collection-title .b-18-r {
+      font-size: {{ section.settings.artist-location-m}}px;
+    }
+    .collection-description .m-b-16-r {
+      font-size: {{ section.settings.artist-description-m}}px;
+    }
+  }
+</style>
+{% endif %}
 <div class="container-fluid">
   <div class="container">
     <div class="collection-title">
@@ -93,69 +119,143 @@
 
 {% schema %}
 {
-"name": "Artist Collection",
-"settings": [
-{
-"type": "header",
-"content": "Text"
-},
-{
-"type": "checkbox",
-"id": "show_artist_block",
-"label": "Show Artist Story Box",
-"default": true
-},
-{
-"type": "text",
-"id": "artist_title",
-"label": "Title",
-"default": "Artist Title"
-},
-{
-"type": "textarea",
-"id": "artist_description",
-"label": "Text",
-"default": "Artist Description"
-},
-{
-"type": "text",
-"id": "artist_cta",
-"label": "Read Story",
-"default": "Read Story"
-},
-{
-"type": "url",
-"id": "artist_cta_url",
-"label": "Add Url"
-},
-{
-"type": "header",
-"content": "More Photographers"
-},
-{
-"type": "text",
-"id": "more",
-"label": "Text",
-"default": "More Unceil photographers"
-},
-{
-"type": "text",
-"id": "more_cta",
-"label": "Meet All Unceil Photographers",
-"default": "meet all unceil photographers"
-},
-{
-"type": "url",
-"id": "more_cta_url",
-"label": "Add Url"
-}
-],
-"presets": [
-{
-"category": "Artist Collection",
-"name": "Artist Collection",
-"settings": {}
-}
-]
+  "name": "Artist Collection",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_artist_block",
+      "label": "Show Artist Story Box",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "artist_title",
+      "label": "Title",
+      "default": "Artist Title"
+    },
+    {
+      "type": "textarea",
+      "id": "artist_description",
+      "label": "Text",
+      "default": "Artist Description"
+    },
+    {
+      "type": "text",
+      "id": "artist_cta",
+      "label": "Read Story",
+      "default": "Read Story"
+    },
+    {
+      "type": "url",
+      "id": "artist_cta_url",
+      "label": "Add Url"
+    },
+    {
+      "type": "header",
+      "content": "More Photographers"
+    },
+    {
+      "type": "text",
+      "id": "more",
+      "label": "Text",
+      "default": "More Unceil photographers"
+    },
+    {
+      "type": "text",
+      "id": "more_cta",
+      "label": "Meet All Unceil Photographers",
+      "default": "meet all unceil photographers"
+    },
+    {
+      "type": "url",
+      "id": "more_cta_url",
+      "label": "Add Url"
+    },
+    {
+      "type": "checkbox",
+      "id": "adjust_fonts",
+      "label": "Adjust Font Sizes?",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Desktop Heading Font Sizes"
+    },
+    {
+      "type": "range",
+      "id": "h1",
+      "min": 80,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "label": "Product Title Font size",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "artist-location",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Artist Location Font size",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "artist-description",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Artist Description Font size",
+      "default": 17
+    },
+    {
+      "type": "header",
+      "content": "Mobile Heading Font Sizes"
+    },
+    {
+      "type": "range",
+      "id": "m-h3",
+      "min": 30,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile Title Font size",
+      "default": 53
+    },
+    {
+      "type": "range",
+      "id": "artist-location-m",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Artist Location Font size",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "artist-description-m",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Artist Description Font size",
+      "default": 17
+    }
+  ],
+  "presets": [
+    {
+      "category": "Artist Collection",
+      "name": "Artist Collection",
+      "settings": {}
+    }
+  ]
 }
 {% endschema %}
