@@ -172,25 +172,36 @@ $(document).ready(function(){
       $('.buy-btn').removeClass('disabled').addClass('enabled');
     }
   }
-  $('#option-1').on('change', function () {
-    var s2 = $('#option-2').val();
-    var s1 = $('#option-1').val();
-    var t = $('#variants-select')
-    $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
-    updateBtnDetails();
-    var variant_id = $("#variants-select").find(":selected").attr('id');
-    $('#variant-id').val(variant_id);
-  })
-  $('#option-2').on('change', function () {
-    var s2 = $('#option-2').val();
-    var s1 = $('#option-1').val();
-    var t = $('#variants-select')
-    $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
-    var variant_id = $("#variants-select").find(":selected").attr('id');
-    $('#variant-id').val(variant_id);
-    updateBtnDetails();
-  
-  })
+  if($('#option-2').length > 0) {
+    $('#option-1').on('change', function () {
+      var s2 = $('#option-2').val();
+      var s1 = $('#option-1').val();
+      var t = $('#variants-select')
+      $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
+      updateBtnDetails();
+      var variant_id = $("#variants-select").find(":selected").attr('id');
+      $('#variant-id').val(variant_id);
+    })
+    $('#option-2').on('change', function () {
+      var s2 = $('#option-2').val();
+      var s1 = $('#option-1').val();
+      var t = $('#variants-select')
+      $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
+      var variant_id = $("#variants-select").find(":selected").attr('id');
+      $('#variant-id').val(variant_id);
+      updateBtnDetails();
+    
+    })
+  } else {
+    $('#option-1').on('change', function () {
+      var s1 = $('#option-1').val();
+      var t = $('#variants-select')
+      $("#variants-select option[data-option1='" + s1 + "']").prop("selected", true);
+      updateBtnDetails();
+      var variant_id = $("#variants-select").find(":selected").attr('id');
+      $('#variant-id').val(variant_id);
+    })
+  }
 })
 
 function updateBtnDetailsM() {
