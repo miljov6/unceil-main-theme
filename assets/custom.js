@@ -52,35 +52,35 @@ $(document).ready(function () {
     });
   }
 })
-$('.spotlight-img').each(function(){
-  $(this).mouseover(function(e){
-  var x = $(window).width() - e.pageX;
-  console.log(e.pageX);
-  if(e.pageX<150) {
+$('.spotlight-img').each(function () {
+  $(this).mouseover(function (e) {
+    var x = $(window).width() - e.pageX;
+    console.log(e.pageX);
+    if (e.pageX < 150) {
       $('.spotlight-slides').slick('slickPrev');
-  } else if(x<150) {
+    } else if (x < 150) {
       $('.spotlight-slides').slick('slickNext');
-  } 
-});
+    }
+  });
 })
 
-  $('.spotlight-slides').mouseover(function(e){
+$('.spotlight-slides').mouseover(function (e) {
   var x = $(window).width() - e.pageX;
   console.log(e.pageX);
-  if(e.pageX<150) {
-      $('.spotlight-slides').slick('slickPrev');
-  } else if(x<150) {
-      $('.spotlight-slides').slick('slickNext');
-  } 
+  if (e.pageX < 150) {
+    $('.spotlight-slides').slick('slickPrev');
+  } else if (x < 150) {
+    $('.spotlight-slides').slick('slickNext');
+  }
 });
 
-$('.collection-more-slider').mouseover(function(e){
+$('.collection-more-slider').mouseover(function (e) {
   var x = $('.collection-more-slider').width() - e.pageX;
-  if(x>1024) {
+  if (x > 1024) {
     $(this).slick('slickPrev');
-  } else if(x<-120) {
+  } else if (x < -120) {
     $(this).slick('slickNext');
-  } 
+  }
 });
 
 $(".faq-item").each(function () {
@@ -104,28 +104,28 @@ $(".faq-item").each(function () {
     }
   })
 })
-$(document).ready(function(){
-  setTimeout(function(){
+$(document).ready(function () {
+  setTimeout(function () {
     $('.product-media-featured').css('height', $('.product-media-featured').outerHeight());
-  },1000)
+  }, 1000)
 })
-$('.product-media-featured').hover(function(){
+$('.product-media-featured').hover(function () {
   var h = $('.product-media-featured').outerHeight();
   $(this).addClass('product-media-featured-zoom');
   $('.product-media-featured').css('height', h);
   $('.img-nonhover').hide();
   $('.img-hover').show();
-  
+
 })
-$('.product-media-featured').on('touchstart', function(){
+$('.product-media-featured').on('touchstart', function () {
   var h = $('.product-media-featured').outerHeight();
   $(this).addClass('product-media-featured-zoom');
   $('.product-media-featured').css('height', h);
   $('.img-nonhover').hide();
   $('.img-hover').show();
-  
+
 })
-$('.product-media-featured').mouseleave(function(){
+$('.product-media-featured').mouseleave(function () {
   var h = $('.product-media-featured').outerHeight();
   $(this).removeClass('product-media-featured-zoom');
   $('.img-hover').hide();
@@ -139,7 +139,7 @@ $('.product-item-photo').each(function () {
     $(this).find('img').attr('src', check);
     $(this).find('a').removeClass('hover-url');
   })
-  $(this).parent().on('touchstart',function () {
+  $(this).parent().on('touchstart', function () {
     $(this).parent().addClass('product-item-photo-zoom');
     var check = $(this).parent().data('zoom-img').toString();
     $(this).attr('src', check);
@@ -153,14 +153,14 @@ $('.product-item-photo img').each(function () {
     $(this).attr('src', check);
     $(this).prev().addClass('hover-url');
   })
-  $(this).on('touchstart',function () {
+  $(this).on('touchstart', function () {
     $(this).parent().addClass('product-item-photo-zoom');
     var check = $(this).parent().data('zoom-img').toString();
     $(this).attr('src', check);
     $(this).prev().addClass('hover-url');
   })
 })
-$(document).ready(function(){
+$(document).ready(function () {
   function updateBtnDetails() {
     var available = $("#variants-select").find(":selected").data('available');
     var price = $("#variants-select").find(":selected").data('price');
@@ -172,7 +172,7 @@ $(document).ready(function(){
       $('.buy-btn').removeClass('disabled').addClass('enabled');
     }
   }
-  if($('#option-2').length > 0) {
+  if ($('#option-2').length > 0) {
     $('#option-1').on('change', function () {
       var s2 = $('#option-2').val();
       var s1 = $('#option-1').val();
@@ -190,7 +190,7 @@ $(document).ready(function(){
       var variant_id = $("#variants-select").find(":selected").attr('id');
       $('#variant-id').val(variant_id);
       updateBtnDetails();
-    
+
     })
   } else {
     $('#option-1').on('change', function () {
@@ -215,25 +215,36 @@ function updateBtnDetailsM() {
     $('.buy-btn-m').removeClass('disabled').addClass('enabled');
   }
 }
-$('#option-1-m').on('change', function () {
-  var s2 = $('#option-2-m').val();
-  var s1 = $('#option-1-m').val();
-  var t = $('#variants-select-m')
-  $("#variants-select-m option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
-  updateBtnDetailsM();
-  var variant_id = $("#variants-select-m").find(":selected").attr('id');
-  $('#variant-id').val(variant_id);
-})
-$('#option-2-m').on('change', function () {
-  var s2 = $('#option-2-m').val();
-  var s1 = $('#option-1-m').val();
-  var t = $('#variants-select-m')
-  $("#variants-select-m option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
-  var variant_id = $("#variants-select-m").find(":selected").attr('id');
-  $('#variant-id-m').val(variant_id);
-  updateBtnDetailsM();
+if ($('#option-2-m').length > 0) {
+  $('#option-1-m').on('change', function () {
+    var s2 = $('#option-2-m').val();
+    var s1 = $('#option-1-m').val();
+    var t = $('#variants-select-m')
+    $("#variants-select-m option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
+    updateBtnDetailsM();
+    var variant_id = $("#variants-select-m").find(":selected").attr('id');
+    $('#variant-id').val(variant_id);
+  })
+  $('#option-2-m').on('change', function () {
+    var s2 = $('#option-2-m').val();
+    var s1 = $('#option-1-m').val();
+    var t = $('#variants-select-m')
+    $("#variants-select-m option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
+    var variant_id = $("#variants-select-m").find(":selected").attr('id');
+    $('#variant-id-m').val(variant_id);
+    updateBtnDetailsM();
 
-})
+  })
+} else {
+  $('#option-1-m').on('change', function () {
+    var s1 = $('#option-1-m').val();
+    var t = $('#variants-select-m')
+    $("#variants-select-m option[data-option1='" + s1 + "']").prop("selected", true);
+    updateBtnDetailsM();
+    var variant_id = $("#variants-select-m").find(":selected").attr('id');
+    $('#variant-id').val(variant_id);
+  })
+}
 $(function () {
 
   var activeIndex = $('.active-tab').index(),
