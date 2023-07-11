@@ -283,6 +283,7 @@
               {% assign t = '' %}
               {% endif %}
                 {{option | append: t | strip_newlines | strip | rstrip | lstrip}}
+                {% endfor %}
               {% endcapture %} 
 
                 <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-option1="{{variant.option1}}"
