@@ -274,11 +274,16 @@
               {% endfor %}
               <select id="variants-select">
                 {% for variant in product.variants %}
+
+                {% capture options %}
+              {% for option in variant.options %}
+                {{option}}{% if forloop.last != true %},{% endif %}
+              {% endfor %}
+              {% endcapture %} 
+
                 <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-option1="{{variant.option1}}"
                 data-option2="{{variant.option2}}" data-price="{{variant.price | money_without_trailing_zeros}}"
-              data-options="{% for option in variant.options %}
-                {{option}}{% if forloop.last != true %},{% endif %}
-              {% endfor %}"
+              data-options="{{options | strip}}"
                 >
                   {{variant.title}}</option>
                 {% endfor %}
