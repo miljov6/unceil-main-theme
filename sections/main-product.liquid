@@ -291,7 +291,7 @@
 
                 <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-option1="{{variant.option1}}"
                 data-option2="{{variant.option2}}" data-price="{{variant.price | money_without_trailing_zeros}}"
-              data-options="{{options}}"
+              data-options="{{options| strip_newlines | strip}}"
                 >
                   {{variant.title}}</option>
                 {% endfor %}
