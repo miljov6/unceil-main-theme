@@ -277,12 +277,13 @@
 
                 {% capture options %}
                   {% for option in variant.options %}
+                  {% assign x = '' %}
                   {% if forloop.last != true %}
                   {% assign t = ',' %}
                   {% else %}
                   {% assign t = '' %}
                   {% endif %}
-                    {{option | append: t | strip_newlines | strip | rstrip | lstrip}}
+                    {{x| append: option | append: t | strip_newlines | strip | rstrip | lstrip}}
                     {% endfor %}
               {% endcapture %} 
 
