@@ -285,7 +285,8 @@
                   {% endif %}
                     {{x | strip_newlines |  strip | rstrip | lstrip | append: option | append: t |  strip | rstrip | lstrip | strip_newlines}}
                     {% endfor %}
-                  {{x |  strip | rstrip | lstrip | strip_newlines }}  
+                  {%  assign r = x |  strip | rstrip | lstrip | strip_newlines %}  
+                {{ r }}
               {% endcapture %} 
 
                 <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-option1="{{variant.option1}}"
