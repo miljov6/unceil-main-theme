@@ -277,7 +277,7 @@
 
                 {% capture options %}
               {% for option in variant.options %}
-                {{option}}{% if forloop.last != true %},{% endif %}
+                {{option | strip | strip_newlines}}{% if forloop.last != true %},{% endif %}
               {% endfor %}
               {% endcapture %} 
 
