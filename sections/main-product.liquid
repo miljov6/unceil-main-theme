@@ -278,7 +278,7 @@
                 data-option2="{{variant.option2}}" data-price="{{variant.price | money_without_trailing_zeros}}"
                 
               {% for option in variant.options %}
-                data-option{{forloop.index}} = "{{option}}"
+                data-option-{{forloop.index}} = "{{option}}"
               {% endif %}
                 >
                   {{variant.title}}</option>
