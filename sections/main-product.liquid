@@ -283,7 +283,7 @@
                   {% else %}
                   {% assign t = '' %}
                   {% endif %}
-                    {{x | strip_newlines | append: option | append: t |  strip | rstrip | lstrip | strip_newlines}}
+                    {{x | strip_newlines |  strip | rstrip | lstrip | append: option | append: t |  strip | rstrip | lstrip | strip_newlines}}
                     {% endfor %}
                   {{x |  strip | rstrip | lstrip | strip_newlines }}  
               {% endcapture %} 
