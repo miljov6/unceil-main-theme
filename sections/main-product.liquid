@@ -100,7 +100,7 @@
                     {% endif %}
                   </div>
   
-                  <select class="select-options b-16-m" id="option-{{forloop.index}}-m">
+                  <select class="select-options select-options-m b-16-m" id="option-{{forloop.index}}-m">
                     {% for value in product_option.values %}
                     <option {% if product_option.selected_value==value %}selected{% endif %} val="{{value | downcase}}">
                       {{ value }}
@@ -263,7 +263,7 @@
                   {% endif %}
                 </div>
 
-                <select class="select-options b-16-m" id="option-{{forloop.index}}">
+                <select class="select-options select-options-d b-16-m" id="option-{{forloop.index}}">
                   {% for value in product_option.values %}
                   <option {% if product_option.selected_value==value %}selected{% endif %} val="{{value | downcase}}">
                     {{ value }}
@@ -276,9 +276,9 @@
                 {% for variant in product.variants %}
                 <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-option1="{{variant.option1}}"
                 data-option2="{{variant.option2}}" data-price="{{variant.price | money_without_trailing_zeros}}"
-              {% for option in variant.options %}
-                data-option-{{forloop.index}} = "{{option}}"
-              {% endfor %}
+              data-options="{% for option in variant.options %}
+                {{option}}{% if forloop.last != true %},{% endif %}
+              {% endfor %}"
                 >
                   {{variant.title}}</option>
                 {% endfor %}
