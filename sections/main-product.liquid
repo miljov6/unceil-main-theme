@@ -277,13 +277,13 @@
 
                 {% capture options %}
               {% for option in variant.options %}
-                {{option | strip | strip_newlines}}{% if forloop.last != true %},{% endif %}
+                {{option | strip_newlines | strip | rstrip | lstrip}}{% if forloop.last != true %},{% endif %}
               {% endfor %}
               {% endcapture %} 
 
                 <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-option1="{{variant.option1}}"
                 data-option2="{{variant.option2}}" data-price="{{variant.price | money_without_trailing_zeros}}"
-              data-options="{{options | strip | strip_newlines}}"
+              data-options="{{options | strip_newlines | strip | rstrip | lstrip}}"
                 >
                   {{variant.title}}</option>
                 {% endfor %}
