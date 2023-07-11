@@ -192,7 +192,7 @@ $(document).ready(function () {
   $('.select-options-d').each(function () {
     $(this).on('change', function () {
       var t = [];
-      $('.select-options').each(function () {
+      $('.select-options-d').each(function () {
         t.push($(this).val());
       })
       var r = t.toString().replaceAll(' ', '');
