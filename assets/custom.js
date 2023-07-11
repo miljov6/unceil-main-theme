@@ -175,81 +175,49 @@ $(document).ready(function () {
       $('.buy-btn').removeClass('disabled').addClass('enabled');
     }
   }
-  if ($('#option-2').length > 0) {
-    $('#option-1').on('change', function () {
-      var s1 = $('#option-1').val();
-      var s2 = $('#option-2').val();
-      var t = $('#variants-select');
-      $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
-      updateBtnDetails();
-      var variant_id = $("#variants-select").find(":selected").attr('id');
-      $('#variant-id').val(variant_id);
-    })
-    $('#option-2').on('change', function () {
-      var s2 = $('#option-2').val();
-      var s1 = $('#option-1').val();
-      var t = $('#variants-select');
-      $("#variants-select option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
-      var variant_id = $("#variants-select").find(":selected").attr('id');
-      $('#variant-id').val(variant_id);
-      updateBtnDetails();
-
-    })
-  } else {
-    $('#option-1').on('change', function () {
-      var s1 = $('#option-1').val();
-      var t = $('#variants-select');
-      $("#variants-select option[data-option1='" + s1 + "']").prop("selected", true);
-      updateBtnDetails();
-      var variant_id = $("#variants-select").find(":selected").attr('id');
-      $('#variant-id').val(variant_id);
-    })
+  function updateBtnDetailsM() {
+    var price = $("#variants-select-m").find(":selected").data('price');
+    var available = $("#variants-select-m").find(":selected").data('available');
+    var id = $("#variants-select-m").find(":selected").data('variant-id');
+    if (available == false) {
+      $('#buy-btn-m').text('Not Available');
+      $('.buy-btn-m').removeClass('enabled').addClass('disabled');
+    } else {
+      $('#buy-btn-m').text('Buy Now - ' + price);
+      $('.buy-btn-m').attr('data-product-id', id);
+      $('.buy-btn-m').removeClass('disabled').addClass('enabled');
+    }
   }
+
+  $('.select-options-d').each(function () {
+    $(this).on('change', function () {
+      var t = [];
+      $('.select-options').each(function () {
+        t.push($(this).val());
+      })
+      var r = t.toString().replaceAll(' ', '');
+      $("#variants-select option[data-options='" + r + "']").prop("selected", true);
+      updateBtnDetails();
+      var variant_id = $("#variants-select").find(":selected").attr('id');
+      $('#variant-id').val(variant_id);
+    })
+  })
+  $('.select-options-m').each(function () {
+    $(this).on('change', function () {
+      var t = [];
+      $('.select-options-m').each(function () {
+        t.push($(this).val());
+      })
+      var r = t.toString().replaceAll(' ', '');
+      $("#variants-select-m option[data-options='" + r + "']").prop("selected", true);
+      updateBtnDetailsM();
+      var variant_id = $("#variants-select-m").find(":selected").attr('id');
+      $('#variant-id-m').val(variant_id);
+    })
+  })
+
 })
 
-function updateBtnDetailsM() {
-  var price = $("#variants-select-m").find(":selected").data('price');
-  var available = $("#variants-select-m").find(":selected").data('available');
-  var id = $("#variants-select-m").find(":selected").data('variant-id');
-  if (available == false) {
-    $('#buy-btn-m').text('Not Available');
-    $('.buy-btn-m').removeClass('enabled').addClass('disabled');
-  } else {
-    $('#buy-btn-m').text('Buy Now - ' + price);
-    $('.buy-btn-m').attr('data-product-id', id);
-    $('.buy-btn-m').removeClass('disabled').addClass('enabled');
-  }
-}
-if ($('#option-2-m').length > 0) {
-  $('#option-1-m').on('change', function () {
-    var s2 = $('#option-2-m').val();
-    var s1 = $('#option-1-m').val();
-    var t = $('#variants-select-m')
-    $("#variants-select-m option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
-    updateBtnDetailsM();
-    var variant_id = $("#variants-select-m").find(":selected").attr('id');
-    $('#variant-id').val(variant_id);
-  })
-  $('#option-2-m').on('change', function () {
-    var s2 = $('#option-2-m').val();
-    var s1 = $('#option-1-m').val();
-    var t = $('#variants-select-m')
-    $("#variants-select-m option[data-option1='" + s1 + "'][data-option2='" + s2 + "']").prop("selected", true);
-    var variant_id = $("#variants-select-m").find(":selected").attr('id');
-    $('#variant-id-m').val(variant_id);
-    updateBtnDetailsM();
-
-  })
-} else {
-  $('#option-1-m').on('change', function () {
-    var s1 = $('#option-1-m').val();
-    var t = $('#variants-select-m')
-    $("#variants-select-m option[data-option1='" + s1 + "']").prop("selected", true);
-    updateBtnDetailsM();
-    var variant_id = $("#variants-select-m").find(":selected").attr('id');
-    $('#variant-id').val(variant_id);
-  })
-}
 $(function () {
 
   var activeIndex = $('.active-tab').index(),

@@ -283,14 +283,15 @@
                   {% else %}
                   {% assign t = '' %}
                   {% endif %}
-                    {{x| append: option | append: t |  strip | rstrip | lstrip | strip_newlines}}
+                    {{x | strip_newlines |  strip | rstrip | lstrip | append: option | append: t |  strip | rstrip | lstrip | strip_newlines}}
                     {% endfor %}
-                  {{x |  strip | rstrip | lstrip | strip_newlines }}  
+                  {%  assign r = x |  strip | rstrip | lstrip | strip_newlines %}  
+                {{ r }}
               {% endcapture %} 
 
                 <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-option1="{{variant.option1}}"
                 data-option2="{{variant.option2}}" data-price="{{variant.price | money_without_trailing_zeros}}"
-              data-options="{{options | strip_newlines | strip | rstrip | lstrip}}"
+              data-options="{{options| strip_newlines | strip | replace: " ", ""}}"
                 >
                   {{variant.title}}</option>
                 {% endfor %}
