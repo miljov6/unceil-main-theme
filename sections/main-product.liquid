@@ -93,11 +93,7 @@
                 {% for product_option in product.options_with_values %}
                 <div class="product-options">
                   <div class="product-option-left">
-                    {% if product_option.name contains 'Size' %}
-                    <span class="b-14-r text-grey">Select size</span>
-                    {% else %}
-                    <span class="b-14-r text-grey">Framing</span>
-                    {% endif %}
+                    <span class="b-14-r text-grey">{{product_option.name}}</span>
                   </div>
   
                   <select class="select-options select-options-m b-16-m" id="option-{{forloop.index}}-m">
@@ -255,11 +251,7 @@
               {% for product_option in product.options_with_values %}
               <div class="product-options">
                 <div class="product-option-left">
-                  {% if product_option.name contains 'Size' %}
-                  <span class="b-14-r text-grey">Select size</span>
-                  {% else %}
-                  <span class="b-14-r text-grey">Framing</span>
-                  {% endif %}
+                  <span class="b-14-r text-grey">{{product_option.name}}</span>
                 </div>
 
                 <select class="select-options select-options-d b-16-m" id="option-{{forloop.index}}">
