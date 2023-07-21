@@ -136,7 +136,7 @@ $('.product-item-photo').each(function () {
     $(this).removeClass('product-item-photo-zoom');
     $(this).find('.img-hover').hide();
     $(this).find('.img-nonhover').show();
-    $(this).closest('a').removeClass('hover-url');
+    $(this).find('a').removeClass('hover-url');
   })
   $(this).parent().on('touchstart', function () {
     $(this).removeClass('product-item-photo-zoom');
@@ -151,7 +151,7 @@ $('.product-item-photo img').each(function () {
     var check = $(this).parent().data('zoom-img').toString();
     $(this).find('.img-nonhover').hide();
     $(this).find('.img-hover').show();
-    $(this).closest('a').addClass('hover-url');
+    $(this).find('a').addClass('hover-url');
   })
   $(this).on('touchstart', function () {
     $(this).parent().addClass('product-item-photo-zoom');
