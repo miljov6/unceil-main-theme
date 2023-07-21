@@ -134,14 +134,14 @@ $('.product-media-featured').mouseleave(function () {
 $('.product-item-photo').each(function () {
   $(this).mouseleave(function () {
     $(this).removeClass('product-item-photo-zoom');
-    $('.img-nonhover').show();
-    $('.img-hover').hide();
+    $(this+'.img-nonhover').show();
+    $(this+'.img-hover').hide();
     $(this).find('a').removeClass('hover-url');
   })
   $(this).parent().on('touchstart', function () {
     $(this).parent().addClass('product-item-photo-zoom');
-    $('.img-nonhover').show();
-    $('.img-hover').hide();
+    $(this+'.img-nonhover').show();
+    $(this+'.img-hover').hide();
     $(this).prev().addClass('hover-url');
   })
 })
@@ -154,8 +154,8 @@ $('.product-item-photo img').each(function () {
   })
   $(this).on('touchstart', function () {
     $(this).parent().addClass('product-item-photo-zoom');
-    $('.img-nonhover').hide();
-    $('.img-hover').show();
+    $(this+'.img-nonhover').hide();
+    $(this+'.img-hover').show();
     $(this).prev().addClass('hover-url');
   })
 })
