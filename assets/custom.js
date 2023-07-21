@@ -134,14 +134,14 @@ $('.product-media-featured').mouseleave(function () {
 $('.product-item-photo').each(function () {
   $(this).mouseleave(function () {
     $(this).removeClass('product-item-photo-zoom');
-    $(this+'.img-nonhover').show();
     $(this+'.img-hover').hide();
+    $(this+'.img-nonhover').show();
     $(this).find('a').removeClass('hover-url');
   })
   $(this).parent().on('touchstart', function () {
     $(this).parent().addClass('product-item-photo-zoom');
-    $(this+'.img-nonhover').show();
     $(this+'.img-hover').hide();
+    $(this+'.img-nonhover').show();
     $(this).prev().addClass('hover-url');
   })
 })
