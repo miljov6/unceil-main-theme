@@ -136,7 +136,7 @@ $('.product-item-photo').each(function () {
     $(this).removeClass('product-item-photo-zoom');
     $(this).find('.img-hover').hide();
     $(this).find('.img-nonhover').show();
-    $(this).find('a').removeClass('hover-url');
+    $(this).parent().find('a').removeClass('hover-url');
   })
   $(this).parent().on('touchstart', function () {
     $(this).removeClass('product-item-photo-zoom');
