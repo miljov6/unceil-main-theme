@@ -134,14 +134,14 @@ $('.product-media-featured').mouseleave(function () {
 $('.product-item-photo').each(function () {
   $(this).mouseleave(function () {
     $(this).removeClass('product-item-photo-zoom');
-    $(this+'.img-hover').hide();
-    $(this+'.img-nonhover').show();
+    $(this).find('.img-hover').hide();
+    $(this).find('.img-nonhover').show();
     $(this).find('a').removeClass('hover-url');
   })
   $(this).parent().on('touchstart', function () {
     $(this).parent().addClass('product-item-photo-zoom');
-    $(this+'.img-hover').hide();
-    $(this+'.img-nonhover').show();
+    $(this).find('.img-hover').hide();
+    $(this).find('.img-nonhover').show();
     $(this).prev().addClass('hover-url');
   })
 })
@@ -149,13 +149,13 @@ $('.product-item-photo img').each(function () {
   $(this).hover(function () {
     $(this).parent().addClass('product-item-photo-zoom');
     var check = $(this).parent().data('zoom-img').toString();
-    $(this+'.img-nonhover').hide();
-    $(this+'.img-hover').show();
+    $(this).find('.img-nonhover').hide();
+    $(this).find('.img-hover').show();
   })
   $(this).on('touchstart', function () {
     $(this).parent().addClass('product-item-photo-zoom');
-    $(this+'.img-nonhover').hide();
-    $(this+'.img-hover').show();
+    $(this).find('.img-nonhover').hide();
+    $(this).find('.img-hover').show();
     $(this).prev().addClass('hover-url');
   })
 })
