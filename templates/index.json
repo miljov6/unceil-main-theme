@@ -6,8 +6,8 @@
         "title": "In awe of innocent beauty",
         "text": "<br>Discover the captivating allure of fine art photography, celebrating the power of nature and the authentic beauty of femininity. Immerse yourself in our curated collection and experience the timeless elegance that truly sets our collection apart.",
         "adjust_fonts": true,
-        "h2": 70,
-        "b-18-r": 17,
+        "h2": 68,
+        "b-18-r": 16,
         "m-h4": 44,
         "m-b-16-r": 16
       }
@@ -46,7 +46,7 @@
         "cta": "Explore Héctor's artwork",
         "cta_url": "shopify:\/\/collections\/hector-alamilla",
         "adjust_fonts": true,
-        "h3": 60,
+        "h3": 54,
         "allcaps": 21,
         "b-18-r": 15,
         "m-h6": 30,
@@ -120,7 +120,7 @@
         "cta": "Explore all",
         "cta_url": "shopify:\/\/collections\/gallery",
         "h3": 96,
-        "b-14-r": 18,
+        "b-14-r": 16,
         "m-h5": 37
       }
     },
