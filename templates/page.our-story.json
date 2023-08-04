@@ -11,8 +11,8 @@
     "8b6a0745-f46b-4183-8b55-368a95859c6b": {
       "type": "hero-text-image",
       "settings": {
-        "title": "Experience a seamless art collecting journey",
-        "text": "<br>How many times have you come across a photography you loved, only to give up on buying it due to the hassle involved? Contacting galleries or artists is one thing, but finding a secure way to purchase and have the artwork delivered is another challenge. We have eliminated all those complications for you. From curated photograph prints to bespoke framing that perfectly complements the art, we offer a smooth and effortless journey of collecting art.",
+        "title": "Empowering artistic independence",
+        "text": "<br>\n<br>At Unceil, our passion lies in empowering artists and fostering their autonomy. We believe that artists should have the power to represent themselves and to create financial abundance on their own. That's why we have created an online gallery where any fine art photography that aligns with our values can be exhibited. <br>\n<br>\nWith non-exclusive contracts, we actively encourage artists to develop their voice, gain recognition, and cultivate a strong and unique artistic presence. We aim to break away from traditional restrictions and limitations imposed on artists, enabling them to maintain full control over their work and build their own path.",
         "img": "shopify:\/\/shop_images\/LR_Daisy_Hector_Alamilla.png",
         "adjust_fonts": true,
         "h1": 70,
@@ -25,7 +25,7 @@
       "type": "title-text",
       "settings": {
         "title": "The beginning of Unceil",
-        "text": "<br>In a world abundant with countless fine art photographs, what distinguishes one as truly unique? This question ignited our mission to curate a collection of our own, giving birth to Unceil - an amalgamation of boldness and subtlety. Guided by a delicate equilibrium, we curate the intersection between the risqué and pure innocence, where refined beauty converges with untamed wildness. Join us as we venture into the essence of fine art photography and beyond.",
+        "text": "<br>In a world full of fine art photographs, what distinguishes one as truly unique? This question ignited our mission to curate a collection of our own, giving birth to Unceil - a perfect blend of boldness and subtlety. We curate the intersection between the risqué and pure innocence, where refined beauty converges with untamed wildness. Join us as we venture into the essence of fine art photography and beyond.",
         "adjust_fonts": true,
         "h2": 70,
         "b-18-r": 17,
@@ -42,9 +42,9 @@
     "b73b02d1-4076-45b7-9554-ffff1f6d6bec": {
       "type": "support-artists",
       "settings": {
-        "title": "Empowering artistic independence",
-        "text": "At Unceil, our passion lies in empowering artists and fostering their autonomy. We firmly believe that artists should have the freedom to represent themselves rather than being represented by others. That's why we have created an online gallery where any fine art photography that aligns with our values can be exhibited. <br>\n<br>\nBy embracing a non-exclusive approach, we actively encourage artists to develop their distinct voice, gain recognition, and cultivate a strong and unique artistic presence. We aim to break away from traditional restrictions and limitations imposed on artists, enabling them to maintain full control over their work and build their own path towards independence.",
-        "img": "shopify:\/\/shop_images\/Frame_854.png",
+        "title": "Unleashing creativity",
+        "text": "<br>At Unceil, we offer a comprehensive range of services for artists. From managing the complexities of e-commerce to fine art qualified printing, issuing certificates, handling shipping, framing, and much more - we take care of the non-artistic tasks so that they can fully immerse themselves in creativity.\n<br>\n<br>By enabling artists to solely focus on their creative process, art reaches new heights of excellence. We take pride in unleashing the true potential and cultivating the production of artwork.",
+        "img": "shopify:\/\/shop_images\/Dune_Wes.png",
         "artist_name": "",
         "adjust_fonts": true,
         "h1": 70,
@@ -57,8 +57,8 @@
     "d5ec0454-da7d-4796-9fa2-9ad8d174f1f4": {
       "type": "text-map",
       "settings": {
-        "title": "Unleashing creativity",
-        "text": "<br>\n<br>Imagine the collective time wasted by artists on commercializing their work. At Unceil, we offer a comprehensive range of services with lower commissions, effectively outsourcing the non-artistic tasks. We take care of managing the e-commerce side, printing, issuing certificates, handling shipping, framing, and more, allowing artists to fully immerse themselves in their creativity. By enabling artists to solely focus on their creative process, we unleash their true potential and cultivate the production of exceptional artwork.",
+        "title": "Start a seamless art collecting journey",
+        "text": "<br>\n<br>Discover an exquisite collection of artworks from the comfort of your seat, make your selection, and have it delivered to your doorstep, ready to hang and enjoy. With our curated photograph prints and bespoke framing services, we present an effortless way to indulge in the joy of collecting art. Say farewell to complexities and embrace a hassle-free experience that allows you to cherish and bring home the art you truly adore.",
         "adjust_fonts": true,
         "h1": 70,
         "b-18-r": 17,
