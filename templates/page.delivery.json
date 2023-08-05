@@ -93,13 +93,20 @@
         "081caaf5-eb59-4797-8d25-b884b254ede7"
       ],
       "settings": {
-        "title": "Delivery"
+        "title": "Delivery",
+        "adjust_fonts": false,
+        "h2": 70,
+        "b-16-r": 16,
+        "m-h4": 42
       }
     },
     "b044276d-2cdc-4e80-aef6-6e138e4be492": {
       "type": "questions-cta",
       "settings": {
-        "text": "<p>Questions? Send us an <a href=\"#\" title=\"#\">email<\/a> or <a href=\"#\" title=\"#\">contact us<\/a>.<\/p>"
+        "text": "<p>Questions? Send us an <a href=\"#\" title=\"#\">email<\/a> or <a href=\"#\" title=\"#\">contact us<\/a>.<\/p>",
+        "adjust_fonts": false,
+        "b-16-r": 16,
+        "m-b-14-r": 14
       }
     }
   },
