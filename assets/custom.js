@@ -134,14 +134,14 @@ $('.product-media-featured').mouseleave(function () {
 $('.product-item-photo').each(function () {
   $(this).mouseleave(function () {
     $(this).removeClass('product-item-photo-zoom');
-    $(this).find('.img-hover').hide();
-    $(this).find('.img-nonhover').show();
+    $(this).parent().find('.img-hover').hide();
+    $(this).parent().find('.img-nonhover').show();
     $(this).parent().find('a').removeClass('hover-url');
   })
   $(this).parent().on('touchstart', function () {
     $(this).removeClass('product-item-photo-zoom');
-    $(this).find('.img-hover').hide();
-    $(this).find('.img-nonhover').show();
+    $(this).parent().find('.img-hover').hide();
+    $(this).parent().find('.img-nonhover').show();
     $(this).prev().addClass('hover-url');
   })
 })
@@ -155,8 +155,8 @@ $('.product-item-photo img').each(function () {
   })
   $(this).on('touchstart', function () {
     $(this).parent().addClass('product-item-photo-zoom');
-    $(this).find('.img-nonhover').hide();
-    $(this).find('.img-hover').show();
+    $(this).parent().find('.img-nonhover').hide();
+    $(this).parent().find('.img-hover').show();
     $(this).prev().addClass('hover-url');
   })
 })
