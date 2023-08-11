@@ -9,6 +9,17 @@
   .section-faq-block .b-14-r  {
     font-size: {{ section.settings.b-14-r }}px;
   }
+  @media screen and (max-width: 641px) {
+    .section-faq-block .faq-question {
+      font-size: {{ section.settings.mobile-faq-question}}px;
+    }
+    .section-faq-block .allcaps {
+      font-size: {{ section.settings.mobile-allcaps}}px;
+    }
+    .section-faq-block .b-14-r  {
+      font-size: {{ section.settings.mobile-b-14-r }}px;
+    }
+  }
 </style>
 {% endif %}
 <div class="container-fluid">
@@ -71,6 +82,16 @@
       },
       {
         "type": "range",
+        "id": "mobile-faq-question",
+        "min": 10,
+        "max": 36,
+        "step": 1,
+        "unit": "px",
+        "label": "Question Font Size",
+        "default": 18
+      },
+      {
+        "type": "range",
         "id": "allcaps",
         "min": 10,
         "max": 30,
@@ -81,7 +102,27 @@
       },
       {
         "type": "range",
+        "id": "mobile-allcaps",
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "label": "Section Title Font size",
+        "default": 14
+      },
+      {
+        "type": "range",
         "id": "b-14-r",
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "label": "Regular Font size",
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "mobile-b-14-r",
         "min": 10,
         "max": 30,
         "step": 1,
