@@ -149,8 +149,8 @@ $('.product-item-photo img').each(function () {
   $(this).hover(function () {
     $(this).parent().addClass('product-item-photo-zoom');
     var check = $(this).parent().data('zoom-img').toString();
-    $(this).closest('.img-hover').show();
-    $(this).closest('.img-nonhover').hide();
+    $(this).closest('img').find('.img-hover').show();
+    $(this).closest('img').find('.img-nonhover').hide();
     $(this).parent().find('a').addClass('hover-url');
   })
   $(this).on('touchstart', function () {
