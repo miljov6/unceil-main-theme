@@ -87,12 +87,18 @@
       ],
       "settings": {
         "title": "",
-        "block_id": ""
+        "block_id": "",
+        "adjust_fonts": true,
+        "faq-question": 18,
+        "allcaps": 14,
+        "b-14-r": 14,
+        "mobile-faq-question": 13,
+        "mobile-allcaps": 13,
+        "mobile-b-14-r": 13
       }
     },
     "8232c4a5-d3ae-4f6c-a753-900fc6e2b6d7": {
       "type": "faq-block",
-      "disabled": true,
       "blocks": {
         "template--19304804057400__8232c4a5-d3ae-4f6c-a753-900fc6e2b6d7-1685344553221dacb8-0": {
           "type": "faq",
@@ -129,15 +135,26 @@
         "template--19304804057400__8232c4a5-d3ae-4f6c-a753-900fc6e2b6d7-1685344553221dacb8-2",
         "template--19304804057400__8232c4a5-d3ae-4f6c-a753-900fc6e2b6d7-1685344553221dacb8-3"
       ],
+      "disabled": true,
       "settings": {
         "title": "Nº2 — Order and payment",
-        "block_id": ""
+        "block_id": "",
+        "adjust_fonts": false,
+        "faq-question": 18,
+        "allcaps": 14,
+        "b-14-r": 14,
+        "mobile-faq-question": 16,
+        "mobile-allcaps": 14,
+        "mobile-b-14-r": 14
       }
     },
     "b044276d-2cdc-4e80-aef6-6e138e4be492": {
       "type": "questions-cta",
       "settings": {
-        "text": "<p>Questions? Send us an <a href=\"#\" title=\"#\">email<\/a> or <a href=\"#\" title=\"#\">contact us<\/a>.<\/p>"
+        "text": "<p>Questions? Send us an <a href=\"#\" title=\"#\">email<\/a> or <a href=\"#\" title=\"#\">contact us<\/a>.<\/p>",
+        "adjust_fonts": false,
+        "b-16-r": 16,
+        "m-b-14-r": 14
       }
     }
   },
