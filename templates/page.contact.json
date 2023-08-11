@@ -51,10 +51,10 @@
       ],
       "settings": {
         "title": "Contact Us",
-        "adjust_fonts": false,
+        "adjust_fonts": true,
         "h2": 70,
         "b-16-r": 16,
-        "m-h4": 44
+        "m-h4": 30
       }
     }
   },
