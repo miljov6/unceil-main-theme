@@ -7,6 +7,9 @@
     font-size: {{ section.settings.b-18-r}}px;
   }
   @media screen and (max-width: 641px) {
+    .title-text-block h2 {
+      font-size: {{ section.settings.m-h4}}px;
+    }
     .title-text-block .m-h4 {
       font-size: {{ section.settings.m-h4}}px;
     }
@@ -21,7 +24,7 @@
         <div class="title-text-block">
             <h2 class="m-h4">{{section.settings.title}}</h2>
             <div class="standard-block">
-                <p class="b-18-r m-b16-r">{{section.settings.text}}</p>
+                <p class="b-18-r m-b-16-r">{{section.settings.text}}</p>
             </div>
         </div>
     </div>
