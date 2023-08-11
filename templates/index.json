@@ -128,6 +128,7 @@
       "type": "newsletter-block",
       "settings": {
         "img": "shopify:\/\/shop_images\/image_16.png",
+        "img_mobile": "shopify:\/\/shop_images\/Background.png",
         "title": "Get new works straight in your inbox",
         "text": "Always be in to know about our limited work, special editions, and other news",
         "email": "Your email",
