@@ -191,15 +191,6 @@ productItemPhotos.forEach(photo => {
     // parent.querySelector('a').classList.add('hover-url');
   });
 
-  photo.addEventListener('contextmenu', function (event) {
-    event.preventDefault(); // Prevent the default context menu (right-click menu)
-    const parent = this.parentElement;
-    parent.classList.add('product-item-photo-zoom');
-    parent.querySelector('.img-hover').style.display = 'block';
-    parent.querySelector('.img-nonhover').style.display = 'none';
-    // parent.querySelector('a').classList.add('hover-url');
-  });
-
   photo.addEventListener('touchend', function () {
     const parent = this.parentElement;
     parent.classList.remove('product-item-photo-zoom');
