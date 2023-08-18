@@ -150,6 +150,12 @@ $('.product-item-photo').each(function () {
     $(this).find('.img-nonhover').hide();
     $(this).find('a').addClass('hover-url');
   })
+  $(this).on('tap', function () {
+    $(this).addClass('product-item-photo-zoom');
+    $(this).find('.img-hover').show();
+    $(this).find('.img-nonhover').hide();
+    $(this).find('a').addClass('hover-url');
+  })
 })
 $('.product-item-photo img').each(function () {
   $(this).hover(function () {
