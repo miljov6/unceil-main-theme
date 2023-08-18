@@ -6,8 +6,8 @@
         data-zoom-img="{% if  image_on_hover != blank %} {{image_on_hover | img_url: 'master'}}{% else %}{{product.featured_image | img_url: 'master'}}{% endif %}"
         data-product-img="{{product.featured_image | img_url: 'master'}}">
         <a href="{{product.url}}"></a>
-        <img src="{{product.featured_image | img_url: 'grande'}}" class="img-nonhover" loading="lazy">
-        <img src="{{image_on_hover | img_url: 'grande'}}" class="img-hover" loading="lazy">
+        <img src="{{product.featured_image | img_url: 'master'}}" class="img-nonhover" loading="lazy">
+        <img src="{{image_on_hover | img_url: 'master'}}" class="img-hover" loading="lazy">
     </div>
     <div class="product-item-info spotlight-info">
         <a href="{{product.url}}"></a>
