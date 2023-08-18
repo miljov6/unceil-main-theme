@@ -171,6 +171,52 @@ $('.product-item-photo img').each(function () {
     //$(this).prev().addClass('hover-url');
   })
 })
+const productItemPhotos = document.querySelectorAll('.product-item-photo img');
+
+productItemPhotos.forEach(photo => {
+  photo.addEventListener('mouseenter', function () {
+    const parent = this.parentElement;
+    parent.classList.add('product-item-photo-zoom');
+    const zoomImg = parent.getAttribute('data-zoom-img').toString();
+    parent.querySelector('.img-hover').style.display = 'block';
+    parent.querySelector('.img-nonhover').style.display = 'none';
+    // parent.querySelector('a').classList.add('hover-url');
+  });
+
+  photo.addEventListener('touchstart', function () {
+    const parent = this.parentElement;
+    parent.classList.add('product-item-photo-zoom');
+    parent.querySelector('.img-hover').style.display = 'block';
+    parent.querySelector('.img-nonhover').style.display = 'none';
+    // parent.querySelector('a').classList.add('hover-url');
+  });
+
+  photo.addEventListener('contextmenu', function (event) {
+    event.preventDefault(); // Prevent the default context menu (right-click menu)
+    const parent = this.parentElement;
+    parent.classList.add('product-item-photo-zoom');
+    parent.querySelector('.img-hover').style.display = 'block';
+    parent.querySelector('.img-nonhover').style.display = 'none';
+    // parent.querySelector('a').classList.add('hover-url');
+  });
+
+  photo.addEventListener('touchend', function () {
+    const parent = this.parentElement;
+    parent.classList.remove('product-item-photo-zoom');
+    parent.querySelector('.img-hover').style.display = 'none';
+    parent.querySelector('.img-nonhover').style.display = 'block';
+    // parent.querySelector('a').classList.remove('hover-url');
+  });
+
+  photo.addEventListener('click', function () {
+    const parent = this.parentElement;
+    parent.classList.remove('product-item-photo-zoom');
+    parent.querySelector('.img-hover').style.display = 'none';
+    parent.querySelector('.img-nonhover').style.display = 'block';
+    // parent.querySelector('a').classList.remove('hover-url');
+  });
+});
+
 $(document).ready(function () {
   function updateBtnDetails() {
     var available = $("#variants-select").find(":selected").data('available');
