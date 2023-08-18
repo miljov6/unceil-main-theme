@@ -140,9 +140,9 @@ $('.product-item-photo').each(function () {
   })
   $(this).parent().on('touchstart', function () {
     $(this).removeClass('product-item-photo-zoom');
-    $(this).parent().find('.img-hover').hide();
-    $(this).parent().find('.img-nonhover').show();
-    $(this).prev().addClass('hover-url');
+    $(this).find('.img-hover').hide();
+    $(this).find('.img-nonhover').show();
+    $(this).find('a').removeClass('hover-url');
   })
 })
 $('.product-item-photo img').each(function () {
