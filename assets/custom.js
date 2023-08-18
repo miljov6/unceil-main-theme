@@ -167,9 +167,17 @@ $('.product-item-photo img').each(function () {
   })
   $(this).on('touchstart', function () {
     $(this).parent().addClass('product-item-photo-zoom');
-    $(this).parent().find('.img-nonhover').hide();
+    var check = $(this).parent().data('zoom-img').toString();
     $(this).parent().find('.img-hover').show();
-    $(this).prev().addClass('hover-url');
+    $(this).parent().find('.img-nonhover').hide();
+    $(this).parent().find('a').addClass('hover-url');
+  })
+  $(this).on('tap', function () {
+    $(this).parent().addClass('product-item-photo-zoom');
+    var check = $(this).parent().data('zoom-img').toString();
+    $(this).parent().find('.img-hover').show();
+    $(this).parent().find('.img-nonhover').hide();
+    $(this).parent().find('a').addClass('hover-url');
   })
 })
 $(document).ready(function () {
