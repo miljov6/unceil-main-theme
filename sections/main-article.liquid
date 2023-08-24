@@ -23,7 +23,7 @@
         {% when 'textimage' %}
         <div class="text-image-block">
           <div class="text-image-left">
-            <img src={{block.settings.img | img_url: 'master' }}>
+            <img src="{{block.settings.img | img_url: 'master' }}">
           </div>
           <div class="text-image-right">
             <p class="b-18-r m-b-16-r">{{block.settings.text}}</p>
@@ -32,10 +32,10 @@
         {% when 'image' %}
         <div class="images-block">
           <div class="images-block-left">
-            <img src={{block.settings.img_1 | img_url: 'master' }}>
+            <img src="{{block.settings.img_1 | img_url: 'master' }}">
           </div>
           <div class="images-block-right">
-            <img src={{block.settings.img_2 | img_url: 'master' }}>
+            <img src="{{block.settings.img_2 | img_url: 'master' }}">
           </div>
         </div>
         {% endcase %}

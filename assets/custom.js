@@ -147,7 +147,6 @@ $('.product-item-photo').each(function () {
 $('.product-item-photo img').each(function () {
   $(this).hover(function () {
     $(this).parent().addClass('product-item-photo-zoom');
-    var check = $(this).parent().data('zoom-img').toString();
     $(this).parent().find('.img-hover').show();
     $(this).parent().find('.img-nonhover').hide();
     $(this).parent().find('a').addClass('hover-url');
