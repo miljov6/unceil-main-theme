@@ -1,17 +1,7 @@
 <div class="container-fluid">
   <div class="container">
     <div class="gallery-collection">
-      <div class="gallery-filters">
-        <div class="gallery-filter active-btn" id="all">
-          <span class="b-14-r">Show all</span>
-        </div>
-        <div class="gallery-filter" id="portrait">
-          <span class="b-14-r">Portrait</span>
-        </div>
-        <div class="gallery-filter" id="landscape">
-          <span class="b-14-r">Landscape</span>
-        </div>
-      </div>
+
       <div class="gallery-grid">
         {% for product in collection.products %}
         {% render 'product-item' product: product %}
