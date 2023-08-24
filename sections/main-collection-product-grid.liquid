@@ -20,39 +20,7 @@
     </div>
   </div>
 </div>
-<script defer>
-  $('.gallery-filter').each(function () {
-    $(this).click(function () {
-      $('.gallery-filter').each(function () {
-        $(this).removeClass('active-btn');
-      })
-      $(this).addClass('active-btn');
-    })
-  })
-  $('#all').click(function () {
-    $('.product-item').each(function () {
-      $(this).show(500);
-    })
-  })
-  $('#portrait').click(function () {
-    $('.product-item').each(function () {
-      if ($(this).attr('data-filter') == 'portrait') {
-        $(this).show(500);
-      } else {
-        $(this).hide(500);
-      }
-    })
-  })
-  $('#landscape').click(function () {
-    $('.product-item').each(function () {
-      if ($(this).attr('data-filter') == 'landscape') {
-        $(this).show(500);
-      } else {
-        $(this).hide(500);
-      }
-    })
-  })
-</script>
+
 {% schema %}
 {
 "name": "t:sections.main-collection-product-grid.name",
