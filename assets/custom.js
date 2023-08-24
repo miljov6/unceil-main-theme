@@ -136,7 +136,7 @@ $('.product-item-photo').each(function () {
     $(this).removeClass('product-item-photo-zoom');
     $(this).parent().find('.img-hover').hide();
     $(this).parent().find('.img-nonhover').show();
-    //$(this).parent().find('a').removeClass('hover-url');
+    $(this).parent().find('a').removeClass('hover-url');
   })
   $(this).parent().on('touch', function () {
     $(this).removeClass('product-item-photo-zoom');
@@ -150,25 +150,25 @@ $('.product-item-photo img').each(function () {
     var check = $(this).parent().data('zoom-img').toString();
     $(this).parent().find('.img-hover').show();
     $(this).parent().find('.img-nonhover').hide();
-    //$(this).parent().find('a').addClass('hover-url');
+    $(this).parent().find('a').addClass('hover-url');
   })
   $(this).on('touch', function () {
     $(this).parent().addClass('product-item-photo-zoom');
     $(this).parent().find('.img-hover').show();
     $(this).parent().find('.img-nonhover').hide();
-    //$(this).prev().addClass('hover-url');
+    $(this).prev().addClass('hover-url');
   })
   $(this).on('taphold', function () {
     $(this).parent().addClass('product-item-photo-zoom');
     $(this).parent().find('.img-hover').show();
     $(this).parent().find('.img-nonhover').hide();
-    //$(this).prev().addClass('hover-url');
+    $(this).prev().addClass('hover-url');
   })
   $(this).on('tap', function () {
     $(this).parent().addClass('product-item-photo-zoom');
     $(this).parent().find('.img-hover').show();
     $(this).parent().find('.img-nonhover').hide();
-    //$(this).prev().addClass('hover-url');
+    $(this).prev().addClass('hover-url');
   })
 })
 const productItemPhotos = document.querySelectorAll('.product-item-photo img');
@@ -180,7 +180,7 @@ productItemPhotos.forEach(photo => {
     const zoomImg = parent.getAttribute('data-zoom-img').toString();
     parent.querySelector('.img-hover').style.display = 'block';
     parent.querySelector('.img-nonhover').style.display = 'none';
-    // parent.querySelector('a').classList.add('hover-url');
+    parent.querySelector('a').classList.add('hover-url');
   });
 
   photo.addEventListener('touchstart', function () {
@@ -188,7 +188,7 @@ productItemPhotos.forEach(photo => {
     parent.classList.add('product-item-photo-zoom');
     parent.querySelector('.img-hover').style.display = 'block';
     parent.querySelector('.img-nonhover').style.display = 'none';
-    // parent.querySelector('a').classList.add('hover-url');
+    parent.querySelector('a').classList.add('hover-url');
   });
 
   photo.addEventListener('touchend', function () {
@@ -196,7 +196,7 @@ productItemPhotos.forEach(photo => {
     parent.classList.remove('product-item-photo-zoom');
     parent.querySelector('.img-hover').style.display = 'none';
     parent.querySelector('.img-nonhover').style.display = 'block';
-    // parent.querySelector('a').classList.remove('hover-url');
+    parent.querySelector('a').classList.remove('hover-url');
   });
 
   photo.addEventListener('click', function () {
@@ -204,7 +204,7 @@ productItemPhotos.forEach(photo => {
     parent.classList.remove('product-item-photo-zoom');
     parent.querySelector('.img-hover').style.display = 'none';
     parent.querySelector('.img-nonhover').style.display = 'block';
-    // parent.querySelector('a').classList.remove('hover-url');
+    parent.querySelector('a').classList.remove('hover-url');
   });
 });
 
