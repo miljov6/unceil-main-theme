@@ -176,7 +176,6 @@ productItemPhotos.forEach(photo => {
   photo.addEventListener('mouseenter', function () {
     const parent = this.parentElement;
     parent.classList.add('product-item-photo-zoom');
-    const zoomImg = parent.getAttribute('data-zoom-img').toString();
     parent.querySelector('.img-hover').style.display = 'block';
     parent.querySelector('.img-nonhover').style.display = 'none';
     parent.querySelector('a').classList.add('hover-url');
