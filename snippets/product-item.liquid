@@ -4,9 +4,9 @@
 <div class="product-item" data-filter="{{orientation}}">
     <div class="product-item-photo{% if orientation == 'landscape' %} landscape-photo {% endif %}">
         <a href="{{product.url}}"></a>
-        <img src="{{product.featured_image | img_url: 'grande'}}" class="img-nonhover"
+        <img src="https://{{product.featured_image | img_url: 'grande'}}" class="img-nonhover"
             alt="{{product.featured_image.alt}}">
-        <img src="{{image_on_hover | img_url: 'grande'}}" alt="{{image_on_hover.alt}}" class="img-hover">
+        <img src="https://{{image_on_hover | img_url: 'grande'}}" alt="{{image_on_hover.alt}}" class="img-hover">
     </div>
     <div class="product-item-info spotlight-info">
         <a href="{{product.url}}"></a>
