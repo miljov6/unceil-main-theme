@@ -144,7 +144,7 @@
               </div>
               <div class="product-tabs-content product-tabs-content-m">
                 <div class="product-tab-text standard-block">
-                  <p class="b-14-r">{{product.content}}</p>
+                  <p class="b-14-r">{{product.content | strip_html}}</p>
                 </div>
                 <div class="product-tab-text standard-block">
                   <p class="b-14-r">{{settings.payment_text}}</p>
@@ -318,7 +318,7 @@
             </div>
             <div class="product-tabs-content product-tabs-content-d">
               <div class="product-tab-text standard-block">
-                <p class="b-14-r">{{product.content}}</p>
+                <p class="b-14-r">{{product.content | strip_html}}</p>
               </div>
               <div class="product-tab-text standard-block">
                 <p class="b-14-r">{{settings.payment_text}}</p>
