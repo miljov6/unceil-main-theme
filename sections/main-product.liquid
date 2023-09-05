@@ -40,6 +40,12 @@
 .product-more-info .b-18-r {
   font-size: {{ section.settings.discover-cta}}px;
 }
+.product-additional-block .b-14-m {
+  font-size: {{ section.settings.additional-title}}px;
+}
+.under-block .b-16-r {
+  font-size: {{ section.settings.additional-text}}px;
+}
 @media screen and (max-width: 641px) {
     .product-form-block .m-h3 {
       font-size: {{ section.settings.m-h3}}px;
@@ -65,6 +71,12 @@
     .product-more-info .b-18-r {
       font-size: {{ section.settings.discover-cta-m}}px;
     }
+    .product-additional-block .b-14-m {
+  font-size: {{ section.settings.additional-title-mobile}}px;
+}
+.under-block .b-16-r {
+  font-size: {{ section.settings.additional-text-mobile}}px;
+}
   }
 </style>
 {% endif %}
@@ -468,6 +480,26 @@
   },
   {
     "type": "range",
+    "id": "additional-title",
+    "min": 10,
+    "max": 30,
+    "step": 1,
+    "unit": "px",
+    "label": "Additional Block Title",
+    "default": 14
+  },
+  {
+    "type": "range",
+    "id": "additional-text",
+    "min": 10,
+    "max": 30,
+    "step": 1,
+    "unit": "px",
+    "label": "Additional Block Title",
+    "default": 16
+  },
+  {
+    "type": "range",
     "id": "discover-cta",
     "min": 10,
     "max": 30,
@@ -549,6 +581,26 @@
     "unit": "px",
     "label": "Help Block Text",
     "default": 14
+  },
+  {
+    "type": "range",
+    "id": "additional-title-mobile",
+    "min": 10,
+    "max": 30,
+    "step": 1,
+    "unit": "px",
+    "label": "Additional Block Title",
+    "default": 14
+  },
+  {
+    "type": "range",
+    "id": "additional-text-mobile",
+    "min": 10,
+    "max": 30,
+    "step": 1,
+    "unit": "px",
+    "label": "Additional Block Title",
+    "default": 16
   },
   {
     "type": "range",
