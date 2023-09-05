@@ -318,7 +318,7 @@
             </div>
             <div class="product-tabs-content product-tabs-content-d">
               <div class="product-tab-text standard-block">
-                <p class="b-14-r">{{product.content | strip | replace: '<p>','<p class="b-14-r">'}}</p>
+                <p class="b-14-r">{{product.content | strip_newline | replace: '<p>','<p class="b-14-r">'}}</p>
               </div>
               <div class="product-tab-text standard-block">
                 <p class="b-14-r">{{settings.payment_text}}</p>
@@ -331,7 +331,7 @@
           <div class="product-help-block">
             <p class="b-14-m">{{settings.help_title}}</p>
             <div class="standard-block">
-              <p class="b-14-r underline-link">{{settings.help_text | strip | replace: '<p>','<p class="b-14-r">' | strip }}</p>
+              <p class="b-14-r underline-link">{{settings.help_text | strip_newline | replace: '<p>','<p class="b-14-r">' | strip }}</p>
             </div>
           </div>
           <div class="product-more-info">
