@@ -107,7 +107,7 @@
                 {% endfor %}
                 <select id="variants-select-m">
                   {% for variant in product.variants %}
-                  <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-price="{{variant.price | money_without_trailing_zeros}}" data-options="{{options| strip_newlines | strip | replace: " ", ""}}">
+                  <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-price="{{variant.price | money_without_trailing_zeros}}" data-options="{{options | strip | replace: " ", ""}}">
                     {{variant.title}}</option>
                   {% endfor %}
                 </select>
@@ -144,7 +144,7 @@
               </div>
               <div class="product-tabs-content product-tabs-content-m">
                 <div class="product-tab-text standard-block">
-                  <p class="b-14-r">{{product.content | strip_html | strip_newlines | strip | lstrip}}</p>
+                  <p class="b-14-r">{{product.content | strip_html  | strip | lstrip}}</p>
                 </div>
                 <div class="product-tab-text standard-block">
                   <p class="b-14-r">{{settings.payment_text}}</p>
@@ -274,14 +274,14 @@
                   {% else %}
                   {% assign t = '' %}
                   {% endif %}
-                    {{x | strip_newlines |  strip | rstrip | lstrip | append: option | append: t |  strip | rstrip | lstrip | strip_newlines}}
+                    {{x  |  strip | rstrip | lstrip | append: option | append: t |  strip | rstrip | lstrip }}
                     {% endfor %}
-                  {%  assign r = x |  strip | rstrip | lstrip | strip_newlines %}  
+                  {%  assign r = x |  strip | rstrip | lstrip  %}  
                 {{ r }}
               {% endcapture %} 
 
                 <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-price="{{variant.price | money_without_trailing_zeros}}"
-              data-options="{{options| strip_newlines | strip | replace: " ", ""}}">
+              data-options="{{options | strip | replace: " ", ""}}">
                   {{variant.title}}</option>
                 {% endfor %}
               </select>
@@ -318,7 +318,7 @@
             </div>
             <div class="product-tabs-content product-tabs-content-d">
               <div class="product-tab-text standard-block">
-                <p class="b-14-r">{{product.content | strip_html | strip_newlines | strip | lstrip}}</p>
+                <p class="b-14-r">{{product.content | strip_html  | strip | lstrip}}</p>
               </div>
               <div class="product-tab-text standard-block">
                 <p class="b-14-r">{{settings.payment_text}}</p>
