@@ -61,13 +61,20 @@
         "5af20286-1544-47d4-986d-4d35e8eba1fc"
       ],
       "settings": {
-        "title": "Order & Payment"
+        "title": "Order & Payment",
+        "adjust_fonts": true,
+        "h2": 60,
+        "b-16-r": 14,
+        "m-h4": 44
       }
     },
     "b044276d-2cdc-4e80-aef6-6e138e4be492": {
       "type": "questions-cta",
       "settings": {
-        "text": "<p>Questions? Send us an <a href=\"#\" title=\"#\">email<\/a> or <a href=\"#\" title=\"#\">contact us<\/a>.<\/p>"
+        "text": "<p>Questions? Send us an <a href=\"#\" title=\"#\">email<\/a> or <a href=\"#\" title=\"#\">contact us<\/a>.<\/p>",
+        "adjust_fonts": false,
+        "b-16-r": 16,
+        "m-b-14-r": 14
       }
     }
   },
