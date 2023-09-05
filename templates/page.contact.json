@@ -52,8 +52,8 @@
       "settings": {
         "title": "Contact Us",
         "adjust_fonts": true,
-        "h2": 70,
-        "b-16-r": 16,
+        "h2": 60,
+        "b-16-r": 14,
         "m-h4": 30
       }
     }
