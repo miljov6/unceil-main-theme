@@ -12,7 +12,7 @@
         "help-title": 14,
         "help-text": 14,
         "additional-title": 14,
-        "additional-text": 16,
+        "additional-text": 14,
         "discover-cta": 14,
         "m-h3": 41,
         "photographer-name-m": 14,
@@ -21,8 +21,8 @@
         "add-btn-m": 13,
         "help-title-m": 14,
         "help-text-m": 14,
-        "additional-title-mobile": 14,
-        "additional-text-mobile": 14,
+        "additional-title-mobile": 13,
+        "additional-text-mobile": 13,
         "discover-cta-m": 15
       }
     },
