@@ -293,7 +293,7 @@
               {% endcapture %} 
 
                 <option id="{{variant.id}}" data-variant-id="{{variant.id}}" data-available="{{variant.available}}" data-price="{{variant.price | money_without_trailing_zeros}}"
-              data-options="{{options | strip_html | strip_newlines | strip | replace: " ", "" | strip_newlines | replace: "\n","" }}">
+                data-options="{{options | strip_html | strip_newlines | strip | replace: " ", "" | strip_newlines | replace: "\n","" }}">
                   {{variant.title}}</option>
                 {% endfor %}
               </select>
