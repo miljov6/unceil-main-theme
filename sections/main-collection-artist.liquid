@@ -90,7 +90,7 @@
     </div>
     {% endif %}
     <div class="collection-description">
-      <p class="b-18-r m-b-16-r">{{collection.description | strip | replace: '<p>','' | replace: '</p>',''}}</p>
+      {{collection.description | strip | replace: '<p>','<p class="b-18-r m-b-16-r">'}}
     </div>
     <div class="collection-gallery">
       {% if section.settings.show_artist_block %}
