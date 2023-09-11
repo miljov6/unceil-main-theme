@@ -55,7 +55,7 @@
     {% endif %}
     <div class="collection-description">
       <p class="b-18-r m-b-16-r">
-      {{collection.description | strip | replace: '<p>','<p class="b-18-r m-b-16-r">'}}
+      {{collection.description | strip | replace: '<p>','<p class="b-18-r m-b-16-r">' | replace: '<p class="p1" data-mce-fragment="1">','<p class="b-18-r m-b-16-r">'}}
         </p>
     </div>
     <div class="collection-gallery">
