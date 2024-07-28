@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -17,14 +26,6 @@
             "img": "shopify:\/\/shop_images\/Hector_Alamilla.png",
             "name": "Héctor Alamilla",
             "url": "shopify:\/\/collections\/hector-alamilla"
-          }
-        },
-        "e2c4fc25-e9f8-410b-8fe8-c8c7d5f74b71": {
-          "type": "photo",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/Lotte_Lisa_Ekkel.png",
-            "name": "Lotte Lisa Ekkel",
-            "url": "shopify:\/\/collections\/lotte-lisa-ekkel"
           }
         },
         "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-1": {
@@ -73,7 +74,6 @@
       },
       "block_order": [
         "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-0",
-        "e2c4fc25-e9f8-410b-8fe8-c8c7d5f74b71",
         "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-1",
         "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-3",
         "template--19218766692664__5ae8e817-d2a5-4d84-b2da-12de36310ced-168533980012ef3c18-2",
