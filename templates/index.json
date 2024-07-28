@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "cc144c7a-195a-4dbb-b83b-9bdb08601dea": {
@@ -62,28 +71,10 @@
             "product": "a-lucid-dream"
           }
         },
-        "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-1": {
-          "type": "slide",
-          "settings": {
-            "product": "bedouin-falcon"
-          }
-        },
-        "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-2": {
-          "type": "slide",
-          "settings": {
-            "product": "decalcomania"
-          }
-        },
         "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-3": {
           "type": "slide",
           "settings": {
             "product": "gentle-thoughts"
-          }
-        },
-        "a0203650-5b6b-41f4-9a07-2d85819ea07c": {
-          "type": "slide",
-          "settings": {
-            "product": "golden-hour"
           }
         },
         "8d9e8026-ceab-4c81-b834-4575161e2e8e": {
@@ -91,29 +82,12 @@
           "settings": {
             "product": "mist"
           }
-        },
-        "08790513-e42e-4490-aead-75919e7c05d8": {
-          "type": "slide",
-          "settings": {
-            "product": "unmanifested"
-          }
-        },
-        "34954974-9fab-4556-b22f-2c30959da353": {
-          "type": "slide",
-          "settings": {
-            "product": "disposition-45"
-          }
         }
       },
       "block_order": [
         "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-0",
-        "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-1",
-        "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-2",
         "template--19218765381944__0f5d62e7-0bb3-44e0-888a-0aae2e983e2b-168512519362274e97-3",
-        "a0203650-5b6b-41f4-9a07-2d85819ea07c",
-        "8d9e8026-ceab-4c81-b834-4575161e2e8e",
-        "08790513-e42e-4490-aead-75919e7c05d8",
-        "34954974-9fab-4556-b22f-2c30959da353"
+        "8d9e8026-ceab-4c81-b834-4575161e2e8e"
       ],
       "settings": {
         "title": "In the spotlight",
