@@ -66,8 +66,7 @@
         {% render 'product-item' product: product %}
         {% unless forloop.index != half %}
       </div>
-      {% render 'artist-block' with artist_title: artist_title, artist_description: artist_description,
-      artist_cta: artist_cta, artist_img: artist_img, artist_cta_url: artist_cta_url %}
+      {% render 'artist-block' with artist_title, artist_title: artist_title, artist_description: artist_description, artist_cta: artist_cta, artist_img: artist_img, artist_cta_url: artist_cta_url %}
 
       <div class="gallery-grid collection-grid">
         {% endunless %}
@@ -84,8 +83,7 @@
       {% if section.settings.show_artist_block %}
       <div class="additional-class-block">
 
-        {% render 'artist-block' with artist_title: artist_title, artist_description: artist_description,
-        artist_cta: artist_cta, artist_img: artist_img, artist_cta_url: artist_cta_url %}
+        {% render 'artist-block' with artist_title, artist_title: artist_title, artist_description: artist_description, artist_cta: artist_cta, artist_img: artist_img, artist_cta_url: artist_cta_url %}
 
       </div>
       {% endif %}
@@ -263,4 +261,24 @@
 }
 ]
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% render 'artist-block' with artist_title: artist_title, artist_description: artist_description,
+          artist_cta: artist_cta, artist_img: artist_img, artist_cta_url: artist_cta_url %}
+  to: "{% render 'artist-block' with artist_title, artist_title: artist_title, artist_description:
+    artist_description, artist_cta: artist_cta, artist_img: artist_img, artist_cta_url:
+    artist_cta_url %}"
+  position: 2655..2848
+- from: |-
+    {% render 'artist-block' with artist_title: artist_title, artist_description: artist_description,
+            artist_cta: artist_cta, artist_img: artist_img, artist_cta_url: artist_cta_url %}
+  to: "{% render 'artist-block' with artist_title, artist_title: artist_title, artist_description:
+    artist_description, artist_cta: artist_cta, artist_img: artist_img, artist_cta_url:
+    artist_cta_url %}"
+  position: 3263..3456
+{%- endcomment -%}
